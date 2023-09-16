@@ -1,0 +1,21 @@
+{
+  "name": "recipe-cards",
+  "version": "1.0.0",
+  "description": "Create recipes BD and draw svg cards",
+  "private": true,
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "build": "webpack --config ./config/webpack/build.js",
+    "start": "cd ./dist webpack-dev-server"
+  },
+  "license": "ISC"
+}

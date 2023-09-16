@@ -1,0 +1,131 @@
+/* [module.id,
+\"* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+[class^=\\\"box-\\\"] background-color: skyblue;
+display: grid;
+place-items: center; */
+
+.ingredient__container {
+  display: grid;
+  grid-template-columns: 1fr 1024px 1fr;
+}
+
+.ingredient__content {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ingredient__center {
+  background: antiquewhite;
+  padding: 32px;
+}
+
+.ingredient-column {
+  grid-template-rows: 16px 36px 36px 64px;
+  display: grid;
+  grid-row-gap: 8px;
+}
+
+/* .ingredient-column > textarea:not(.filter) {  margin-top: 16px;} */
+.amount-of {
+  grid-template-rows: 16px 36px;
+  display: grid;
+  grid-row-gap: 8px;
+}
+
+.unit {
+  grid-template-rows: 16px 36px 64px;
+  display: grid;
+  grid-row-gap: 8px;
+}
+
+.center {
+  display: grid;
+  grid-template-rows: auto 40px 64px;
+}
+
+.actions {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr 98px;
+}
+
+.ingredient {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-rows: 32px 1fr 32px;
+}
+
+select,
+textarea,
+input {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  background: white;
+  width: 100%;
+  border: solid 1px #9E9E9E;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  border: solid 1px #9E9E9E;
+}
+
+label {
+  font-size: 16px;
+}
+
+.tabs {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-column-gap: 8px;
+}
+
+.tab {
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: solid 1px #efefef;
+}
+
+.tab:focus {
+  outline-width: 0px;
+}
+
+.tab-shade {
+  border-bottom: solid 1px #9E9E9E;
+}
+
+.json-container {
+  display: grid;
+  grid-template-rows: 38px;
+  background-color: #efefef;
+  border: solid 1px #9E9E9E;
+  padding: 8px;
+  z-index: 0;
+}
+
+.json-container>textarea {
+  height: 180px;
+}
+
+.json-containers {
+  display: grid;
+  grid-template-rows: 35px 200px;
+}
+
+.buttom_primary {
+  background-color: #CDDC39;
+}
+
+.buttom_secondary {
+  background-color: #ffeb3b;
+}

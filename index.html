@@ -1,0 +1,183 @@
+<!-- https://color.romanuke.com/czvetovaya-palitra-4528/ -->
+<!-- #5C7728
+#F8AE29
+#F7F7F9
+#FFC9B3
+#B76C49 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: monospace;
+    }
+
+    .page {
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 800px 1fr;
+    }
+
+    .page__title {
+      display: grid;
+      justify-content: center;
+    }
+
+    .table__head {
+      display: grid;
+      grid-template-columns: 226px 226px 226px 36px 36px;
+      height: 42px;
+      background: #DBB6A4;
+    }
+
+    .table__head div {
+      /* border: 4px solid white; */
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding: 8px 0px;
+      border-bottom: 0;
+    }
+
+    .table__head div:not(:last-child) {
+      border-right: 0;
+    }
+
+    /* TODO миксин */
+    .table__row {
+      display: grid;
+      grid-template-columns: 226px 226px 226px 32px 32px;
+      border: 1px solid #E5E5E5;
+      border-top: 0;
+      border-bottom: 0;
+      /* border-bottom: 0; */
+    }
+
+    .table__row:last-child {
+      border: 1px solid #E5E5E5;
+    }
+
+    .table__cell {
+      /* border: 4px solid white; */
+      padding: 8px;
+      border-bottom: 0;
+    }
+
+    .table__cell:not(:last-child) {
+      border-right: 0px;
+    }
+
+    /* .table__cell_type_button {
+      padding: 24px 8px;
+      align-items: center;
+      display: grid;
+    } */
+
+    .table {
+      width: 752px;
+      font-size: 16px;
+      color: #1B1D19;
+      margin: 24px;
+    }
+
+    .table button {
+      background: #B76C49;
+      border-radius: 4px;
+      border: none;
+      padding: 8px;
+    }
+
+    .table input {
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #D9D9D9;
+    }
+
+    .table input:focus {
+      border: 0;
+    }
+
+    .table__cell_type_ingredients div:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    .table__cell_type_units div:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  </style>
+  <script>
+    // document.querySelector('.content').appendChild(
+    //   document.createElement
+    // )
+  </script>
+  <script src="./src/index.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="page">
+    <div></div>
+    <div>
+      <div class="page__title">
+        <h1>Добавление рецепта</h1>
+      </div>
+      <div class="table">
+        <div class="table__head">
+          <div>
+            Ингредиент
+          </div>
+          <div>
+            Количество
+          </div>
+          <div>
+            Единицы измерения
+          </div>
+          <div class="table__head_type_button"></div>
+          <div class="table__head_type_button"></div>
+        </div>
+        <div class="table__content">
+          <div class="table__row">
+            <div class="table__cell">
+              <!-- TODO сделать это через b() -->
+              <input type="text" />
+              <!-- <div>
+                <select>
+                  <option>Свекла</option>
+                  <option>Морковь</option>
+                </select>
+              </div> -->
+            </div>
+            <div class="table__cell">
+              <input type="text" />
+              <!-- <div> -->
+                <!-- <select>
+                  <option>шт.</option>
+                  <option>кг.</option>
+                </select> -->
+              <!-- </div>
+              <div>
+                <input type="text">
+              </div> -->
+            </div>
+            <div class="table__cell">
+              <input type="text" />
+            </div>
+            <div class="table__cell table__cell_type_button">
+              <button>A</button>
+            </div>
+            <div class="table__cell table__cell_type_button">
+              <button>D</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</body>
+
+</html>

@@ -53,7 +53,6 @@
       border: 1px solid #E5E5E5;
       border-top: 0;
       border-bottom: 0;
-      /* border-bottom: 0; */
     }
 
     .table__row:last-child {
@@ -61,7 +60,6 @@
     }
 
     .table__cell {
-      /* border: 4px solid white; */
       padding: 8px;
       border-bottom: 0;
     }
@@ -69,12 +67,6 @@
     .table__cell:not(:last-child) {
       border-right: 0px;
     }
-
-    /* .table__cell_type_button {
-      padding: 24px 8px;
-      align-items: center;
-      display: grid;
-    } */
 
     .table {
       width: 752px;
@@ -84,21 +76,49 @@
     }
 
     .table button {
-      background: #B76C49;
-      border-radius: 4px;
-      border: none;
-      padding: 8px;
+      padding: 0px;
     }
 
     .table input {
       border: none;
       padding: 8px;
       border-radius: 4px;
-      border: 1px solid #D9D9D9;
+      border: 1px solid #d9d9d9;
+      font-size: 16px;
+    }
+
+    .add-button {
+      background-image: url(edit-icon.svg);
+      background-size: 100%;
+      width: 32px;
+      height: 32px;
+      /* background: mediumaquamarine; */
+      border: none;
+      background-color: transparent;
+    }
+
+    .delete-button {
+      background-image: url(cancell-icon.svg);
+      background-size: 100%;
+      width: 32px;
+      height: 32px;
+      /* background: mediumaquamarine; */
+      border: none;
+      background-color: transparent;
     }
 
     .table input:focus {
-      border: 0;
+      border: 1px solid #d9d9d9;
+      outline-color: #d9d9d9;
+    }
+
+    .table input:focus-visible {
+      border: 1px solid #d9d9d9;
+      outline-color: #d9d9d9;
+    }
+
+    .table input:active {
+      border: 1px solid red;
     }
 
     .table__cell_type_ingredients div:not(:last-child) {
@@ -108,18 +128,126 @@
     .table__cell_type_units div:not(:last-child) {
       margin-bottom: 4px;
     }
+
+    .text-input input {
+      width: 192px;
+    }
+
+    .table__active-button {
+      padding: 0;
+      display: grid;
+      align-items: center;
+    }
   </style>
+  <script type="module" src="./src/app/components/select-with-search/index.js"></script>
   <script>
-    // document.querySelector('.content').appendChild(
-    //   document.createElement
-    // )
+    // console.log('%c%s', 'background: cadetblue; padding: 8px;', 'loadTemplates');
+    // const loadTemplates = async () => {
+    //   //get the imported document in templates:
+    //   var templates = document.createElement( 'template' )
+    //   templates.innerHTML = await ( await fetch( 'templates.html' ) ).text();
+    // };
+
+    // const loadTemplates = () => {
+    //
+    // }
   </script>
-  <script src="./src/index.js"></script>
+  <!-- <script src="./src/index.js"></script> -->
   <title>Document</title>
 </head>
 
 <body>
+  <div w3-include-html="templates.html"></div>
+  <script>
+    // const loadTemplates = async () => {
+    //   var templates = document.createElement( 'template' )
+    //   // const templatesFile = await fetch( 'templates.html' );
+    //   templates.innerHTML = await ( await fetch( 'templates.html' ) ).text();
+    //   document.querySelector('body').appendChild(templates);
+    // };
+
+    // loadTemplates();
+  </script>
   <div class="page">
+    <template id="select-with-search">
+      <style>
+        .select__add-button {
+          background-image: url('add-icon.svg');
+          width: 24px;
+          height: 24px;
+          border: none;
+          background-color: transparent;
+        }
+
+        .select__add-button:hover {
+          background-image: url('add-icon_hover.svg');
+        }
+
+        .select__container {
+          position: absolute;
+          background: white;
+          display: block;
+          border: 1px solid #E5E5E5;
+          width: 180px;
+          box-shadow: 0px 2px 8px 0px rgb(34 60 80 / 20%);
+        }
+
+        .select__option {
+          padding: 8px;
+          border-bottom: 1px solid #E5E5E5;
+        }
+
+        .select__option:hover {
+          background-color: #F8AE29;
+        }
+
+        .select__field {
+          display: grid;
+          grid-template-columns: 182px 24px;
+          gap: 4px;
+          align-items: center;
+          position: relative;
+        }
+
+        .select input {
+          border: none;
+          padding: 8px;
+          border-radius: 4px;
+          border: 1px solid #d9d9d9;
+          font-size: 16px;
+          ;
+        }
+
+        .select__hide-button {
+          position: absolute;
+          background-image: url(./hide-select-button.svg);
+          background-color: transparent;
+          border: none;
+          height: 36px;
+          width: 30px;
+          left: 152px;
+          background-repeat: no-repeat;
+          background-position-y: 16px;
+          background-position-x: 8px;
+          padding: 0;
+        }
+
+        .select__container.hide {
+          display: none;
+        }
+      </style>
+
+      <!-- TODO сделать это через b() -->
+      <div class="select">
+        <div class="select__field">
+          <input type="text" />
+          <button class="select__add-button"></button>
+          <button class="select__hide-button"></button>
+        </div>
+        <div class="select__container  hide">
+        </div>
+      </div>
+    </template>
     <div></div>
     <div>
       <div class="page__title">
@@ -142,35 +270,21 @@
         <div class="table__content">
           <div class="table__row">
             <div class="table__cell">
-              <!-- TODO сделать это через b() -->
-              <input type="text" />
-              <!-- <div>
-                <select>
-                  <option>Свекла</option>
-                  <option>Морковь</option>
-                </select>
-              </div> -->
+              <select-with-search id="s1" onAddOption="addOption()"></select-with-search>
             </div>
             <div class="table__cell">
-              <input type="text" />
-              <!-- <div> -->
-                <!-- <select>
-                  <option>шт.</option>
-                  <option>кг.</option>
-                </select> -->
-              <!-- </div>
-              <div>
-                <input type="text">
-              </div> -->
+              <div class="text-input">
+                <input type="text" />
+              </div>
             </div>
             <div class="table__cell">
-              <input type="text" />
+              <select-with-search id="s2" onAddOption="addOption"></select-with-search>
             </div>
-            <div class="table__cell table__cell_type_button">
-              <button>A</button>
+            <div class="table__cell table__active-button">
+              <button class="add-button"></button>
             </div>
-            <div class="table__cell table__cell_type_button">
-              <button>D</button>
+            <div class="table__cell  table__active-button">
+              <button class="delete-button"></button>
             </div>
           </div>
         </div>
@@ -178,6 +292,14 @@
     </div>
     <div></div>
   </div>
+  <script>
+    onAddOption = event => {
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', event.currentTarget.text);
+    }
+
+     s1.addEventListener('addOption', onAddOption);
+     s2.addEventListener('addOption', onAddOption);
+  </script>
 </body>
 
 </html>

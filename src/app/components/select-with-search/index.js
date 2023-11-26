@@ -29,7 +29,6 @@ class SelectWithSearch extends HTMLElement {
     this.popup = shadowRoot.querySelector('.select__container');
     this.input = shadowRoot.querySelector('.select__input');
     this.selectContainer = shadowRoot.querySelector('.select__container');
-
   }
 
   static get observedAttributes() { return ['options']; }

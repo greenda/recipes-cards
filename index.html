@@ -1,4 +1,4 @@
-<!-- https://color.romanuke.com/czvetovaya-palitra-4528/ -->
+<!-- https://color.romanuke.com/czvetovaya-palitra-4528/
 <!-- #5C7728
 #F8AE29
 #F7F7F9
@@ -186,6 +186,8 @@
         }
 
         .select__container {
+          height: calc(55px * 6);
+          overflow-y: scroll;
           position: absolute;
           background: white;
           display: block;
@@ -272,27 +274,7 @@
           <div class="table__head_type_button"></div>
           <div class="table__head_type_button"></div>
         </div>
-        <div class="table__content">
-          <div class="table__row">
-            <div class="table__cell">
-              <select-with-search id="s1"></select-with-search>
-            </div>
-            <div class="table__cell">
-              <div class="text-input">
-                <input type="text" />
-              </div>
-            </div>
-            <div class="table__cell">
-              <select-with-search id="s2"></select-with-search>
-            </div>
-            <div class="table__cell table__active-button">
-              <button class="add-button"></button>
-            </div>
-            <div class="table__cell  table__active-button">
-              <button class="delete-button"></button>
-            </div>
-          </div>
-        </div>
+        <div class="table__content"></div>
       </div>
     </div>
     <div></div>
@@ -304,37 +286,105 @@
       updateIngredients([...INGREDIENTS, { id: newId, label: event.currentTarget.newOption }]);
     }
 
-    // const INGREDIENTS = [
-    //   { id: 1, label: 'Свекла' },
-    //   { id: 2, label: 'Морковь' },
-    //   { id: 3, label: 'Мясо' },
-    // ];
+    const addTableRow = ({ ingredientSelectId, unitSelectId }) => {
+      const tableContentElement = document.querySelector('.table__content');
 
-    const updateIngredients = ingredients => {
-      window.table.ingredients.forEach(select => {
-        select.setAttribute('options', JSON.stringify(ingredients));
-      });
+      const rowElement = document.createElement('div');
+      rowElement.className = 'table__row';
+
+      // TODO сделать функцию для создания элемента с параметрами
+      // В идеале для вложенных
+      const ingredientsCell = document.createElement('div');
+      ingredientsCell.className = 'table__cell';
+      const ingredientsSelect = document.createElement('select-with-search');
+      ingredientsSelect.id = ingredientSelectId;
+      ingredientsCell.appendChild(ingredientsSelect);
+
+      const countInputCell = document.createElement('div');
+      countInputCell.className = 'table__cell';
+      const countInputContаiner = document.createElement('div');
+      countInputContаiner.className = 'text-input';
+      const countInput = document.createElement('input');
+      countInput.type = 'text';
+      countInputContаiner.appendChild(countInput);
+      countInputCell.appendChild(countInputContаiner);
+
+      const unitsCell = document.createElement('div');
+      unitsCell.className = 'table__cell';
+      const unitsSelect = document.createElement('select-with-search');
+      unitsSelect.id = unitSelectId;
+      unitsCell.appendChild(unitsSelect);
+
+      const tableAddButtonContainer = document.createElement('div');
+      tableAddButtonContainer.className = 'table__cell table__active-button';
+      const tableAddButton = document.createElement('button');
+      tableAddButton.className = 'add-button';
+      tableAddButtonContainer.appendChild(tableAddButton);
+
+      const tableDeleteButtonContainer = document.createElement('div');
+      tableDeleteButtonContainer.className = 'table__cell table__active-button';
+      const tableDeleteButton = document.createElement('button');
+      tableDeleteButton.className = 'delete-button';
+      tableDeleteButtonContainer.appendChild(tableDeleteButton);
+
+      rowElement.appendChild(ingredientsCell);
+      rowElement.appendChild(countInputCell);
+      rowElement.appendChild(unitsCell);
+      rowElement.appendChild(tableAddButtonContainer);
+      rowElement.appendChild(tableDeleteButtonContainer);
+
+      tableContentElement.appendChild(rowElement);
     }
 
-    fetch('./ingredients.js')
-      .then((res) => res.text())
-      .then((text) => {
-        window.INGREDIENTS = JSON.parse(text).map(({ id, name }) => ({ id, label: name }))
+    const updateSelectOptions = (tables, options) => tables.forEach(select => {
+      select.setAttribute('options', JSON.stringify(options));
+    });
 
-        window.ingredients = INGREDIENTS;
-        window.table = {
-          ingredients: [s1, s2],
-        };
+    const updateIngredients = ingredients => updateSelectOptions(window.table.ingredients, ingredients);
 
-        window.table.ingredients.forEach(select => {
-          select.addEventListener('addOption', onAddOption);
-        });
+    const updateUnits = units => updateSelectOptions(window.table.units, units);
 
-        updateIngredients(INGREDIENTS);
+    // TODO узнать про res.text, почему он ассинхронный
+    const fetchFile = file => fetch(file)
+      .then((res) => res.text());
 
+    const init = async () => {
+      const ingredients = await fetchFile('./ingredients.js');
+      window.INGREDIENTS = JSON.parse(ingredients).map(({ id, name }) => ({ id, label: name }))
+
+      const units = await fetchFile('./units.js');
+      window.UNITS = JSON.parse(units).reduce((acc, { id, name }) => ([
+          ...acc,
+          ...Array.isArray(name)
+            ? name.map((word, index ) => ({ id: `${id}_${index}`, label: word }))
+            : [{ id, label: name }]
+        ]),
+      []);
+
+      addTableRow({
+        ingredientSelectId: 's1',
+        ingredients: INGREDIENTS,
+        unitSelectId: 's2',
+        units: UNITS,
       });
 
+      window.ingredients = INGREDIENTS;
+      window.units = UNITS;
+      window.table = {
+        ingredients: [s1],
+        units: [s2]
+      };
+      window.table.ingredients.forEach(select => {
+        select.addEventListener('addOption', onAddOption);
+      });
 
+      updateIngredients(INGREDIENTS);
+      updateUnits(UNITS);
+    }
+
+    (async () => {
+      await init()
+    })();
   </script>
 </body>
 

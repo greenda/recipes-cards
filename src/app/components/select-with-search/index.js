@@ -10,11 +10,11 @@ class SelectWithSearch extends HTMLElement {
     this.content = templateContent;
     this.options = [];
 
-    this.setOptions([
-      { id: 1, label: 'Свекла' },
-      { id: 2, label: 'Морковь' },
-      { id: 3, label: 'Мясо' },
-    ], templateContent);
+    // this.setOptions([
+    //   { id: 1, label: 'Свекла' },
+    //   { id: 2, label: 'Морковь' },
+    //   { id: 3, label: 'Мясо' },
+    // ], templateContent);
 
     const addButton = templateContent.querySelector('.select__add-button');
     // addButton.onclick = this.addOption();
@@ -32,10 +32,19 @@ class SelectWithSearch extends HTMLElement {
 
   }
 
+  static get observedAttributes() { return ['options']; }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    console.log('Custom square element attributes changed.');
+    if (name === 'options') {
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(JSON.parse(newValue)));
+      this.setOptions(JSON.parse(newValue), this.popup);
+    }
+  }
+
   // TODO отсоединить lister после отсоединения страницы
 
-  setOptions = (options, templateContent) => {
-    const popup = templateContent.querySelector('.select__container');
+  setOptions = (options, popup) => {
     popup.innerHTML = null;
 
     options.forEach(option => this.setOption(option, popup));
@@ -58,14 +67,9 @@ class SelectWithSearch extends HTMLElement {
 
     if (!newValue || this.options.some(({ label }) => label === newValue)) return;
 
-    this.text = `text: ${this.getAttribute('id')}`;
+    this.newOption = this.input.value;
+
     this.dispatchEvent(new CustomEvent('addOption'));
-
-    const newId = Math.max(...this.options.map(({ id }) => id)) + 1;
-
-    this.setOption({ id: newId, label: newValue }, this.popup);
-
-    // // TODO передать во все выпадающие списки
 
     if (!this.popup.classList.contains('hide')) {
       this.togglePopup();

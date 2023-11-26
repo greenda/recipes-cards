@@ -151,6 +151,8 @@
     // const loadTemplates = () => {
     //
     // }
+
+
   </script>
   <!-- <script src="./src/index.js"></script> -->
   <title>Document</title>
@@ -273,7 +275,7 @@
         <div class="table__content">
           <div class="table__row">
             <div class="table__cell">
-              <select-with-search id="s1" onAddOption="addOption()"></select-with-search>
+              <select-with-search id="s1"></select-with-search>
             </div>
             <div class="table__cell">
               <div class="text-input">
@@ -281,7 +283,7 @@
               </div>
             </div>
             <div class="table__cell">
-              <select-with-search id="s2" onAddOption="addOption"></select-with-search>
+              <select-with-search id="s2"></select-with-search>
             </div>
             <div class="table__cell table__active-button">
               <button class="add-button"></button>
@@ -297,11 +299,42 @@
   </div>
   <script>
     onAddOption = event => {
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', event.currentTarget.text);
+      const newId = Math.max(...INGREDIENTS.map(({ id }) => id)) + 1;
+
+      updateIngredients([...INGREDIENTS, { id: newId, label: event.currentTarget.newOption }]);
     }
 
-     s1.addEventListener('addOption', onAddOption);
-     s2.addEventListener('addOption', onAddOption);
+    // const INGREDIENTS = [
+    //   { id: 1, label: 'Свекла' },
+    //   { id: 2, label: 'Морковь' },
+    //   { id: 3, label: 'Мясо' },
+    // ];
+
+    const updateIngredients = ingredients => {
+      window.table.ingredients.forEach(select => {
+        select.setAttribute('options', JSON.stringify(ingredients));
+      });
+    }
+
+    fetch('./ingredients.js')
+      .then((res) => res.text())
+      .then((text) => {
+        window.INGREDIENTS = JSON.parse(text).map(({ id, name }) => ({ id, label: name }))
+
+        window.ingredients = INGREDIENTS;
+        window.table = {
+          ingredients: [s1, s2],
+        };
+
+        window.table.ingredients.forEach(select => {
+          select.addEventListener('addOption', onAddOption);
+        });
+
+        updateIngredients(INGREDIENTS);
+
+      });
+
+
   </script>
 </body>
 

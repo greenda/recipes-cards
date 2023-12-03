@@ -11,6 +11,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    html {
+      width: 100vw;
+      height: 100vh;
+    }
+
     body {
       font-family: monospace;
     }
@@ -194,6 +199,7 @@
           border: 1px solid #E5E5E5;
           width: 180px;
           box-shadow: 0px 2px 8px 0px rgb(34 60 80 / 20%);
+          z-index: 10;
         }
 
         .select__option {
@@ -286,6 +292,23 @@
       updateIngredients([...INGREDIENTS, { id: newId, label: event.currentTarget.newOption }]);
     }
 
+    addRow = () => {
+      const ingredientSelectId = `s${window.maxIndex + 1}`;
+      const unitSelectId = `s${window.maxIndex + 2}`;
+
+      addTableRow({ ingredientSelectId, unitSelectId });
+      window.maxIndex = window.maxIndex + 3;
+
+      window.table = {
+        ingredients: [...window.table.ingredients, window[ingredientSelectId]],
+        units: [...window.table.units, window[unitSelectId]],
+      };
+
+      updateIngredients(INGREDIENTS);
+      updateUnits(UNITS);
+      updateListeners();
+    }
+
     const addTableRow = ({ ingredientSelectId, unitSelectId }) => {
       const tableContentElement = document.querySelector('.table__content');
 
@@ -319,6 +342,7 @@
       tableAddButtonContainer.className = 'table__cell table__active-button';
       const tableAddButton = document.createElement('button');
       tableAddButton.className = 'add-button';
+      tableAddButton.onclick = this.addRow;
       tableAddButtonContainer.appendChild(tableAddButton);
 
       const tableDeleteButtonContainer = document.createElement('div');
@@ -336,13 +360,29 @@
       tableContentElement.appendChild(rowElement);
     }
 
+    const sortAlphabetically = ({ label: aLabel }, { label: bLabel}) => {
+      if (aLabel < bLabel) {
+        return -1;
+      }
+      if (aLabel > bLabel) {
+        return 1;
+      }
+      return 0;
+    }
+
     const updateSelectOptions = (tables, options) => tables.forEach(select => {
       select.setAttribute('options', JSON.stringify(options));
     });
 
-    const updateIngredients = ingredients => updateSelectOptions(window.table.ingredients, ingredients);
+    const updateIngredients = ingredients => updateSelectOptions(window.table.ingredients, ingredients.sort(sortAlphabetically));
 
-    const updateUnits = units => updateSelectOptions(window.table.units, units);
+    const updateUnits = units => updateSelectOptions(window.table.units, units.sort(sortAlphabetically));
+
+    const updateListeners = () => {
+      window.table.ingredients.forEach(select => {
+        select.addEventListener('addOption', onAddOption);
+      });
+    }
 
     // TODO узнать про res.text, почему он ассинхронный
     const fetchFile = file => fetch(file)
@@ -374,12 +414,11 @@
         ingredients: [s1],
         units: [s2]
       };
-      window.table.ingredients.forEach(select => {
-        select.addEventListener('addOption', onAddOption);
-      });
+      window.maxIndex = 3;
 
       updateIngredients(INGREDIENTS);
       updateUnits(UNITS);
+      updateListeners();
     }
 
     (async () => {

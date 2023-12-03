@@ -10,14 +10,7 @@ class SelectWithSearch extends HTMLElement {
     this.content = templateContent;
     this.options = [];
 
-    // this.setOptions([
-    //   { id: 1, label: 'Свекла' },
-    //   { id: 2, label: 'Морковь' },
-    //   { id: 3, label: 'Мясо' },
-    // ], templateContent);
-
     const addButton = templateContent.querySelector('.select__add-button');
-    // addButton.onclick = this.addOption();
     addButton.addEventListener('click', this.addOption)
 
     const selectHideButton = templateContent.querySelector('.select__hide-button');
@@ -29,19 +22,25 @@ class SelectWithSearch extends HTMLElement {
     this.popup = shadowRoot.querySelector('.select__container');
     this.input = shadowRoot.querySelector('.select__input');
     this.selectContainer = shadowRoot.querySelector('.select__container');
+
+    document.querySelector('html').addEventListener('click', this.handleExternalClick);
   }
 
   static get observedAttributes() { return ['options']; }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    console.log('Custom square element attributes changed.');
     if (name === 'options') {
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(JSON.parse(newValue)));
       this.setOptions(JSON.parse(newValue), this.popup);
     }
   }
 
-  // TODO отсоединить lister после отсоединения страницы
+  disconnectedCallback() {
+    const addButton = templateContent.querySelector('.select__add-button');
+    addButton.removeEventListener('click', this.addOption)
+
+    const selectHideButton = templateContent.querySelector('.select__hide-button');
+    selectHideButton.removeEventListener('click', this.togglePopup);
+  }
 
   setOptions = (options, popup) => {
     popup.innerHTML = null;
@@ -82,6 +81,18 @@ class SelectWithSearch extends HTMLElement {
   selectOption = event => {
     this.input.value = event.currentTarget.innerHTML;
     this.togglePopup();
+  }
+
+  handleExternalClick = event => {
+    const target = event.target;
+
+    if (target.id !== this.id || (
+      target.classList.contains(/select/)
+        && !target.classList.contains('select__hide-button')
+      )
+    ) {
+      this.popup.classList.add('hide');
+    }
   }
 }
 

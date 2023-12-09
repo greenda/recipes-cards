@@ -11,6 +11,8 @@ class SelectWithSearch extends HTMLElement {
     this.content = templateContent;
     this.options = [];
 
+    const tabIndex = template.getAttribute('index2');
+
     const addButton = templateContent.querySelector('.select__add-button');
     addButton.addEventListener('click', this.addOption)
 
@@ -18,7 +20,8 @@ class SelectWithSearch extends HTMLElement {
     selectHideButton.addEventListener('click', this.togglePopup);
 
     const selectInput = templateContent.querySelector('.select__input');
-    selectInput.addEventListener('input', this.handleInputChange)
+    selectInput.addEventListener('input', this.handleInputChange);
+    selectInput.tabIndex = tabIndex;
 
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(templateContent);
@@ -26,6 +29,7 @@ class SelectWithSearch extends HTMLElement {
     this.popup = shadowRoot.querySelector('.select__container');
     this.input = shadowRoot.querySelector('.select__input');
     this.selectContainer = shadowRoot.querySelector('.select__container');
+    this.select = shadowRoot.querySelector('.select');
 
     document.querySelector('html').addEventListener('click', this.handleExternalClick);
   }
@@ -35,14 +39,21 @@ class SelectWithSearch extends HTMLElement {
   attributeChangedCallback(name, oldValue, newValue) {
     if (name === 'options') {
       this.setOptions(JSON.parse(newValue), this.popup);
+
+      const tabIndex = +this.getAttribute('index');
+
+      this.select.querySelector('.select__field').tabIndex = -1;
+      this.select.querySelector('.select__input').tabIndex = tabIndex;
+      this.select.querySelector('.select__hide-button').tabIndex = tabIndex + 1;
+      this.select.querySelector('.select__add-button').tabIndex = tabIndex + 2;
     }
   }
 
   disconnectedCallback() {
-    const addButton = templateContent.querySelector('.select__add-button');
+    const addButton = this.select.querySelector('.select__add-button');
     addButton.removeEventListener('click', this.addOption)
 
-    const selectHideButton = templateContent.querySelector('.select__hide-button');
+    const selectHideButton = this.select.querySelector('.select__hide-button');
     selectHideButton.removeEventListener('click', this.togglePopup);
   }
 

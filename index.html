@@ -179,6 +179,8 @@
     <template id="select-with-search">
       <style>
         .select__add-button {
+          background-repeat: no-repeat;
+          background-position-y: center;
           background-image: url('add-icon.svg');
           width: 24px;
           height: 24px;
@@ -217,6 +219,19 @@
           gap: 4px;
           align-items: center;
           position: relative;
+        }
+
+        .select:focus-visible {
+          outline: 1px solid rgb(110, 0, 0);
+          border: 1px solid rgb(52, 4, 4);
+        }
+
+        #s1:focus-visible {
+          outline: 1px solid #1a1d75;
+        }
+
+        button:focus-visible {
+          outline: 1px solid #B0B0B0;
         }
 
         .select input {
@@ -296,21 +311,38 @@
       const ingredientSelectId = `s${window.maxIndex + 1}`;
       const unitSelectId = `s${window.maxIndex + 2}`;
 
-      addTableRow({ ingredientSelectId, unitSelectId });
+      addTableRow({ ingredientSelectId, unitSelectId, rowIndex: window.rowIndex });
       window.maxIndex = window.maxIndex + 3;
 
-      window.table = {
-        ingredients: [...window.table.ingredients, window[ingredientSelectId]],
-        units: [...window.table.units, window[unitSelectId]],
-      };
+      window.table = [
+        ...window.table,
+        {
+          rowIndex,
+          ingredients: window[ingredientSelectId],
+          units: window[unitSelectId],
+        },
+      ];
 
       updateIngredients(INGREDIENTS);
       updateUnits(UNITS);
       updateListeners();
     }
 
-    const addTableRow = ({ ingredientSelectId, unitSelectId }) => {
+    removeRow = event => {
+      const rowIndex = event.target.parentNode.parentNode.getAttribute('rowindex');
+
+      window.table = window.table.filter(({ rowIndex: index }) => index !== rowIndex);
+
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'removeRow');
+
+      document.querySelector(`.table__row[rowindex="${rowIndex}"]`).remove();
+
+      // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(window.table));
+    }
+
+    const addTableRow = ({ ingredientSelectId, unitSelectId, rowIndex }) => {
       const tableContentElement = document.querySelector('.table__content');
+      const tabIndex = window.tabIndex;
 
       const rowElement = document.createElement('div');
       rowElement.className = 'table__row';
@@ -329,6 +361,7 @@
       countInputContаiner.className = 'text-input';
       const countInput = document.createElement('input');
       countInput.type = 'text';
+      countInput.tabIndex = tabIndex + 5;
       countInputContаiner.appendChild(countInput);
       countInputCell.appendChild(countInputContаiner);
 
@@ -342,6 +375,7 @@
       tableAddButtonContainer.className = 'table__cell table__active-button';
       const tableAddButton = document.createElement('button');
       tableAddButton.className = 'add-button';
+      tableAddButton.tabIndex = tabIndex + 10;
       tableAddButton.onclick = this.addRow;
       tableAddButtonContainer.appendChild(tableAddButton);
 
@@ -349,6 +383,8 @@
       tableDeleteButtonContainer.className = 'table__cell table__active-button';
       const tableDeleteButton = document.createElement('button');
       tableDeleteButton.className = 'delete-button';
+      tableDeleteButton.onclick = this.removeRow;
+      tableDeleteButton.tabIndex = tabIndex + 11;
       tableDeleteButtonContainer.appendChild(tableDeleteButton);
 
       rowElement.appendChild(ingredientsCell);
@@ -358,6 +394,20 @@
       rowElement.appendChild(tableDeleteButtonContainer);
 
       tableContentElement.appendChild(rowElement);
+
+      window.tabIndex = window.tabIndex + 10;
+
+      rowElement.setAttribute('rowIndex', rowIndex);
+
+      ingredientsSelect.setAttribute('index', tabIndex + 1);
+      ingredientsSelect.setAttribute('tabindex', tabIndex + 4);
+      ingredientsSelect.setAttribute('options', JSON.stringify(window.INGREDIENTS));
+      unitsSelect.setAttribute('index', tabIndex + 7);
+      unitsSelect.setAttribute('tabindex', tabIndex + 7);
+
+      unitsSelect.setAttribute('options', JSON.stringify(window.UNITS));
+
+      window.rowIndex = rowIndex + 1;
     }
 
     const sortAlphabetically = ({ label: aLabel }, { label: bLabel}) => {
@@ -370,16 +420,16 @@
       return 0;
     }
 
-    const updateSelectOptions = (tables, options) => tables.forEach(select => {
-      select.setAttribute('options', JSON.stringify(options));
+    const updateSelectOptions = (unit, options) => window.table.forEach(select => {
+      select[unit].setAttribute('options', JSON.stringify(options));
     });
 
-    const updateIngredients = ingredients => updateSelectOptions(window.table.ingredients, ingredients.sort(sortAlphabetically));
+    const updateIngredients = ingredients => updateSelectOptions('ingredients', ingredients.sort(sortAlphabetically));
 
-    const updateUnits = units => updateSelectOptions(window.table.units, units.sort(sortAlphabetically));
+    const updateUnits = units => updateSelectOptions('units', units.sort(sortAlphabetically));
 
     const updateListeners = () => {
-      window.table.ingredients.forEach(select => {
+      window.table.forEach(({ ingredients: select }) => {
         select.addEventListener('addOption', onAddOption);
       });
     }
@@ -401,23 +451,28 @@
         ]),
       []);
 
+      window.tabIndex = 0;
+
       addTableRow({
         ingredientSelectId: 's1',
         ingredients: INGREDIENTS,
         unitSelectId: 's2',
         units: UNITS,
+        rowIndex: 1,
       });
 
       window.ingredients = INGREDIENTS;
       window.units = UNITS;
-      window.table = {
-        ingredients: [s1],
-        units: [s2]
-      };
+      window.table = [{
+        rowIndex: 1,
+        ingredients: s1,
+        units: s2,
+      }];
       window.maxIndex = 3;
+      window.rowIndex = 2;
 
-      updateIngredients(INGREDIENTS);
-      updateUnits(UNITS);
+      // updateIngredients(INGREDIENTS);
+      // updateUnits(UNITS);
       updateListeners();
     }
 

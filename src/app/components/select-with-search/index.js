@@ -3,6 +3,7 @@ class SelectWithSearch extends HTMLElement {
     super();
 
     this.isOpen = false;
+    this.commonOptions = [];
 
     const template = document.getElementById("select-with-search");
     const templateContent = template.cloneNode(true).content;
@@ -15,6 +16,9 @@ class SelectWithSearch extends HTMLElement {
 
     const selectHideButton = templateContent.querySelector('.select__hide-button');
     selectHideButton.addEventListener('click', this.togglePopup);
+
+    const selectInput = templateContent.querySelector('.select__input');
+    selectInput.addEventListener('input', this.handleInputChange)
 
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(templateContent);
@@ -42,13 +46,30 @@ class SelectWithSearch extends HTMLElement {
     selectHideButton.removeEventListener('click', this.togglePopup);
   }
 
-  setOptions = (options, popup) => {
+  handleInputChange = () => {
+    const searchString = (this.input.value || '').toLowerCase();
+
+    this.setOptions(
+      this.commonOptions.filter(({ label }) => label.toLowerCase().includes(searchString)),
+      this.popup,
+      true,
+    );
+
+    // Переделать в Open и Close
+    this.popup.classList.remove('hide');
+  }
+
+  setOptions = (options, popup, isFilter) => {
     popup.innerHTML = null;
 
     options.forEach(option => this.setOption(option, popup));
+
+    if (!isFilter) {
+      this.commonOptions = options;
+    }
   }
 
-  setOption = ({ id, label }, popup) => {
+  setOption = ({ id, label }, popup, isDefault) => {
     const optionNode = document.createElement('div');
     optionNode.className = 'select__option';
     optionNode.innerHTML = label;
@@ -56,8 +77,6 @@ class SelectWithSearch extends HTMLElement {
     optionNode.addEventListener('click', this.selectOption);
 
     popup.appendChild(optionNode);
-
-    this.options = [...this.options, { id, label }];
   }
 
   addOption = () => {

@@ -18,6 +18,7 @@
 
     body {
       font-family: monospace;
+      color: #1B1D19;
     }
 
     .page {
@@ -143,6 +144,84 @@
       display: grid;
       align-items: center;
     }
+
+    .create-card-button {
+      background-color: #F8AE29;
+      width: 192px;
+      height: 42px;
+      border-radius: 16px;
+      border: none;
+      font-family: monospace;
+      color: #1B1D19;
+      font-size: 14px;
+    }
+
+    .create-card-button:hover {
+      background-color: #EEA729;
+    }
+
+    .copy-card-button {
+      background-color: #B76C49;
+      width: 192px;
+      height: 42px;
+      border-radius: 16px;
+      border: none;
+      font-family: monospace;
+      color: #1B1D19;
+      font-size: 14px;
+    }
+
+    .copy-card-button:hover {
+      background-color: #a86342;
+    }
+
+    .active-buttons {
+      margin: 24px;
+      margin-top: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 10px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+  .title {
+    font-size: 24px;
+    font-family: 'FreeMono';
+    text-align: center;
+    stroke: #000000;
+  }
+
+  .content {
+    font-size: 16px;
+    font-family: 'FreeMono';
+    fill: #000000;
+  }
+
+  .preparing {
+    font-style: italic;
+    font-size: 24px;
+    font-family: 'FreeMono';
+    text-align: center;
+    fill: #000000;
+  }
+
+  .preparing__content {
+    font-family: 'FreeMono';
+    font-size: 16px;
+    fill: #000000;
+  }
+
+  .recipe__container {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
   </style>
   <script type="module" src="./src/app/components/select-with-search/index.js"></script>
   <script>
@@ -297,6 +376,16 @@
         </div>
         <div class="table__content"></div>
       </div>
+      <div class="active-buttons">
+        <button class="create-card-button" onclick="createCard()">Нарисовать карточку</button>
+        <button class="create-card-button" onclick="createCard()">Скопировать карточку</button>
+        <button class="copy-card-button" onclick="copyCard()">Скопировать JSON</button>
+      </div>
+      <div class="cards">
+        <div class="cards__container">
+          <svg width="208mm" height="148mm" fill="white"></svg>
+        </div>
+      </div>
     </div>
     <div></div>
   </div>
@@ -307,9 +396,13 @@
       updateIngredients([...INGREDIENTS, { id: newId, label: event.currentTarget.newOption }]);
     }
 
+    // TODO вынести таблицу в объект
+
     addRow = () => {
       const ingredientSelectId = `s${window.maxIndex + 1}`;
       const unitSelectId = `s${window.maxIndex + 2}`;
+
+      const rowIndex = window.rowIndex;
 
       addTableRow({ ingredientSelectId, unitSelectId, rowIndex: window.rowIndex });
       window.maxIndex = window.maxIndex + 3;
@@ -340,6 +433,246 @@
       // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(window.table));
     }
 
+    // TODO вынести функции работы с карточкой в объект
+    const mm = value => `${value}mm`;
+    const NAMESPACE = 'http://www.w3.org/2000/svg';
+    const CARD_WIDTH = 104;
+    const CARD_HEIGHT = 148;
+    const BASE_OFFSET = 16;
+    const PRODUCTS_OFFSET = 50;
+    const INGREDIENTS_MAX_CHAR_COUNT = 20;
+    const DIRECTIONS_MAX_CHAR_COUNT = 34;
+    const TYPE = {
+      SVG: 'svg',
+      GROUP: 'g',
+      RECTANGLE: 'rect',
+      TEXT: 'text',
+      TSPAN: 'tspan'
+    };
+
+    const createSvgElement = (type, attrs = {}, textContent = '') => {
+    const node = document.createElementNS(NAMESPACE, type);
+
+    Object.entries(attrs).forEach(([key, value]) => {
+      node.setAttribute(key, value);
+    });
+
+    if ([TYPE.TEXT, TYPE.TSPAN].includes(type)) {
+      node.textContent = textContent;
+    }
+
+    return node;
+  };
+
+  const trimRow = (limit, text) => text.split(' ')
+    .reduce((acc, word, index) => {
+      const lastElement = acc.length - 1;
+      if (index === 0) return [word];
+
+      const prevElement = acc[lastElement];
+
+      return prevElement.length < 3
+        ? [...acc.slice(0, -1), `${prevElement} ${word}`]
+        : [...acc, word];
+    }, [])
+    .reduce((acc, word) => {
+      if (!acc.length) return [word]; const lastIndex = acc.length - 1; const lastElement = acc[lastIndex]; const rowWithNewWord = `${lastElement} ${word}`; return rowWithNewWord.length < limit ? [...acc.slice(0, -1), rowWithNewWord] : [...acc, word];
+    }, []);
+
+    const createCardSvg = (recipe, x0, y0) => {
+      const startX = +x0;
+      const startY = +y0;
+
+      let svg = document.querySelector('svg');
+
+      const container = document.querySelector('.cards__container');
+
+      if (!svg) {
+        svg = createSvgElement(TYPE.SVG, { width: mm(210), height: mm(297) });
+      }
+
+      const recipeGroup = createSvgElement(TYPE.GROUP);
+
+      const recipeContainer = createSvgElement(
+        TYPE.RECTANGLE, {
+        x: mm(startX),
+        y: mm(startY),
+        width: mm(CARD_WIDTH),
+        height: mm(CARD_HEIGHT),
+        class: 'recipe__container'
+      });
+
+      const {
+        id,
+        title,
+        ingredients,
+        directions
+      } = recipe;
+
+      const recipeTitle = createSvgElement(TYPE.TEXT, {
+        'text-anchor': 'middle',
+        x: mm(startX + CARD_WIDTH / 2),
+        y: mm(startY + BASE_OFFSET),
+        class: 'title',
+        style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
+      },
+        `${id}. ${title}`
+      );
+
+      const ingredientsAmountOfGroup = createSvgElement(TYPE.GROUP, { class: 'content' });
+
+      const ingredientMainText = createSvgElement(TYPE.TEXT, {
+        x: mm(startX + BASE_OFFSET),
+        y: mm(startY + BASE_OFFSET * 2)
+      });
+
+      const ingredientProductsText = createSvgElement(TYPE.TEXT, {
+        x: mm(startX + PRODUCTS_OFFSET),
+        y: mm(startY + BASE_OFFSET * 2)
+      });
+
+      ingredients.reduce((acc, { ingredientId, ...rest }) => {
+        const a = window.INGREDIENTS.find(({ id }) => id === ingredientId);
+
+        const ingredientElementsRows = trimRow(INGREDIENTS_MAX_CHAR_COUNT, window.INGREDIENTS.find(({ id }) => id === ingredientId).label);
+
+        return [...acc, { ingredientId, ingredientElementsRows, ...rest }];
+      }, [])
+        .reduce((acc, { amountOf, unitId, index: unitIndex, isAnalogue, ingredientId, ingredientElementsRows }, index) => {
+          const isFirstRow = index === 0; const lastRowCount = isFirstRow ? 1 : acc[acc.length - 1].rowCount;
+
+          const unit = window.UNITS.find(({ id }) => id === unitId).label;
+
+          const amountOfUnitElement = createSvgElement(TYPE.TSPAN, {
+            x: mm(startX + BASE_OFFSET),
+            dy: isFirstRow ? '0' :
+              isAnalogue ? '0.8em' : `${(lastRowCount + 1) * 0.8}em`
+          },
+            `▪ ${amountOf || ''} ${Array.isArray(unit) ? unit[unitIndex] : unit}`);
+
+          ingredientMainText.appendChild(amountOfUnitElement); ingredientElementsRows.forEach((word, wordIndex) => {
+            const productRow = createSvgElement(TYPE.TSPAN, {
+              x: mm(startX + PRODUCTS_OFFSET),
+              dy: isFirstRow && wordIndex === 0 ? '0' : wordIndex === 0 && !isAnalogue ? '1.6em' : '0.8em'
+            },
+              isAnalogue ? `или ${word.toLowerCase()}` : word); ingredientProductsText.appendChild(productRow);
+          });
+
+          return [...acc, { rowCount: ingredientElementsRows.length }];
+        }, []);
+
+      ingredientsAmountOfGroup.appendChild(ingredientMainText);
+      ingredientsAmountOfGroup.appendChild(ingredientProductsText);
+
+      recipeGroup.appendChild(recipeContainer);
+      recipeGroup.appendChild(recipeTitle);
+      recipeGroup.appendChild(ingredientsAmountOfGroup);
+      svg.appendChild(recipeGroup);
+      container.appendChild(svg);
+
+      // ---------------------------- //
+
+      const directionsGroup = createSvgElement(TYPE.GROUP, {
+        class: 'content'
+      });
+
+      const directionsTitle = createSvgElement(TYPE.TEXT, {
+        // TODO 52 в константы
+        x: mm(startX + CARD_WIDTH + 52),
+        y: mm(startY + BASE_OFFSET),
+        'text-anchor': 'middle',
+        class: 'preparing'
+      }, 'Приготовление');
+
+      const directionsMainText = createSvgElement(TYPE.TEXT, {
+        x: mm(startX + CARD_WIDTH + BASE_OFFSET / 2),
+        y: mm(startY + BASE_OFFSET * 2), class: 'preparing__content'
+      });
+
+      const PIXEL_IN_MM = 0.26; directions.forEach((direction, index) => {
+        trimRow(DIRECTIONS_MAX_CHAR_COUNT, direction).forEach((row, rowIndex) => {
+          if (rowIndex === 0) {
+            directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
+              x: mm(startX + CARD_WIDTH + BASE_OFFSET / 2),
+              dy: index === 0 && rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em', class: 'bold'
+            }, `${index + 1}.`));
+          }
+
+          directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
+            x: rowIndex === 0 ? mm(startX + CARD_WIDTH + BASE_OFFSET / 2 + 16 * (`${index}`.length + 1) * PIXEL_IN_MM)
+              : mm(startX + CARD_WIDTH + BASE_OFFSET), dy: rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em'
+          }, row));
+        });
+      });
+
+      const directionsContainer = createSvgElement(TYPE.RECTANGLE, {
+        x: mm(startX + CARD_WIDTH),
+        y: mm(startY),
+        width: mm(CARD_WIDTH),
+        height: mm(CARD_HEIGHT),
+
+        // TODO вынести в класс
+        style: 'fill: none; stroke: black; stroke-width: 1'
+      });
+
+      recipeGroup.appendChild(directionsGroup);
+      recipeGroup.appendChild(directionsTitle);
+      recipeGroup.appendChild(directionsMainText);
+      recipeGroup.appendChild(directionsContainer);
+
+      const topHoleRect = createSvgElement(TYPE.RECTANGLE, {
+        x: mm(0 + startX),
+        y: mm(32 + startY),
+        width: mm(10),
+        height: 2,
+        // TODO в стиль
+        style: 'fill: #dfdfdf; stroke: none;'
+      });
+      const bottomHoleRect = createSvgElement(TYPE.RECTANGLE, {
+        x: mm(0 + startX),
+        y: mm(112 + startY),
+        width: mm(10),
+        height: 2,
+        // TODO в стиль
+        style: 'fill:#dfdfdf; stroke: none;'
+      });
+
+      recipeGroup.appendChild(topHoleRect);
+      recipeGroup.appendChild(bottomHoleRect);
+    };
+
+    createCard = () => {
+      createCardSvg({
+        id: 1,
+        title: 'Здесь будет название рецепта',
+        ingredients: copyCard(),
+        directions: ['Здесь будет описание']
+      }, 0, 0);
+      // createCard(0, 148);
+    }
+
+    copyCard = () => {
+      const acc = window.table.reduce((acc, { rowIndex, ingredients, units }, index) => {
+        console.log('%c%s', 'background: cadetblue; padding: 8px;', rowIndex);
+        const ingredient = ingredients.input.value;
+        const ingredientId = window.INGREDIENTS.find(({ label }) => label === ingredient)?.id;
+        const amountOf = document.querySelector(`.table__row[rowindex="${rowIndex}"] .amount-of__input`)?.value;
+        const unit = units.input.value;
+        const unitId = window.UNITS.find(({ label }) => label === unit)?.id;
+
+        return [
+          ...acc,
+          {
+            ingredientId,
+            amountOf,
+            unitId,
+          },
+        ]
+      }, []);
+
+      return acc;
+    }
+
     const addTableRow = ({ ingredientSelectId, unitSelectId, rowIndex }) => {
       const tableContentElement = document.querySelector('.table__content');
       const tabIndex = window.tabIndex;
@@ -361,6 +694,7 @@
       countInputContаiner.className = 'text-input';
       const countInput = document.createElement('input');
       countInput.type = 'text';
+      countInput.className = 'amount-of__input';
       countInput.tabIndex = tabIndex + 5;
       countInputContаiner.appendChild(countInput);
       countInputCell.appendChild(countInputContаiner);

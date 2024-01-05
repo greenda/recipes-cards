@@ -37,6 +37,7 @@ class SelectWithSearch extends HTMLElement {
   static get observedAttributes() { return ['options']; }
 
   attributeChangedCallback(name, oldValue, newValue) {
+    // console.log('%c%s', 'background: cadetblue; padding: 8px;', 'attributeChangedCallback ' + name);
     if (name === 'options') {
       this.setOptions(JSON.parse(newValue), this.popup);
 
@@ -46,6 +47,9 @@ class SelectWithSearch extends HTMLElement {
       this.select.querySelector('.select__input').tabIndex = tabIndex;
       this.select.querySelector('.select__hide-button').tabIndex = tabIndex + 1;
       this.select.querySelector('.select__add-button').tabIndex = tabIndex + 2;
+
+      // TODO должен как-то в init выполняться
+      this.select.querySelector('.select__input').value = this.getAttribute('value1');
     }
   }
 
@@ -111,6 +115,7 @@ class SelectWithSearch extends HTMLElement {
   selectOption = event => {
     this.input.value = event.currentTarget.innerHTML;
     this.togglePopup();
+    this.dispatchEvent(new CustomEvent('selectOption'));
   }
 
   handleExternalClick = event => {

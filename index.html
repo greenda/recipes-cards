@@ -214,7 +214,7 @@
   }
 
   .recipe__container {
-    fill: none;
+    fill: white;
     stroke: black;
     stroke-width: 1;
   }
@@ -378,12 +378,13 @@
       </div>
       <div class="active-buttons">
         <button class="create-card-button" onclick="createCard()">Нарисовать карточку</button>
-        <button class="create-card-button" onclick="createCard()">Скопировать карточку</button>
+        <button class="create-card-button" onclick="copySvg()">Скопировать карточку</button>
         <button class="copy-card-button" onclick="copyCard()">Скопировать JSON</button>
       </div>
+      <div><a id="link" download = "1.svg";>Ссылка для скачивания svg</a></div>
       <div class="cards">
         <div class="cards__container">
-          <svg width="208mm" height="148mm" fill="white"></svg>
+          <svg id="svg" width="208mm" height="148mm" fill="white"></svg>
         </div>
       </div>
     </div>
@@ -391,9 +392,30 @@
   </div>
   <script>
     onAddOption = event => {
-      const newId = Math.max(...INGREDIENTS.map(({ id }) => id)) + 1;
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'onAddOption');
+      const type = event.currentTarget.getAttribute('type');
+      const newOption = event.currentTarget.newOption;
 
-      updateIngredients([...INGREDIENTS, { id: newId, label: event.currentTarget.newOption }]);
+      if ( type === 'ingredients') {
+        const ingredients = getIngredients();
+        const newId = Math.max(...ingredients.map(({ id }) => id)) + 1;
+
+        updateIngredients([...ingredients, { id: newId, label: newOption }]);
+
+        window.NEW_INGREDIENTS = [...window.NEW_INGREDIENTS, { id: newId, label: newOption }];
+      }
+
+      if (type === 'units') {
+        const units = getUnits();
+        const newId = Math.max(...units.map(({ id }) => {
+          const a = /_/.test(id) ? id.match(/^(\d+)/)[1] : id;
+          return +a;
+        })) + 1;
+
+        updateUnits([...units, { id: newId, label: newOption }]);
+
+        window.NEW_UNITS = [...window.NEW_UNITS, { id: newId, label: newOption}]
+      }
     }
 
     // TODO вынести таблицу в объект
@@ -433,6 +455,10 @@
       // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(window.table));
     }
 
+    // TODO узнать про res.text, почему он ассинхронный
+    const fetchFile = file => fetch(file)
+      .then((res) => res.text());
+
     // TODO вынести функции работы с карточкой в объект
     const mm = value => `${value}mm`;
     const NAMESPACE = 'http://www.w3.org/2000/svg';
@@ -447,7 +473,9 @@
       GROUP: 'g',
       RECTANGLE: 'rect',
       TEXT: 'text',
-      TSPAN: 'tspan'
+      TSPAN: 'tspan',
+      DEFS: 'defs',
+      STYLE: 'style',
     };
 
     const createSvgElement = (type, attrs = {}, textContent = '') => {
@@ -463,6 +491,9 @@
 
     return node;
   };
+
+  const getIngredients = () => [...window.INGREDIENTS, ...window.NEW_INGREDIENTS];
+  const getUnits = () => [...window.UNITS, ...window.NEW_UNITS];
 
   const trimRow = (limit, text) => text.split(' ')
     .reduce((acc, word, index) => {
@@ -491,6 +522,13 @@
         svg = createSvgElement(TYPE.SVG, { width: mm(210), height: mm(297) });
       }
 
+      const defs = createSvgElement(TYPE.DEFS);
+      const style = createSvgElement(TYPE.STYLE);
+      const docu = new DOMParser().parseFromString("<xml></xml>", "application/xml");
+      const cdata = docu.createCDATASection(`${window.css}`);
+      style.appendChild(cdata);
+      defs.appendChild(style);
+      svg.appendChild(defs);
       const recipeGroup = createSvgElement(TYPE.GROUP);
 
       const recipeContainer = createSvgElement(
@@ -532,9 +570,10 @@
       });
 
       ingredients.reduce((acc, { ingredientId, ...rest }) => {
-        const a = window.INGREDIENTS.find(({ id }) => id === ingredientId);
+        // TODO сделать получение ингредиентов методом
+        const a = getIngredients().find(({ id }) => id === ingredientId);
 
-        const ingredientElementsRows = trimRow(INGREDIENTS_MAX_CHAR_COUNT, window.INGREDIENTS.find(({ id }) => id === ingredientId).label);
+        const ingredientElementsRows = trimRow(INGREDIENTS_MAX_CHAR_COUNT, getIngredients().find(({ id }) => id === ingredientId).label);
 
         return [...acc, { ingredientId, ingredientElementsRows, ...rest }];
       }, [])
@@ -610,9 +649,7 @@
         y: mm(startY),
         width: mm(CARD_WIDTH),
         height: mm(CARD_HEIGHT),
-
-        // TODO вынести в класс
-        style: 'fill: none; stroke: black; stroke-width: 1'
+        class: 'recipe__container',
       });
 
       recipeGroup.appendChild(directionsGroup);
@@ -653,9 +690,8 @@
 
     copyCard = () => {
       const acc = window.table.reduce((acc, { rowIndex, ingredients, units }, index) => {
-        console.log('%c%s', 'background: cadetblue; padding: 8px;', rowIndex);
         const ingredient = ingredients.input.value;
-        const ingredientId = window.INGREDIENTS.find(({ label }) => label === ingredient)?.id;
+        const ingredientId = getIngredients().find(({ label }) => label === ingredient)?.id;
         const amountOf = document.querySelector(`.table__row[rowindex="${rowIndex}"] .amount-of__input`)?.value;
         const unit = units.input.value;
         const unitId = window.UNITS.find(({ label }) => label === unit)?.id;
@@ -670,7 +706,34 @@
         ]
       }, []);
 
+      const newIngredients = window.NEW_INGREDIENTS.reduce((ingredientAcc, ingredient) => ([...ingredientAcc, ...[{ ...ingredient, linkedUnits: []}]]), [])
+      const newUnits = window.NEW_UNITS.reduce((unitAcc, unit) => ([...unitAcc, ...[unit]]), []);
+
+
+      const result = `recipes: \n ${JSON.stringify(acc)} \n ingredients: \n${JSON.stringify(newIngredients)} \n units: \n${JSON.stringify(newUnits)}}`;
+
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', result);
+
+      navigator.clipboard.writeText(result);
+
       return acc;
+    }
+
+    copySvg = () => {
+      var svg = document.getElementById('svg');
+
+      var serializer = new XMLSerializer();
+      var source = serializer.serializeToString(svg);
+
+      if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
+          source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+      }
+
+      source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+
+      var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
+
+      document.getElementById("link").href = url;
     }
 
     const addTableRow = ({ ingredientSelectId, unitSelectId, rowIndex }) => {
@@ -735,9 +798,12 @@
 
       ingredientsSelect.setAttribute('index', tabIndex + 1);
       ingredientsSelect.setAttribute('tabindex', tabIndex + 4);
+      // TODO type в константы
+      ingredientsSelect.setAttribute('type', 'ingredients');
       ingredientsSelect.setAttribute('options', JSON.stringify(window.INGREDIENTS));
       unitsSelect.setAttribute('index', tabIndex + 7);
       unitsSelect.setAttribute('tabindex', tabIndex + 7);
+      unitsSelect.setAttribute('type', 'units');
 
       unitsSelect.setAttribute('options', JSON.stringify(window.UNITS));
 
@@ -763,18 +829,21 @@
     const updateUnits = units => updateSelectOptions('units', units.sort(sortAlphabetically));
 
     const updateListeners = () => {
-      window.table.forEach(({ ingredients: select }) => {
-        select.addEventListener('addOption', onAddOption);
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'updateListeners');
+      window.table.forEach(({ ingredients, units }) => {
+        ingredients.addEventListener('addOption', onAddOption);
+        units.addEventListener('addOption', onAddOption);
       });
     }
-
-    // TODO узнать про res.text, почему он ассинхронный
-    const fetchFile = file => fetch(file)
-      .then((res) => res.text());
 
     const init = async () => {
       const ingredients = await fetchFile('./ingredients.js');
       window.INGREDIENTS = JSON.parse(ingredients).map(({ id, name }) => ({ id, label: name }))
+      window.NEW_INGREDIENTS = [];
+      window.NEW_UNITS = [];
+
+      const css = await fetchFile('./svg1.css');
+      window.css = css;
 
       const units = await fetchFile('./units.js');
       window.UNITS = JSON.parse(units).reduce((acc, { id, name }) => ([

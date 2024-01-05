@@ -1,0 +1,36 @@
+.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}

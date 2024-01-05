@@ -96,7 +96,7 @@ class SelectWithSearch extends HTMLElement {
     if (!newValue || this.options.some(({ label }) => label === newValue)) return;
 
     this.newOption = this.input.value;
-
+    console.log('%c%s', 'background: cadetblue; padding: 8px;', 'addOption');
     this.dispatchEvent(new CustomEvent('addOption'));
 
     if (!this.popup.classList.contains('hide')) {

@@ -13,9 +13,6 @@ class SelectWithSearch extends HTMLElement {
 
     const tabIndex = template.getAttribute('index2');
 
-    const addButton = templateContent.querySelector('.select__add-button');
-    addButton.addEventListener('click', this.addOption)
-
     const selectHideButton = templateContent.querySelector('.select__hide-button');
     selectHideButton.addEventListener('click', this.togglePopup);
 
@@ -46,7 +43,6 @@ class SelectWithSearch extends HTMLElement {
       this.select.querySelector('.select__field').tabIndex = -1;
       this.select.querySelector('.select__input').tabIndex = tabIndex;
       this.select.querySelector('.select__hide-button').tabIndex = tabIndex + 1;
-      this.select.querySelector('.select__add-button').tabIndex = tabIndex + 2;
 
       // TODO должен как-то в init выполняться
       this.select.querySelector('.select__input').value = this.getAttribute('value1');
@@ -54,9 +50,6 @@ class SelectWithSearch extends HTMLElement {
   }
 
   disconnectedCallback() {
-    const addButton = this.select.querySelector('.select__add-button');
-    addButton.removeEventListener('click', this.addOption)
-
     const selectHideButton = this.select.querySelector('.select__hide-button');
     selectHideButton.removeEventListener('click', this.togglePopup);
   }

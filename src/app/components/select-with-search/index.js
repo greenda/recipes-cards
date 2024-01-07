@@ -44,8 +44,12 @@ class SelectWithSearch extends HTMLElement {
       this.select.querySelector('.select__input').tabIndex = tabIndex;
       this.select.querySelector('.select__hide-button').tabIndex = tabIndex + 1;
 
-      // TODO должен как-то в init выполняться
-      this.select.querySelector('.select__input').value = this.getAttribute('value1');
+      const newValue1 = this.getAttribute('value1');
+
+      if (newValue1) {
+        // TODO должен как-то в init выполняться
+        this.select.querySelector('.select__input').value = this.getAttribute('value1');
+      }
     }
   }
 

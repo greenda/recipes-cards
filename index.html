@@ -259,6 +259,10 @@
     padding-right: 24px;
     width: 416px;
   }
+
+  .hidden {
+    display: none;
+  }
   </style>
   <script type="module" src="./src/app/components/select-with-search/index.js"></script>
   <script>
@@ -398,8 +402,18 @@
       </div>
       <!-- TODO переделать контейнер -->
       <div class="section">
-        <h2>Название</h1>
-        <input type="text" class="recipe-title"/>
+        <h2>Название</h2>
+        <input class="recipe-title"/>
+      </div>
+      <div class="section">
+        <div class="section__group">
+          <h2>БЖУ</h2>
+          <input class="recipe-nutritional-value"/>
+        </div>
+        <div class="section__group">
+          <h2>URL</h2>
+          <input class="recipe-url"/>
+        </div>
       </div>
       <div class="table">
         <div class="table__head">
@@ -426,7 +440,7 @@
         <button class="create-card-button" onclick="copySvg()">Скопировать карточку</button>
         <button class="copy-card-button" onclick="copyCard()">Скопировать JSON</button>
       </div>
-      <div><a id="link" download = "1.svg";>Ссылка для скачивания svg</a></div>
+      <div><a id="link" class="hidden">Ссылка для скачивания svg</a></div>
       <div class="cards">
         <div class="cards__container">
           <svg id="svg" width="208mm" height="148mm" fill="white"></svg>
@@ -436,32 +450,31 @@
     <div></div>
   </div>
   <script>
-    onAddOption = event => {
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'onAddOption');
-      const type = event.currentTarget.getAttribute('type');
-      const newOption = event.currentTarget.newOption;
+    // onAddOption = event => {
+    //   const type = event.currentTarget.getAttribute('type');
+    //   const newOption = event.currentTarget.newOption;
 
-      if ( type === 'ingredients') {
-        const ingredients = getIngredients();
-        const newId = Math.max(...ingredients.map(({ id }) => id)) + 1;
+    //   if ( type === 'ingredients') {
+    //     const ingredients = getIngredients();
+    //     const newId = Math.max(...ingredients.map(({ id }) => id)) + 1;
 
-        updateIngredients([...ingredients, { id: newId, label: newOption }]);
+    //     updateIngredients([...ingredients, { id: newId, label: newOption }]);
 
-        window.NEW_INGREDIENTS = [...window.NEW_INGREDIENTS, { id: newId, label: newOption }];
-      }
+    //     window.NEW_INGREDIENTS = [...window.NEW_INGREDIENTS, { id: newId, label: newOption }];
+    //   }
 
-      if (type === 'units') {
-        const units = getUnits();
-        const newId = Math.max(...units.map(({ id }) => {
-          const a = /_/.test(id) ? id.match(/^(\d+)/)[1] : id;
-          return +a;
-        })) + 1;
+    //   if (type === 'units') {
+    //     const units = getUnits();
+    //     const newId = Math.max(...units.map(({ id }) => {
+    //       const a = /_/.test(id) ? id.match(/^(\d+)/)[1] : id;
+    //       return +a;
+    //     })) + 1;
 
-        updateUnits([...units, { id: newId, label: newOption }]);
+    //     updateUnits([...units, { id: newId, label: newOption }]);
 
-        window.NEW_UNITS = [...window.NEW_UNITS, { id: newId, label: newOption}]
-      }
-    }
+    //     window.NEW_UNITS = [...window.NEW_UNITS, { id: newId, label: newOption}]
+    //   }
+    // }
 
     // TODO вынести таблицу в объект
 
@@ -485,7 +498,7 @@
 
       updateIngredients(INGREDIENTS);
       updateUnits(UNITS);
-      updateListeners();
+      // updateListeners();
     }
 
     removeRow = event => {
@@ -724,24 +737,47 @@
     };
 
     createCard = () => {
-      const { id, title, directions = [] } = selectedRecipe;
-
-      createCardSvg({
-        id,
-        title,
-        ingredients: copyCard(),
-        directions,
-      }, 0, 0);
+      createCardSvg(window.selectedRecipe || copyCard(), 0, 0);
       // createCard(0, 148);
+    }
+
+    addIngredient = ingredient => {
+      const ingredients = getIngredients();
+      const newId = Math.max(...ingredients.map(({ id }) => id)) + 1;
+
+      updateIngredients([...ingredients, { id: newId, label: ingredient }]);
+
+      window.NEW_INGREDIENTS = [...window.NEW_INGREDIENTS, { id: newId, label: ingredient }];
+
+      return newId;
+    }
+
+    addUnit = unit => {
+      const units = getUnits();
+      const newId = Math.max(...units.map(({ id }) => {
+        const a = /_/.test(id) ? id.match(/^(\d+)/)[1] : id;
+        return +a;
+      })) + 1;
+
+      // TODO Нужно ли?
+      updateUnits([...units, { id: newId, label: unit }]);
+
+      window.NEW_UNITS = [...window.NEW_UNITS, { id: newId, label: unit}];
+
+      return newId;
     }
 
     copyCard = () => {
       const acc = window.table.reduce((acc, { rowIndex, ingredients, units }, index) => {
-        const ingredient = ingredients.input.value;
-        const ingredientId = getIngredients().find(({ label }) => label === ingredient)?.id;
+        const ingredientValue = ingredients.input.value;
+        const ingredient = getIngredients().find(({ label }) => label === ingredientValue);
+
+        const ingredientId = ingredient ? ingredient.id : addIngredient(ingredientValue);
+
         const amountOf = document.querySelector(`.table__row[rowindex="${rowIndex}"] .amount-of__input`)?.value;
-        const unit = units.input.value;
-        const unitId = window.UNITS.find(({ label }) => label === unit)?.id;
+        const unitValue = units.input.value;
+        const unit = window.UNITS.find(({ label }) => label === unitValue);
+        const unitId = unit ? unit.id : addUnit(unitValue);
 
         return [
           ...acc,
@@ -750,20 +786,33 @@
             amountOf,
             unitId,
           },
-        ]
+        ];
       }, []);
 
-      const newIngredients = window.NEW_INGREDIENTS.reduce((ingredientAcc, ingredient) => ([...ingredientAcc, ...[{ ...ingredient, linkedUnits: []}]]), [])
+      const newIngredients = window.NEW_INGREDIENTS.map(({ id, label }) => ({ id, name: label })).reduce((ingredientAcc, ingredient) => ([...ingredientAcc, ...[{ ...ingredient, linkedUnits: []}]]), [])
       const newUnits = window.NEW_UNITS.reduce((unitAcc, unit) => ([...unitAcc, ...[unit]]), []);
+      const newId = Math.max(...window.RECIPES.map(({ id }) => id)) + 1;
+      const title = document.querySelector('.recipe-title').value;
+      const directions = document.querySelector('.directions__textarea').value.split('\n');
+      const nutritionalValue = document.querySelector('.recipe-nutritional-value').value || null;
+      const url = document.querySelector('.recipe-url').value || null;
 
+      const newRecipe = {
+        id: newId,
+        title,
+        ingredients: acc,
+        directions,
+        nutritionalValue,
+        url,
+      }
 
-      const result = `recipes: \n ${JSON.stringify(acc)} \n ingredients: \n${JSON.stringify(newIngredients)} \n units: \n${JSON.stringify(newUnits)}}`;
+      const result = `recipes: \n ${JSON.stringify(newRecipe, null, 2)} \n ingredients: \n${JSON.stringify(newIngredients)} \n units: \n${JSON.stringify(newUnits)}}`;
 
       console.log('%c%s', 'background: cadetblue; padding: 8px;', result);
 
       navigator.clipboard.writeText(result);
 
-      return acc;
+      return newRecipe;
     }
 
     copySvg = () => {
@@ -780,7 +829,13 @@
 
       var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
 
-      document.getElementById("link").href = url;
+      // TODO эту и подобные функции в хелпер
+      const newId = Math.max(...window.RECIPES.map(({ id }) => id)) + 1;
+
+      const link = document.getElementById("link");
+      link.href = url;
+      link.download = `${newId}. ${document.querySelector('.recipe-title').value}`;
+      link.classList.toggle('hidden');
     }
 
     const addTableRow = ({
@@ -906,7 +961,6 @@
     selectRecipe = event => {
       const selectedRecipe = window.RECIPES.find(({ title }) => event.target.input.value === title);
 
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'selectRecipe');
       window.selectedRecipe = selectedRecipe;
 
       fillTable(selectedRecipe);
@@ -920,13 +974,12 @@
 
     const updateUnits = units => updateSelectOptions('units', units.sort(sortAlphabetically));
 
-    const updateListeners = () => {
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'updateListeners');
-      window.table.forEach(({ ingredients, units }) => {
-        ingredients.addEventListener('addOption', onAddOption);
-        units.addEventListener('addOption', onAddOption);
-      });
-    }
+    // const updateListeners = () => {
+    //   window.table.forEach(({ ingredients, units }) => {
+    //     ingredients.addEventListener('addOption', onAddOption);
+    //     units.addEventListener('addOption', onAddOption);
+    //   });
+    // }
 
     const init = async () => {
       const ingredients = await fetchFile('./ingredients.js');
@@ -979,7 +1032,7 @@
 
       // updateIngredients(INGREDIENTS);
       // updateUnits(UNITS);
-      updateListeners();
+      // updateListeners();
     }
 
     (async () => {

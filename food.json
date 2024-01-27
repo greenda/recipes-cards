@@ -1,0 +1,18 @@
+
+[
+  {
+    "id": 1,
+    "title": "Сардельки",
+    "type": "secound-course"
+  },
+  {
+    "id": 2,
+    "title": "Картофельное пюре",
+    "type": "garnish"
+  },
+  {
+    "id": 3,
+    "title": "Пресервы",
+    "type": "secound-course"
+  }
+]

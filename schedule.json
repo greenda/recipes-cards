@@ -1,0 +1,81 @@
+[
+  {
+    "date": "20.01.24",
+    "dishes": [
+      {
+        "id": 15,
+        "type": "cooked",
+        "meal": "lunch",
+        "portion": 2
+      }, {
+        "id": 2,
+        "type": "food",
+        "meal": "dinner",
+        "portion": 2
+      }, {
+        "id": 1,
+        "type": "food",
+        "meal": "dinner",
+        "portion": 2
+      }
+    ]
+  },  {
+    "date": "21.01.24",
+    "dishes": [
+      {
+        "id": 2,
+        "type": "experiment",
+        "meal": "breakfast",
+        "portion": 2
+      },
+      {
+        "id": 15,
+        "type": "cooked",
+        "meal": "lunch",
+        "portion": 2
+      }, {
+        "id": 2,
+        "type": "food",
+        "meal": "dinner",
+        "portion": 2
+      }, {
+        "id": 2,
+        "type": "food",
+        "meal": "dinner",
+        "portion": 2
+      }, {
+        "id": 1,
+        "type": "experiment",
+        "meal": "prepare"
+      }
+    ]
+  }, {
+    "date": "22.01.24",
+    "dishes": [
+      {
+        "id": 2,
+        "type": "food",
+        "meal": "lunch",
+        "portion": 1,
+        "place": "work"
+      },
+      {
+        "id": 2,
+        "type": "food",
+        "meal": "lunch",
+        "portion": 1
+      }
+    ]
+  }, {
+    "date": "21.01.24",
+    "dishes": []
+  }, {
+    "dishes": [
+      {
+        "21.01.24": "Лепешки, щи, картофельное пюре с селедкой или кальмарами",
+        "22.01.24": "картофельное пюре с кальмарами, с салатом с баклажанами, щи; купить и сварить курицу",
+        "23.01.24": 
+      }
+    ]
+  }
+]

@@ -31,7 +31,7 @@ class SelectWithSearch extends HTMLElement {
     document.querySelector('html').addEventListener('click', this.handleExternalClick);
   }
 
-  static get observedAttributes() { return ['options']; }
+  static get observedAttributes() { return ['options', 'mix']; }
 
   attributeChangedCallback(name, oldValue, newValue) {
     // console.log('%c%s', 'background: cadetblue; padding: 8px;', 'attributeChangedCallback ' + name);
@@ -50,6 +50,13 @@ class SelectWithSearch extends HTMLElement {
         // TODO должен как-то в init выполняться
         this.select.querySelector('.select__input').value = this.getAttribute('value1');
       }
+    }
+
+    if (name === 'mix' && newValue) {
+      const newClasses = Array.isArray(newValue) ? newValue : [newValue];
+      const input = this.select.querySelector('.select__field');
+
+      newClasses.forEach(className => input.classList.add(className));
     }
   }
 
@@ -97,7 +104,7 @@ class SelectWithSearch extends HTMLElement {
     if (!newValue || this.options.some(({ label }) => label === newValue)) return;
 
     this.newOption = this.input.value;
-    console.log('%c%s', 'background: cadetblue; padding: 8px;', 'addOption');
+
     this.dispatchEvent(new CustomEvent('addOption'));
 
     if (!this.popup.classList.contains('hide')) {

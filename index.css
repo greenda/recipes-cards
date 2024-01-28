@@ -1,0 +1,268 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: monospace;
+  color: #1B1D19;
+}
+
+.page {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 800px 1fr;
+}
+
+.page__title {
+  display: grid;
+  justify-content: center;
+}
+
+.table {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.table__head {
+  display: grid;
+  grid-template-columns: 226px 226px 226px 36px 36px;
+  height: 42px;
+  background: #DBB6A4;
+}
+
+.table__head div {
+  /* border: 4px solid white; */
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 8px 0px;
+  border-bottom: 0;
+}
+
+.table__head div:not(:last-child) {
+  border-right: 0;
+}
+
+/* TODO миксин */
+.table__row {
+  display: grid;
+  grid-template-columns: 226px 226px 226px 32px 32px;
+  border: 1px solid #E5E5E5;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.table__row:last-child {
+  border: 1px solid #E5E5E5;
+}
+
+.table__cell {
+  padding: 8px;
+  border-bottom: 0;
+}
+
+.table__cell:not(:last-child) {
+  border-right: 0px;
+}
+
+.table {
+  width: 752px;
+  font-size: 16px;
+  color: #1B1D19;
+  margin: 24px;
+}
+
+.table button {
+  padding: 0px;
+}
+
+.table input {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+}
+
+.add-button {
+  background-image: url(edit-icon.svg);
+  background-size: 100%;
+  width: 32px;
+  height: 32px;
+  /* background: mediumaquamarine; */
+  border: none;
+  background-color: transparent;
+}
+
+.delete-button {
+  background-image: url(cancell-icon.svg);
+  background-size: 100%;
+  width: 32px;
+  height: 32px;
+  /* background: mediumaquamarine; */
+  border: none;
+  background-color: transparent;
+}
+
+.table input:focus {
+  border: 1px solid #d9d9d9;
+  outline-color: #d9d9d9;
+}
+
+.table input:focus-visible {
+  border: 1px solid #d9d9d9;
+  outline-color: #d9d9d9;
+}
+
+.table input:active {
+  border: 1px solid red;
+}
+
+.table__cell_type_ingredients div:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.table__cell_type_units div:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.text-input input {
+  width: 192px;
+}
+
+.table__active-button {
+  padding: 0;
+  display: grid;
+  align-items: center;
+}
+
+.create-card-button {
+  background-color: #F8AE29;
+  width: 192px;
+  height: 42px;
+  border-radius: 16px;
+  border: none;
+  font-family: monospace;
+  color: #1B1D19;
+  font-size: 14px;
+}
+
+.create-card-button:hover {
+  background-color: #EEA729;
+}
+
+.copy-card-button {
+  background-color: #B76C49;
+  width: 192px;
+  height: 42px;
+  border-radius: 16px;
+  border: none;
+  font-family: monospace;
+  color: #1B1D19;
+  font-size: 14px;
+}
+
+.copy-card-button:hover {
+  background-color: #a86342;
+}
+
+.active-buttons {
+  margin: 24px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold; 
+}
+
+.section {
+  display: flex;
+  margin: 0px 24px;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+}
+
+.section input {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  padding-right: 24px;
+  width: 272px;
+}
+
+.section h2 {
+  width: 116px;
+}
+
+.directions {
+  margin: 0px 24px 36px;
+  font-size: 16px;
+}
+
+.directions textarea {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  padding-right: 24px;
+  width: 416px;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu__container {
+  margin: 16px;
+  margin-left: 0;
+}
+
+.menu__head {
+  display: grid;
+  grid-template-columns: 226px 226px 226px 36px 36px;
+  height: 42px;
+  background: #DBB6A4;
+}

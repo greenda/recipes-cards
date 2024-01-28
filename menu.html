@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./menu.css">
+  <script type="module" src="./src/app/components/select-with-search/index.js"></script>
+  <script src="./src/utils/index.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <div></div>
+    <div>
+      <div class="page__title">
+        <h1>Меню</h1>
+      </div>
+      <div class="menu-form">
+        <div class="menu-form__date-title">
+          <input class="menu-form__date menu-form__date-input" value="21.01.24">
+        </div>
+        <div class="menu-form__plan-fact-title">
+          <div>План</div>
+          <div>Факт</div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <script>
+    const addRow = () => {
+      const formContainer = document.querySelector('.menu-form');
+
+      const rowElement = document.createElement('div');
+      rowElement.className = 'form__row';
+
+      const planSelectContainer = document.createElement('div');
+      planSelectContainer.className = 'form__plan-selector-container';
+
+      const planSelectElement = document.createElement('select-with-search');
+      const planPortionSelect = document.createElement('select-with-search');
+
+      planSelectContainer.appendChild(planSelectElement);
+      planSelectContainer.appendChild(planPortionSelect);
+
+      planPortionSelect.setAttribute('options', JSON.stringify(['1пп', '1бп', '1мп'].map(day => ({ id: day, label: day }))))
+      planPortionSelect.setAttribute('mix', 'date-input_short');
+
+      const addPlanRowButton = document.createElement('button');
+      addPlanRowButton.className = 'add-row-button';
+
+      const deletePlanRowButton = document.createElement('button');
+      deletePlanRowButton.className = 'delete-button';
+
+      const movePlanButton = document.createElement('button');
+      movePlanButton.className = 'move-button';
+
+      const factSelectContainer = document.createElement('div');
+      factSelectContainer.className = 'form__plan-selector-container';
+
+      const factSelectElement = document.createElement('select-with-search');
+      const factPortionSelect = document.createElement('select-with-search');
+
+      factSelectContainer.appendChild(factSelectElement);
+      factSelectContainer.appendChild(factPortionSelect);
+
+      factPortionSelect.setAttribute('options', JSON.stringify(['1пп', '1бп', '1мп'].map(day => ({ id: day, label: day }))))
+      factPortionSelect.setAttribute('mix', 'date-input_short');
+
+      const addFactRowButton = document.createElement('button');
+      addFactRowButton.className = 'add-row-button';
+
+      const deleteFactRowButton = document.createElement('button');
+      deleteFactRowButton.className = 'delete-button';
+
+      rowElement.appendChild(planSelectContainer);
+      rowElement.appendChild(addPlanRowButton);
+      rowElement.appendChild(deletePlanRowButton);
+      rowElement.appendChild(movePlanButton);
+      rowElement.appendChild(factSelectContainer);
+      rowElement.appendChild(addFactRowButton);
+      rowElement.appendChild(deleteFactRowButton);
+      formContainer.appendChild(rowElement);
+
+      planSelectElement.setAttribute(
+        'options',
+        getSelectOptions(window.RECIPES, 'id', 'title'),
+      );
+      factSelectElement.setAttribute(
+        'options',
+        getSelectOptions(window.RECIPES, 'id', 'title'),
+      );
+    }
+
+    const init = async () => {
+      await initTemplates();
+
+      const recipes = await fetchFile('./src/app/recipes.json');
+
+      window.RECIPES = JSON.parse(recipes);
+
+      // const daysContainer = document.querySelector('.page');
+      const daysContainer = document.querySelector('.menu-form__date-title');
+      const daySelector = document.createElement('select-with-search');
+      daySelector.id = 'day';
+      daysContainer.appendChild(daySelector);
+      daySelector.setAttribute(
+        'options',
+        JSON.stringify(['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'].map(day => ({ id: day, label: day })))
+      );
+      daySelector.setAttribute('mix', 'menu-form__date-input');
+
+      addRow();
+      addRow();
+    }
+
+    (async () => {
+      await init()
+    })();
+  </script>
+</body>
+
+</html>

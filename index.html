@@ -1,300 +1,17 @@
-<!-- https://color.romanuke.com/czvetovaya-palitra-4528/
-<!-- #5C7728
-#F8AE29
-#F7F7F9
-#FFC9B3
-#B76C49 -->
+<!-- https://color.romanuke.com/czvetovaya-palitra-4528/ -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html {
-      width: 100vw;
-      height: 100vh;
-    }
-
-    body {
-      font-family: monospace;
-      color: #1B1D19;
-    }
-
-    .page {
-      padding: 24px;
-      display: grid;
-      grid-template-columns: 1fr 800px 1fr;
-    }
-
-    .page__title {
-      display: grid;
-      justify-content: center;
-    }
-
-    .table__head {
-      display: grid;
-      grid-template-columns: 226px 226px 226px 36px 36px;
-      height: 42px;
-      background: #DBB6A4;
-    }
-
-    .table__head div {
-      /* border: 4px solid white; */
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      padding: 8px 0px;
-      border-bottom: 0;
-    }
-
-    .table__head div:not(:last-child) {
-      border-right: 0;
-    }
-
-    /* TODO миксин */
-    .table__row {
-      display: grid;
-      grid-template-columns: 226px 226px 226px 32px 32px;
-      border: 1px solid #E5E5E5;
-      border-top: 0;
-      border-bottom: 0;
-    }
-
-    .table__row:last-child {
-      border: 1px solid #E5E5E5;
-    }
-
-    .table__cell {
-      padding: 8px;
-      border-bottom: 0;
-    }
-
-    .table__cell:not(:last-child) {
-      border-right: 0px;
-    }
-
-    .table {
-      width: 752px;
-      font-size: 16px;
-      color: #1B1D19;
-      margin: 24px;
-    }
-
-    .table button {
-      padding: 0px;
-    }
-
-    .table input {
-      border: none;
-      padding: 8px;
-      border-radius: 4px;
-      border: 1px solid #d9d9d9;
-      font-size: 16px;
-    }
-
-    .add-button {
-      background-image: url(edit-icon.svg);
-      background-size: 100%;
-      width: 32px;
-      height: 32px;
-      /* background: mediumaquamarine; */
-      border: none;
-      background-color: transparent;
-    }
-
-    .delete-button {
-      background-image: url(cancell-icon.svg);
-      background-size: 100%;
-      width: 32px;
-      height: 32px;
-      /* background: mediumaquamarine; */
-      border: none;
-      background-color: transparent;
-    }
-
-    .table input:focus {
-      border: 1px solid #d9d9d9;
-      outline-color: #d9d9d9;
-    }
-
-    .table input:focus-visible {
-      border: 1px solid #d9d9d9;
-      outline-color: #d9d9d9;
-    }
-
-    .table input:active {
-      border: 1px solid red;
-    }
-
-    .table__cell_type_ingredients div:not(:last-child) {
-      margin-bottom: 4px;
-    }
-
-    .table__cell_type_units div:not(:last-child) {
-      margin-bottom: 4px;
-    }
-
-    .text-input input {
-      width: 192px;
-    }
-
-    .table__active-button {
-      padding: 0;
-      display: grid;
-      align-items: center;
-    }
-
-    .create-card-button {
-      background-color: #F8AE29;
-      width: 192px;
-      height: 42px;
-      border-radius: 16px;
-      border: none;
-      font-family: monospace;
-      color: #1B1D19;
-      font-size: 14px;
-    }
-
-    .create-card-button:hover {
-      background-color: #EEA729;
-    }
-
-    .copy-card-button {
-      background-color: #B76C49;
-      width: 192px;
-      height: 42px;
-      border-radius: 16px;
-      border: none;
-      font-family: monospace;
-      color: #1B1D19;
-      font-size: 14px;
-    }
-
-    .copy-card-button:hover {
-      background-color: #a86342;
-    }
-
-    .active-buttons {
-      margin: 24px;
-      margin-top: 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      gap: 10px;
-      font-family: monospace;
-      font-size: 14px;
-    }
-
-  .title {
-    font-size: 24px;
-    font-family: 'FreeMono';
-    text-align: center;
-    stroke: #000000;
-  }
-
-  .content {
-    font-size: 16px;
-    font-family: 'FreeMono';
-    fill: #000000;
-  }
-
-  .preparing {
-    font-style: italic;
-    font-size: 24px;
-    font-family: 'FreeMono';
-    text-align: center;
-    fill: #000000;
-  }
-
-  .preparing__content {
-    font-family: 'FreeMono';
-    font-size: 16px;
-    fill: #000000;
-  }
-
-  .recipe__container {
-    fill: transparent;
-    stroke: black;
-    stroke-width: 1;
-  }
-
-  .bold {
-    font-weight: bold;
-  }
-
-  .section {
-    display: flex;
-    margin: 0px 24px;
-    align-items: center;
-    gap: 24px;
-    font-size: 16px;
-  }
-
-  .section input {
-    border: none;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #d9d9d9;
-    font-size: 16px;
-    padding-right: 24px;
-    width: 272px;
-  }
-
-  .section h2 {
-    width: 116px;
-  }
-
-  .directions {
-    margin: 0px 24px 36px;
-    font-size: 16px;
-  }
-
-  .directions textarea {
-    border: none;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #d9d9d9;
-    font-size: 16px;
-    padding-right: 24px;
-    width: 416px;
-  }
-
-  .hidden {
-    display: none;
-  }
-  </style>
+  <link rel="stylesheet" href="./index.css">
   <script type="module" src="./src/app/components/select-with-search/index.js"></script>
-  <script>
-    // console.log('%c%s', 'background: cadetblue; padding: 8px;', 'loadTemplates');
-    // const loadTemplates = async () => {
-    //   //get the imported document in templates:
-    //   var templates = document.createElement( 'template' )
-    //   templates.innerHTML = await ( await fetch( 'templates.html' ) ).text();
-    // };
-
-    // const loadTemplates = () => {
-    //
-    // }
-
-
-  </script>
-  <!-- <script src="./src/index.js"></script> -->
+  <script src="./src/utils/index.js"></script>
   <title>Document</title>
 </head>
 
 <body>
-  <div w3-include-html="templates.html"></div>
-  <script>
-    // const loadTemplates = async () => {
-    //   var templates = document.createElement( 'template' )
-    //   // const templatesFile = await fetch( 'templates.html' );
-    //   templates.innerHTML = await ( await fetch( 'templates.html' ) ).text();
-    //   document.querySelector('body').appendChild(templates);
-    // };
-
-    // loadTemplates();
-  </script>
   <div class="page">
     <div></div>
     <div>
@@ -358,34 +75,6 @@
     <div></div>
   </div>
   <script>
-    // onAddOption = event => {
-    //   const type = event.currentTarget.getAttribute('type');
-    //   const newOption = event.currentTarget.newOption;
-
-    //   if ( type === 'ingredients') {
-    //     const ingredients = getIngredients();
-    //     const newId = Math.max(...ingredients.map(({ id }) => id)) + 1;
-
-    //     updateIngredients([...ingredients, { id: newId, label: newOption }]);
-
-    //     window.NEW_INGREDIENTS = [...window.NEW_INGREDIENTS, { id: newId, label: newOption }];
-    //   }
-
-    //   if (type === 'units') {
-    //     const units = getUnits();
-    //     const newId = Math.max(...units.map(({ id }) => {
-    //       const a = /_/.test(id) ? id.match(/^(\d+)/)[1] : id;
-    //       return +a;
-    //     })) + 1;
-
-    //     updateUnits([...units, { id: newId, label: newOption }]);
-
-    //     window.NEW_UNITS = [...window.NEW_UNITS, { id: newId, label: newOption}]
-    //   }
-    // }
-
-    // TODO вынести таблицу в объект
-
     const RECIPE_TYPE = {
       FIRST_COURSE: 'first-course',
       SECOND_COURSE: 'secound-course',
@@ -444,10 +133,6 @@
 
       // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(window.table));
     }
-
-    // TODO узнать про res.text, почему он ассинхронный
-    const fetchFile = file => fetch(file)
-      .then((res) => res.text());
 
     // TODO вынести функции работы с карточкой в объект
     const mm = value => `${value}mm`;
@@ -922,21 +607,11 @@
 
     const updateUnits = units => updateSelectOptions('units', units.sort(sortAlphabetically));
 
-    // const updateListeners = () => {
-    //   window.table.forEach(({ ingredients, units }) => {
-    //     ingredients.addEventListener('addOption', onAddOption);
-    //     units.addEventListener('addOption', onAddOption);
-    //   });
-    // }
-
     const init = async () => {
       const ingredients = await fetchFile('./ingredients.json');
       const recipes = await fetchFile('./src/app/recipes.json');
 
-      //TODO в отдельную функцию все подгрузки шаблонов
-      const selectWithSearchTemplate = await fetchFile('./src/app/components/select-with-search/template.html');
-
-      document.querySelector('.page').insertAdjacentHTML('beforebegin', selectWithSearchTemplate);
+      await initTemplates();
 
       window.INGREDIENTS = JSON.parse(ingredients).map(({ id, name }) => ({ id, label: name }))
       window.NEW_INGREDIENTS = [];

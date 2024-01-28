@@ -1,4 +1,8 @@
 <template id="select-with-search">
+  <!-- TODO сделать это как-то через пропсы -->
+  <style>
+    @import "./menu.css";
+  </style>
   <style>
     .select__container {
       max-height: calc(55px * 6);
@@ -42,17 +46,21 @@
       outline: 1px solid #B0B0B0;
     }
 
-    .select input {
+    .select__input {
       border: none;
       padding: 8px;
       border-radius: 4px;
       border: 1px solid #d9d9d9;
       font-size: 16px;
-      padding-right: 24px;
+      /* padding-right: 24px; */
     }
 
-    .select input:focus-visible {
+    .select__input:focus-visible {
       outline: 1px solid #B0B0B0;
+    }
+
+    .select__input_short {
+      width: 60px;
     }
 
     .select__hide-button {
@@ -81,6 +89,22 @@
       border: 1px solid #d9d9d9;
       font-size: 16px;
       padding-right: 24px;
+    }
+
+    .date-input_short input {
+      width: 44px;
+    }
+
+    .date-input_short button {
+      left: 32px;
+    }
+
+    .date-input_short + .select__container{
+      width: 68px;
+    }
+
+    .select__field.date-input_short {
+      grid-template-columns: 62px;
     }
   </style>
 

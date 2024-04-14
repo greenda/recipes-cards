@@ -86,3 +86,80 @@
   border: none;
   background-color: transparent;
 }
+
+.menu-form__texts {
+  display: flex;
+  padding: 8px;
+  gap: 8px
+}
+
+.menu-form__notes {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.menu-form__actions {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.menu-form__label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.menu-form__textarea {
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+}
+
+.add-menu-button {
+  background-color: rgba(248, 174, 41, 0.5);
+  width: 192px;
+  height: 42px;
+  border-radius: 16px;
+  border: none;
+  font-family: monospace;
+  color: #1B1D19;
+  font-size: 14px;
+}
+
+.add-menu-button:hover {
+  background-color: rgba(248, 174, 41, 0.6);
+}
+
+.update-menu-button {
+  background-color: #F8AE29;
+  width: 192px;
+  height: 42px;
+  border-radius: 16px;
+  border: none;
+  font-family: monospace;
+  color: #1B1D19;
+  font-size: 14px;
+}
+
+.update-menu-button:hover {
+  background-color: rgba(240, 174, 41, 0.6);
+}
+
+.copy-menu-button {
+  background-color: rgba(180, 106, 72, 0.8);
+  width: 192px;
+  height: 42px;
+  border-radius: 16px;
+  border: none;
+  font-family: monospace;
+  color: #1B1D19;
+  font-size: 14px;
+}
+
+.copy-menu-button:hover {
+  background-color: rgba(180, 106, 72, 1);
+}

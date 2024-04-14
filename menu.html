@@ -25,13 +25,30 @@
           <div>План</div>
           <div>Факт</div>
         </div>
+        <div class="rows"></div>
+        <div class="menu-form__texts">
+          <div class="menu-form__notes">
+            <label class="menu-form__label">Заметки</label>
+            <textarea class="menu-form__textarea"></textarea>
+          </div>
+          <div class="menu-form__actions">
+            <label class="menu-form__label">Действия</label>
+            <textarea class="menu-form__textarea"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="active-buttons">
+        <button class="add-menu-button" onclick="">Добавить</button>
+        <button class="update-menu-button" onclick="">Обновить</button>
+        <button class="copy-menu-button" onclick="">Скопировать</button>
       </div>
     </div>
     <div></div>
   </div>
   <script>
     const addRow = () => {
-      const formContainer = document.querySelector('.menu-form');
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'addRow');
+      const formContainer = document.querySelector('.rows');
 
       const rowElement = document.createElement('div');
       rowElement.className = 'form__row';
@@ -50,6 +67,7 @@
 
       const addPlanRowButton = document.createElement('button');
       addPlanRowButton.className = 'add-row-button';
+      addPlanRowButton.onclick = addRow;
 
       const deletePlanRowButton = document.createElement('button');
       deletePlanRowButton.className = 'delete-button';
@@ -71,6 +89,7 @@
 
       const addFactRowButton = document.createElement('button');
       addFactRowButton.className = 'add-row-button';
+      addFactRowButton.onclick = addRow;
 
       const deleteFactRowButton = document.createElement('button');
       deleteFactRowButton.className = 'delete-button';
@@ -112,8 +131,41 @@
       );
       daySelector.setAttribute('mix', 'menu-form__date-input');
 
+      const formContainer = document.querySelector('.menu-form');
+
       addRow();
-      addRow();
+
+      const textsElement = document.createElement('div');
+      textsElement.className = 'menu-form__texts';
+
+      const notesElement = document.createElement('div');
+      notesElement.className = 'menu-form__notes';
+
+      const noteLabelElement = document.createElement('label');
+      noteLabelElement.className = 'form__label';
+      noteLabelElement.innerHTML = 'Заметки';
+
+      const noteTextareaElement = document.createElement('textarea');
+      noteTextareaElement.className = 'menu-form__textarea';
+
+      notesElement.appendChild(noteLabelElement);
+      notesElement.appendChild(noteTextareaElement);
+
+      const actionsElement = document.createElement('div');
+      actionsElement.className = 'menu-form__actions';
+
+      const actionLabelElement = document.createElement('label');
+      actionLabelElement.className = 'form__label';
+      actionLabelElement.innerHTML = 'Заметки';
+
+      const actionTextareaElement = document.createElement('textarea');
+      actionTextareaElement.className = 'menu-form__textarea';
+
+      actionsElement.appendChild(actionLabelElement);
+      actionsElement.appendChild(actionTextareaElement);
+
+      textsElement.appendChild(notesElement);
+      textsElement.appendChild(actionsElement);
     }
 
     (async () => {

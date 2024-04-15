@@ -68,7 +68,7 @@
       <div><a id="link" class="hidden">Ссылка для скачивания svg</a></div>
       <div class="cards">
         <div class="cards__container">
-          <svg id="svg" width="208mm" height="148mm" fill="white"></svg>
+          <svg id="svg" width="148mm" height="210mm" fill="white"></svg>
         </div>
       </div>
     </div>
@@ -119,7 +119,6 @@
 
       updateIngredients(INGREDIENTS);
       updateUnits(UNITS);
-      // updateListeners();
     }
 
     removeRow = event => {
@@ -127,22 +126,19 @@
 
       window.table = window.table.filter(({ rowIndex: index }) => index !== rowIndex);
 
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', 'removeRow');
-
       document.querySelector(`.table__row[rowindex="${rowIndex}"]`).remove();
-
-      // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(window.table));
     }
 
     // TODO вынести функции работы с карточкой в объект
     const mm = value => `${value}mm`;
     const NAMESPACE = 'http://www.w3.org/2000/svg';
-    const CARD_WIDTH = 104;
-    const CARD_HEIGHT = 148;
+    const CARD_WIDTH = 148;
+    const CARD_HEIGHT = 210;
     const BASE_OFFSET = 16;
     const PRODUCTS_OFFSET = 50;
-    const INGREDIENTS_MAX_CHAR_COUNT = 20;
-    const DIRECTIONS_MAX_CHAR_COUNT = 34;
+    const DIRECTION_Y_OFFSET = 105;
+    const INGREDIENTS_MAX_CHAR_COUNT = 40;
+    const DIRECTIONS_MAX_CHAR_COUNT = 50;
     const TYPE = {
       SVG: 'svg',
       GROUP: 'g',
@@ -193,9 +189,11 @@
 
       const container = document.querySelector('.cards__container');
 
-      if (!svg) {
-        svg = createSvgElement(TYPE.SVG, { width: mm(210), height: mm(297) });
+      if (svg) {
+        container.removeChild(svg);
       }
+
+      svg = createSvgElement(TYPE.SVG, { id: 'svg', width: mm(148), height: mm(210) });
 
       const defs = createSvgElement(TYPE.DEFS);
       const style = createSvgElement(TYPE.STYLE);
@@ -224,6 +222,15 @@
         directions
       } = recipe;
 
+      const titleContainer = createSvgElement(
+        TYPE.RECTANGLE, {
+        x: mm(startX),
+        y: mm(startY+ BASE_OFFSET / 2),
+        width: mm(CARD_WIDTH),
+        height: mm(BASE_OFFSET - BASE_OFFSET / 4),
+        style: 'stroke: gray; fill: none'
+      });
+
       const recipeTitle = createSvgElement(TYPE.TEXT, {
         'text-anchor': 'middle',
         x: mm(startX + CARD_WIDTH / 2),
@@ -231,7 +238,7 @@
         class: 'title',
         style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
       },
-        `${idInCategory}${RECIPE_TYPE_CUT[type]}. ${title}`
+        title
       );
 
       const ingredientsAmountOfGroup = createSvgElement(TYPE.GROUP, { class: 'content' });
@@ -246,7 +253,7 @@
         y: mm(startY + BASE_OFFSET * 2)
       });
 
-      ingredients.reduce((acc, { ingredientId, ...rest }) => {
+      const ingredientsOffset = ingredients.reduce((acc, { ingredientId, ...rest }) => {
         // TODO сделать получение ингредиентов методом
         const a = getIngredients().find(({ id }) => id === ingredientId);
 
@@ -267,98 +274,93 @@
           },
             `▪ ${amountOf || ''} ${unit.label}`);
 
-          ingredientMainText.appendChild(amountOfUnitElement); ingredientElementsRows.forEach((word, wordIndex) => {
+          ingredientMainText.appendChild(amountOfUnitElement);
+
+          const ingredientOffset = ingredientElementsRows.reduce((elementAcc, word, wordIndex) => {
+            const dy = isFirstRow && wordIndex === 0 ? 0 : wordIndex === 0 && !isAnalogue ? 1.6 : 0.8;
+
             const productRow = createSvgElement(TYPE.TSPAN, {
               x: mm(startX + PRODUCTS_OFFSET),
-              dy: isFirstRow && wordIndex === 0 ? '0' : wordIndex === 0 && !isAnalogue ? '1.6em' : '0.8em'
+              dy: `${dy}em`,
             },
               isAnalogue ? `или ${word.toLowerCase()}` : word); ingredientProductsText.appendChild(productRow);
-          });
 
-          return [...acc, { rowCount: ingredientElementsRows.length }];
+            return elementAcc + dy;
+          }, 0);
+
+          return [...acc, { rowCount: ingredientElementsRows.length, offset: ingredientOffset }];
         }, []);
+
+      // const separatorOffset = Math.floor(ingredientsOffset.reduce((acc, { offset }) => (acc + offset * 16), 0));
+      // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(ingredientsOffset) + separatorOffset);
+
 
       ingredientsAmountOfGroup.appendChild(ingredientMainText);
       ingredientsAmountOfGroup.appendChild(ingredientProductsText);
 
       recipeGroup.appendChild(recipeContainer);
+      recipeGroup.appendChild(titleContainer);
       recipeGroup.appendChild(recipeTitle);
       recipeGroup.appendChild(ingredientsAmountOfGroup);
+
       svg.appendChild(recipeGroup);
       container.appendChild(svg);
-
       // ---------------------------- //
 
       const directionsGroup = createSvgElement(TYPE.GROUP, {
         class: 'content'
       });
 
-      const directionsTitle = createSvgElement(TYPE.TEXT, {
-        // TODO 52 в константы
-        x: mm(startX + CARD_WIDTH + 52),
-        y: mm(startY + BASE_OFFSET),
+      // const directionsTitle = createSvgElement(TYPE.TEXT, {
+      //   // TODO 52 в константы
+      //   x: mm(startX + 52),
+      //   y: mm(startY + BASE_OFFSET + DIRECTION_Y_OFFSET),
+      //   'text-anchor': 'middle',
+      //   class: 'preparing'
+      // }, 'Приготовление');
+
+      const separatorOffset = Math.floor(document.querySelector('.content').getBBox().height * 0.26) + BASE_OFFSET * 2 + BASE_OFFSET / 2;
+      console.log('%c%s', 'background: cadetblue; padding: 8px;', separatorOffset);
+
+      const separator = createSvgElement(TYPE.TEXT, {
         'text-anchor': 'middle',
-        class: 'preparing'
-      }, 'Приготовление');
+        x: mm(startX + CARD_WIDTH / 2),
+        y: separatorOffset + 'mm',
+        class: 'title',
+        style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
+      },
+        '—'
+      );
+
+      recipeGroup.appendChild(separator);
 
       const directionsMainText = createSvgElement(TYPE.TEXT, {
-        x: mm(startX + CARD_WIDTH + BASE_OFFSET / 2),
-        y: mm(startY + BASE_OFFSET * 2), class: 'preparing__content'
+        x: mm(startX + BASE_OFFSET / 2),
+        y: mm(startY + separatorOffset + BASE_OFFSET / 2), class: 'preparing__content'
       });
 
       const PIXEL_IN_MM = 0.26; directions.forEach((direction, index) => {
         trimRow(DIRECTIONS_MAX_CHAR_COUNT, direction).forEach((row, rowIndex) => {
           if (rowIndex === 0) {
             directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
-              x: mm(startX + CARD_WIDTH + BASE_OFFSET / 2),
+              x: mm(startX  + BASE_OFFSET / 2),
               dy: index === 0 && rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em', class: 'bold'
             }, `${index + 1}.`));
           }
 
           directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
-            x: rowIndex === 0 ? mm(startX + CARD_WIDTH + BASE_OFFSET / 2 + 16 * (`${index}`.length + 1) * PIXEL_IN_MM)
-              : mm(startX + CARD_WIDTH + BASE_OFFSET), dy: rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em'
+            x: rowIndex === 0 ? mm(startX + BASE_OFFSET / 2 + 16 * (`${index}`.length + 1) * PIXEL_IN_MM)
+              : mm(startX  + BASE_OFFSET), dy: rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em'
           }, row));
         });
       });
 
-      const directionsContainer = createSvgElement(TYPE.RECTANGLE, {
-        x: mm(startX + CARD_WIDTH),
-        y: mm(startY),
-        width: mm(CARD_WIDTH),
-        height: mm(CARD_HEIGHT),
-        class: 'recipe__container',
-      });
-
-      recipeGroup.appendChild(directionsContainer);
       recipeGroup.appendChild(directionsGroup);
-      recipeGroup.appendChild(directionsTitle);
       recipeGroup.appendChild(directionsMainText);
-
-      const topHoleRect = createSvgElement(TYPE.RECTANGLE, {
-        x: mm(0 + startX),
-        y: mm(32 + startY),
-        width: mm(10),
-        height: 2,
-        // TODO в стиль
-        style: 'fill: #dfdfdf; stroke: none;'
-      });
-      const bottomHoleRect = createSvgElement(TYPE.RECTANGLE, {
-        x: mm(0 + startX),
-        y: mm(112 + startY),
-        width: mm(10),
-        height: 2,
-        // TODO в стиль
-        style: 'fill:#dfdfdf; stroke: none;'
-      });
-
-      recipeGroup.appendChild(topHoleRect);
-      recipeGroup.appendChild(bottomHoleRect);
     };
 
     createCard = () => {
       createCardSvg(window.selectedRecipe || copyCard(), 0, 0);
-      // createCard(0, 148);
     }
 
     addIngredient = ingredient => {
@@ -542,6 +544,7 @@
         const ingredientLabel = window.ingredients.find(({ id }) => id === ingredientId).label;
 
         const processedUnitId = Number.isInteger(index) ? `${unitId}_${index}` : unitId;
+        console.log('%c%s', 'background: cadetblue; padding: 8px;', processedUnitId);
         const unitLabel = window.units.find(({ id }) => id === processedUnitId).label;
         // TODO переименовать value1 во что-то лучше
         ingredientsSelect.setAttribute('value1', ingredientLabel);
@@ -667,14 +670,10 @@
       }];
       window.maxIndex = 3;
       window.rowIndex = 2;
-
-      // updateIngredients(INGREDIENTS);
-      // updateUnits(UNITS);
-      // updateListeners();
     }
 
     (async () => {
-      await init()
+      await init();
     })();
   </script>
 </body>

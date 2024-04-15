@@ -35,14 +35,14 @@
         "ingredientId": 5,
         "amountOf": 1,
         "unitId": 4,
-        "index": 0
+        "index": 1
       },
       {
         "id": 6,
         "ingredientId": 6,
         "amountOf": 1,
         "unitId": 4,
-        "index": 0
+        "index": 1
       },
       {
         "id": 7,
@@ -1484,12 +1484,12 @@
     {
       "ingredientId": 39,
       "amountOf": "½",
-      "unitId": "17_1"
+      "unitId": "17_2"
     },
     {
       "ingredientId": 94,
       "amountOf": "1",
-      "unitId": "17_0"
+      "unitId": "17_1"
     },
     {
       "ingredientId": 22,

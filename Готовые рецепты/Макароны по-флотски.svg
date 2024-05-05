@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="">Макароны по-флотски</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 250 г</tspan><tspan x="16mm" dy="1.6em">▪ 300 г</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 50 г</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Говядина</tspan><tspan x="50mm" dy="1.6em">Макароны</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Сливочное масло</tspan></text></g><text text-anchor="middle" x="74mm" y="64mm" class="title" style="">—</text><g class="content"/><text x="8mm" y="72mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Говядину отвариваем, перекручиваем в фарш.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Поджариваем лук на смеси сливочного</tspan><tspan x="16mm" dy="0.8em">и растительного масло на среднем огне. Добавляем</tspan><tspan x="16mm" dy="0.8em">фарш, разминаем лопаткой, обжариваем до испарения</tspan><tspan x="16mm" dy="0.8em">жидкости.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Добавляем соль, молотый перец и лавровый лист.</tspan><tspan x="16mm" dy="0.8em">Перемешиваем, даём настояться 10 минут.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Отвариваем до готовности макароны (лучше брать</tspan><tspan x="16mm" dy="0.8em">ребристые или полые). Откидываем на дуршлаг</tspan><tspan x="16mm" dy="0.8em">и соединяем с фаршем. Прогреваем на сковороде</tspan><tspan x="16mm" dy="0.8em">1 минуту и подаём.</tspan></text></g></svg>

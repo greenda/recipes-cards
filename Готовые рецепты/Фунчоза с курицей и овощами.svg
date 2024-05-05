@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="font-size: 16px;">Фунчоза с курицей и овощами</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 70 г</tspan><tspan x="16mm" dy="1.6em">▪ 250 г</tspan><tspan x="16mm" dy="1.6em">▪ 80 г</tspan><tspan x="16mm" dy="1.6em">▪ ½ шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 зубчик</tspan><tspan x="16mm" dy="1.6em">▪ 50 мл</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Фунчоза</tspan><tspan x="50mm" dy="1.6em">Куриное филе</tspan><tspan x="50mm" dy="1.6em">Фасоль стручковая</tspan><tspan x="50mm" dy="1.6em">Перец болгарский красный</tspan><tspan x="50mm" dy="1.6em">Помидоры</tspan><tspan x="50mm" dy="1.6em">Морковь</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Чеснок</tspan><tspan x="50mm" dy="1.6em">Соевый соус</tspan><tspan x="50mm" dy="1.6em">Соль</tspan><tspan x="50mm" dy="1.6em">Перец молотый</tspan><tspan x="50mm" dy="1.6em">Масло растительное</tspan></text></g><text text-anchor="middle" x="74mm" y="117mm" class="title" style="font-size: 16px;">—</text><g class="content"/><text x="8mm" y="125mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Морковь, лук чистим и нарезаем произвольно.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Болгарский перец чистим, моем, нарезаем</tspan><tspan x="16mm" dy="0.8em">небольшими кусочками.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Помидор нарезаем средними кусочками.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Чеснок чистим и нарезаем тонкими полосочками.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">На растительном масле жарим сперва куриное филе,</tspan><tspan x="16mm" dy="0.8em">откладываем. Затем лук, чеснок, морковь,</tspan><tspan x="16mm" dy="0.8em">болгарский перец, стручковую фасоль. Обжариваем</tspan><tspan x="16mm" dy="0.8em">10 минут.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">Убавляем огонь до минимум, накрываем крышкой</tspan><tspan x="16mm" dy="0.8em">и готовим ещё 15 минут.</tspan><tspan x="8mm" dy="1.5em" class="bold">7.</tspan><tspan x="16.32mm" dy="0">Заливаем фунчозу кипятком, затем сливаем воду.</tspan><tspan x="8mm" dy="1.5em" class="bold">8.</tspan><tspan x="16.32mm" dy="0">Выкладываем фунчозу к овощам, добавляем перец,</tspan><tspan x="16mm" dy="0.8em">соевый соус и прогреваем 1-2 минуты.</tspan></text></g></svg>

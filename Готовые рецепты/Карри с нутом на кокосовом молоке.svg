@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="font-size: 16px;">Карри с нутом на кокосовом молоке</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 200 г</tspan><tspan x="16mm" dy="1.6em">▪ 200 мл</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 3 зубчик</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 1 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ ½ ч.л</tspan><tspan x="16mm" dy="1.6em">▪ ½ ч.л</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Нут вареный</tspan><tspan x="50mm" dy="1.6em">Кокосовое немолоко</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Чеснок</tspan><tspan x="50mm" dy="1.6em">Оливковое масло</tspan><tspan x="50mm" dy="1.6em">Томатная паста</tspan><tspan x="50mm" dy="1.6em">Карри</tspan><tspan x="50mm" dy="1.6em">Куркума</tspan><tspan x="50mm" dy="1.6em">Соль</tspan><tspan x="50mm" dy="1.6em">Рис</tspan><tspan x="50mm" dy="1.6em">Перец чили красный</tspan></text></g><text text-anchor="middle" x="74mm" y="110mm" class="title" style="font-size: 16px;">—</text><g class="content"/><text x="8mm" y="118mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Лук и чеснок мелко режем и обжариваем</tspan><tspan x="16mm" dy="0.8em">на оливковом масле.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Добавляем карри, куркуму и томатную пасту.</tspan><tspan x="16mm" dy="0.8em">Обжариваем минуту.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Добавляем острый перец и соль, перемешиваем.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Добавляем в сковороду варенный нут.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Вливаем Немолоко, тушим под крышкой на небольшом</tspan><tspan x="16mm" dy="0.8em">огне 25 минут.</tspan></text></g></svg>

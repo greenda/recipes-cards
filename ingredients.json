@@ -595,5 +595,99 @@
   {
     "id": 114,
     "name": "Огурцы соленые"
+  },
+  {
+    "id": 115,
+    "name": "Перец чили"
+  },
+  {
+    "id": 116,
+    "name": "Желтки",
+    "linkedUnits": []
+  },
+  {
+    "id": 117,
+    "name": "Свинина шейка",
+    "linkedUnits": []
+  },
+  {
+    "id": 118,
+    "name": "Майонез",
+    "linkedUnits": []
+  },
+  {
+    "id": 119,
+    "name": "Кардамон молотый",
+    "linkedUnits": []
+  },
+  {
+    "id": 118,
+    "name": "Кефир 3.2%",
+    "linkedUnits": []
+  },
+  {
+    "id": 119,
+    "name": "Сода",
+    "linkedUnits": []
+  },
+  {
+    "id": 120,
+    "name": "Белый хлеб",
+    "linkedUnits": []
+  },
+  {
+    "id": 121,
+    "name": "Барбарис",
+    "linkedUnits": []
+  },
+  {
+    "id": 122,
+    "name": "Свекла",
+    "linkedUnits": []
+  },
+  {
+    "id": 123,
+    "name": "Капуста квашенная",
+    "linkedUnits": []
+  },
+  {
+    "id": 124,
+    "name": "Растительное масло нерафинированное",
+    "linkedUnits": []
+  },
+  {
+    "id": 122,
+    "name": "Свинина",
+    "linkedUnits": []
+  },
+  {
+    "id": 122,
+    "name": "Говяжья печень",
+    "linkedUnits": []
+  },
+  {
+    "id": 123,
+    "name": "Розмарин",
+    "linkedUnits": []
+  },
+  {
+    "id": 124,
+    "name": "Майоран",
+    "linkedUnits": []
+  },
+  {
+    "id": 125,
+    "name": "Батон",
+    "linkedUnits": []
+  },
+  {
+    "id": 126,
+    "name": "Зелень",
+    "linkedUnits": []
+  },
+  {
+    "id": 125,
+    "name": "Изюм",
+    "linkedUnits": []
   }
 ]

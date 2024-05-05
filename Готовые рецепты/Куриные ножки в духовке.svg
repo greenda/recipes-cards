@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="font-size: 16px;">Куриные ножки в духовке</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 8 шт</tspan><tspan x="16mm" dy="1.6em">▪ 3 зубчик</tspan><tspan x="16mm" dy="1.6em">▪ 4 ст.л</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Куриные ножки</tspan><tspan x="50mm" dy="1.6em">Чеснок</tspan><tspan x="50mm" dy="1.6em">Масло растительное</tspan><tspan x="50mm" dy="1.6em">Прованские травы</tspan><tspan x="50mm" dy="1.6em">Перец молотый</tspan><tspan x="50mm" dy="1.6em">Соль</tspan></text></g><text text-anchor="middle" x="74mm" y="77mm" class="title" style="font-size: 16px;">—</text><g class="content"/><text x="8mm" y="85mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Чистим чеснок, пропускаем через давилку.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Ножки перчим, солим, натираем чесночной массой.</tspan><tspan x="16mm" dy="0.8em">Ставим в холодильник на полчаса.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Разогреваем духовку до 190°.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Выкладываем на фольгу, поливаем масло.</tspan><tspan x="16mm" dy="0.8em">Заворачиваем фольгу, чтобы не вытекал сок. Ставим</tspan><tspan x="16mm" dy="0.8em">мясо на 35 минут.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Открываем фольгу, держим ещё 10-15 минут</tspan><tspan x="16mm" dy="0.8em">до образования румяной корочки.</tspan></text></g></svg>

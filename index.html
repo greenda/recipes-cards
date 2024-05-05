@@ -81,6 +81,7 @@
       GARNISH: 'garnish',
       SALAD: 'salad',
       DESSERT: 'dessert',
+      BREAKFAST: 'breakfast',
     };
 
     const RECIPE_TYPE_MAP = {
@@ -89,15 +90,8 @@
       [RECIPE_TYPE.GARNISH]: 'Гарнир',
       [RECIPE_TYPE.SALAD]: 'Салат',
       [RECIPE_TYPE.DESSERT]: 'Десерт',
+      [RECIPE_TYPE.BREAKFAST]: 'Завтрак',
     };
-
-    const RECIPE_TYPE_CUT = {
-      [RECIPE_TYPE.FIRST_COURSE]: 'П',
-      [RECIPE_TYPE.SECOND_COURSE]: 'В',
-      [RECIPE_TYPE.GARNISH]: 'Г',
-      [RECIPE_TYPE.SALAD]: 'С',
-      [RECIPE_TYPE.DESSERT]: 'Д',
-    }
 
     addRow = recipeRow => {
       const ingredientSelectId = `s${window.maxIndex + 1}`;
@@ -272,7 +266,7 @@
             dy: isFirstRow ? '0' :
               isAnalogue ? '0.8em' : `${(lastRowCount + 1) * 0.8}em`
           },
-            `▪ ${amountOf || ''} ${unit.label}`);
+            `▪ ${amountOf || ''} ${unit?.label}`);
 
           ingredientMainText.appendChild(amountOfUnitElement);
 
@@ -320,7 +314,6 @@
       // }, 'Приготовление');
 
       const separatorOffset = Math.floor(document.querySelector('.content').getBBox().height * 0.26) + BASE_OFFSET * 2 + BASE_OFFSET / 2;
-      console.log('%c%s', 'background: cadetblue; padding: 8px;', separatorOffset);
 
       const separator = createSvgElement(TYPE.TEXT, {
         'text-anchor': 'middle',
@@ -406,7 +399,8 @@
           {
             ingredientId,
             amountOf,
-            unitId,
+            unitId: Number.isInteger(unitId) ? unitId : +unitId.split('_')[0],
+            ...(!Number.isInteger(unitId) && { index: +unitId.split('_')[1] }),
           },
         ];
       }, []);
@@ -462,7 +456,7 @@
 
       const link = document.getElementById("link");
       link.href = url;
-      link.download = `${newId}. ${document.querySelector('.recipe-title').value}`;
+      link.download = `${document.querySelector('.recipe-title').value}`;
       link.classList.toggle('hidden');
     }
 
@@ -544,7 +538,7 @@
         const ingredientLabel = window.ingredients.find(({ id }) => id === ingredientId).label;
 
         const processedUnitId = Number.isInteger(index) ? `${unitId}_${index}` : unitId;
-        console.log('%c%s', 'background: cadetblue; padding: 8px;', processedUnitId);
+
         const unitLabel = window.units.find(({ id }) => id === processedUnitId).label;
         // TODO переименовать value1 во что-то лучше
         ingredientsSelect.setAttribute('value1', ingredientLabel);
@@ -619,7 +613,7 @@
       window.INGREDIENTS = JSON.parse(ingredients).map(({ id, name }) => ({ id, label: name }))
       window.NEW_INGREDIENTS = [];
       window.NEW_UNITS = [];
-      window.RECIPES = JSON.parse(recipes);
+      window.RECIPES = JSON.parse(recipes).sort(({ title: a }, { title: b }) => a > b ? 1 : -1);
 
       const css = await fetchFile('./svg1.css');
       window.css = css;
@@ -640,7 +634,7 @@
       recipeSelector.id = 'recipeSelect';
       recipeSelectorContainer.appendChild(recipeSelector);
       recipeSelector.setAttribute('options', JSON.stringify(
-        JSON.parse(recipes).map(({ id, title }) => ({ id, label: title }))),
+        window.RECIPES.map(({ id, title }) => ({ id, label: title }))),
       );
       recipeSelector.addEventListener('selectOption', selectRecipe);
 

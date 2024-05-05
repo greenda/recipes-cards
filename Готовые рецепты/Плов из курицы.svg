@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="">Плов из курицы</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 400 г</tspan><tspan x="16mm" dy="1.6em">▪ 400 г</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 3 зубчика</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Филе курицы</tspan><tspan x="50mm" dy="1.6em">Рис</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Морковь</tspan><tspan x="50mm" dy="1.6em">Чеснок</tspan><tspan x="50mm" dy="1.6em">Зира</tspan><tspan x="50mm" dy="1.6em">Барбарис</tspan></text></g><text text-anchor="middle" x="74mm" y="84mm" class="title" style="">—</text><g class="content"/><text x="8mm" y="92mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Нарезаем филе на кусочки, обжариваем на сковороде</tspan><tspan x="16mm" dy="0.8em">на среднем огне. Перекладываем филе в кастрюлю</tspan><tspan x="16mm" dy="0.8em">с толстым дном.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Нарезаем лук полукольцами, морковь - соломкой.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Обжариваем лук до золотистого цвета, выкладываем</tspan><tspan x="16mm" dy="0.8em">на курицу, не перемешивая.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Обжариваем морковь, выкладываем на лук.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Заливаем поджарку (зирвак) кипятком так, чтобы</tspan><tspan x="16mm" dy="0.8em">вода слегка покрывала слой моркови, тушим</tspan><tspan x="16mm" dy="0.8em">до готовности мяса на слабом огне. Тушим примерно</tspan><tspan x="16mm" dy="0.8em">15 минут. В конце тушения добавляем зиру, молотый</tspan><tspan x="16mm" dy="0.8em">перец, соль.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">Рис промываем, осторожно выкладываем на зирвак,</tspan><tspan x="16mm" dy="0.8em">добавляем барбарис, слегка утрамбовываем рис</tspan><tspan x="16mm" dy="0.8em">шумовкой. Аккуратно заливаем кипятком так, чтобы</tspan><tspan x="16mm" dy="0.8em">вода покрывала рис примерно на 1.5-2 см.</tspan><tspan x="8mm" dy="1.5em" class="bold">7.</tspan><tspan x="16.32mm" dy="0">Варим плов без крышки на среднем огне, пока вода</tspan><tspan x="16mm" dy="0.8em">не впитается в рис.</tspan><tspan x="8mm" dy="1.5em" class="bold">8.</tspan><tspan x="16.32mm" dy="0">Когда вода впиталась, делаем маленький огонь</tspan><tspan x="16mm" dy="0.8em">и закладываем зубчики чеснока.</tspan><tspan x="8mm" dy="1.5em" class="bold">9.</tspan><tspan x="16.32mm" dy="0">Закрываем плотной крышкой, делаем самый слабый</tspan><tspan x="16mm" dy="0.8em">огонь и выдерживаем под крышкой 15 минут.</tspan><tspan x="16mm" dy="0.8em">Выключаем огонь и не снимаем крышку ещё 10 минут.</tspan></text></g></svg>

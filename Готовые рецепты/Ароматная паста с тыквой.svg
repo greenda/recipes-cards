@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="font-size: 16px;">Ароматная паста с тыквой</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 300 г</tspan><tspan x="16mm" dy="1.6em">▪ 300 г</tspan><tspan x="16mm" dy="1.6em">▪ 200 г</tspan><tspan x="16mm" dy="1.6em">▪ 2 головки</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 зубчик</tspan><tspan x="16mm" dy="1.6em">▪ 1 м. пучок</tspan><tspan x="16mm" dy="1.6em">▪ 200 г</tspan><tspan x="16mm" dy="1.6em">▪ 6 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 1 ч.л</tspan><tspan x="16mm" dy="1.6em">▪ 1/4 ч.л</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Макароны Radiatori</tspan><tspan x="50mm" dy="1.6em">Помидоры в соб.соку</tspan><tspan x="50mm" dy="1.6em">Тыква</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Перец чили</tspan><tspan x="50mm" dy="1.6em">Чеснок</tspan><tspan x="50mm" dy="1.6em">Кинза</tspan><tspan x="50mm" dy="1.6em">Йогурт греческий</tspan><tspan x="50mm" dy="1.6em">Оливковое масло</tspan><tspan x="50mm" dy="1.6em">Яблочный уксус</tspan><tspan x="50mm" dy="1.6em">Зира</tspan></text></g><text text-anchor="middle" x="74mm" y="110mm" class="title" style="font-size: 16px;">—</text><g class="content"/><text x="8mm" y="118mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Духовку разогреваем до 180°.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Тыкву 200г чистим, нарезам на кубики, лук</tspan><tspan x="16mm" dy="0.8em">2 головки чистим, режем дольками, поливаем 1-2</tspan><tspan x="16mm" dy="0.8em">ст.л масла, выкладываем на противень, посыпаем</tspan><tspan x="16mm" dy="0.8em">1/4 ч.л. зиры, солим, перчим, запекаем</tspan><tspan x="16mm" dy="0.8em">до готовности.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Макароны 200г отвариваем в подсоленой воде на 1</tspan><tspan x="16mm" dy="0.8em">минуту меньше, чем указано на упаковке.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Чеснок чистим и мелко рубим, поджариваем</tspan><tspan x="16mm" dy="0.8em">на нескольких ложках оливкового масла.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Весь или нарезаем тонкими колечками и отправляем</tspan><tspan x="16mm" dy="0.8em">к чесноку. Добавляем помидоры, солим,</tspan><tspan x="16mm" dy="0.8em">перемешиваем и прогреваем.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">Запеченую тыкву выкладываем в блендер, вливаем</tspan><tspan x="16mm" dy="0.8em">оставшееся масло, яблочный уксус 1ч.л</tspan><tspan x="16mm" dy="0.8em">и измельчаем в пюре.</tspan><tspan x="8mm" dy="1.5em" class="bold">7.</tspan><tspan x="16.32mm" dy="0">Пюре в сковороду с помидорами и чили, все</tspan><tspan x="16mm" dy="0.8em">перемешиваем, добавляем макароны, снова</tspan><tspan x="16mm" dy="0.8em">перемешиваем.</tspan><tspan x="8mm" dy="1.5em" class="bold">8.</tspan><tspan x="16.32mm" dy="0">Подаём с мелкопорубленной кинзой и йогуртом.</tspan></text></g></svg>

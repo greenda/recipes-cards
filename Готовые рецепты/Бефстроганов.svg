@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="">Бефстроганов</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 500 г</tspan><tspan x="16mm" dy="1.6em">▪ 2 шт</tspan><tspan x="16mm" dy="1.6em">▪ ¼ ч.л</tspan><tspan x="16mm" dy="1.6em">▪ ¼ ч.л</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 120 г</tspan><tspan x="16mm" dy="1.6em">▪ 150 г</tspan><tspan x="16mm" dy="1.6em">▪ 1 ст.л</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Говядина</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Душистый перец</tspan><tspan x="50mm" dy="1.6em">Перец чили красный</tspan><tspan x="50mm" dy="1.6em">Томатная паста</tspan><tspan x="50mm" dy="1.6em">Сметана</tspan><tspan x="50mm" dy="1.6em">Мясной бульон</tspan><tspan x="50mm" dy="1.6em">Мука</tspan></text></g><text text-anchor="middle" x="74mm" y="90mm" class="title" style="">—</text><g class="content"/><text x="8mm" y="98mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Говядину (поясничную или заднюю часть) нарезаем</tspan><tspan x="16mm" dy="0.8em">поперёк волокон на широкие ломтики толщиной 2см,</tspan><tspan x="16mm" dy="0.8em">отбиваем.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Нарезаем брусочками длиной 4см. Солим, перчим</tspan><tspan x="16mm" dy="0.8em">и обжариваем на растительном масле до золотистой</tspan><tspan x="16mm" dy="0.8em">корочки.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Лук нарезаем полукольцами, добавляем к мясу,</tspan><tspan x="16mm" dy="0.8em">обжариваем до золотистого цвета.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Добавляем муку, томатную пасту, вливаем сметану,</tspan><tspan x="16mm" dy="0.8em">бульон или горячую воду.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Доводим до кипения, тушим до готовности.</tspan></text></g></svg>

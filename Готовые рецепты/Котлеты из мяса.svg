@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="">Котлеты из мяса</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 1 кг</tspan><tspan x="16mm" dy="1.6em">▪ 200 г</tspan><tspan x="16mm" dy="1.6em">▪ 250 мл</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 50 г</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Фарш</tspan><tspan x="50mm" dy="1.6em">Белый хлеб</tspan><tspan x="50mm" dy="1.6em">Молоко</tspan><tspan x="50mm" dy="1.6em">Яйцо</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Сливочное масло</tspan></text></g><text text-anchor="middle" x="74mm" y="77mm" class="title" style="">—</text><g class="content"/><text x="8mm" y="85mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Замачиваем хлеб в молоке.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Готовим фарш из свинины и говядины (примерно</tspan><tspan x="16mm" dy="0.8em">по половине), также измельчаем лук и отжатый</tspan><tspan x="16mm" dy="0.8em">хлеб.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Добавляем соль, перец, яйцо и сливочное масло.</tspan><tspan x="16mm" dy="0.8em">Хорошо вымешиваем.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Формируем котлеты, смачивая руки холодной водой.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Обжариваем с двух сторон на растительном масле.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">Перекладываем котлеты в форму, добавляем немного</tspan><tspan x="16mm" dy="0.8em">воды, закрываем крышкой и ставим на 5 минут</tspan><tspan x="16mm" dy="0.8em">в микроволновку или в разогретую духовку.</tspan></text></g></svg>

@@ -1,0 +1,4342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1122.5197 793.70081"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3 (1:1.3+202307231459+0e150ed6c4)"
+   sodipodi:docname="Готовые рецепты.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.81691218"
+     inkscape:cx="561.25984"
+     inkscape:cy="396.61546"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer12" /><defs
+     id="defs1"><style
+       id="style1"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-7"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-2"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-4"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-9"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-8"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-5"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-96"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-1"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-6"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-49"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-66"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-83"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-97"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-3"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-92"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-89"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-21"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-74"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-95"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-81"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-0"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-99"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-19"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g
+     inkscape:label="Ароматная паста с тыквой, Бефстроганов"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none"><g
+       id="g51"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2">Ароматная паста с тыквой</text><g
+         class="content"
+         id="g23"><text
+           x="16mm"
+           y="32mm"
+           id="text12"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2">▪ 300 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3">▪ 300 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4">▪ 200 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5">▪ 2 головки</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7">▪ 1 зубчик</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8">▪ 1 м. пучок</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9">▪ 200 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan10">▪ 6 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan11">▪ 1 ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan12">▪ 1/4 ч.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text23"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan13">Макароны Radiatori</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14">Помидоры в соб.соку</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15">Тыква</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17">Перец чили</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan18">Чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan19">Кинза</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan20">Йогурт греческий</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan21">Оливковое масло</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan22">Яблочный уксус</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan23">Зира</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="110mm"
+         class="title"
+         style="font-size:16px"
+         id="text24">—</text><g
+         class="content"
+         id="g24" /><text
+         x="8mm"
+         y="118mm"
+         class="preparing__content"
+         id="text51"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan24">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan25">Духовку разогреваем до 180°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan26">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan27">Тыкву 200г чистим, нарезам на кубики, лук</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan28">2 головки чистим, режем дольками, поливаем 1-2</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29">ст.л масла, выкладываем на противень, посыпаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan30">1/4 ч.л. зиры, солим, перчим, запекаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31">до готовности.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan32">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan33">Макароны 200г отвариваем в подсоленой воде на 1</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan34">минуту меньше, чем указано на упаковке.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan35">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan36">Чеснок чистим и мелко рубим, поджариваем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan37">на нескольких ложках оливкового масла.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan38">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan39">Весь или нарезаем тонкими колечками и отправляем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan40">к чесноку. Добавляем помидоры, солим,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan41">перемешиваем и прогреваем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan42">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan43">Запеченую тыкву выкладываем в блендер, вливаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan44">оставшееся масло, яблочный уксус 1ч.л</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan45">и измельчаем в пюре.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan46">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan47">Пюре в сковороду с помидорами и чили, все</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan48">перемешиваем, добавляем макароны, снова</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan49">перемешиваем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan50">8.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan51">Подаём с мелкопорубленной кинзой и йогуртом.</tspan></text></g><g
+       id="g33"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-5" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-3" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-5">Бефстроганов</text><g
+         class="content"
+         id="g17"><text
+           x="16mm"
+           y="32mm"
+           id="text9"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-6">▪ 500 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-2">▪ 2 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-9">▪ ¼ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-1">▪ ¼ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-2">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-7">▪ 120 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-0">▪ 150 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-9">▪ 1 ст.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text17"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan10-3">Говядина</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-6">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-0">Душистый перец</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-6">Перец чили красный</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-2">Томатная паста</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-6">Сметана</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-1">Мясной бульон</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-8">Мука</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="90mm"
+         class="title"
+         id="text18">—</text><g
+         class="content"
+         id="g18" /><text
+         x="8mm"
+         y="98mm"
+         class="preparing__content"
+         id="text33"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan18-7">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-9">Говядину (поясничную или заднюю часть) нарезаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-2">поперёк волокон на широкие ломтики толщиной 2см,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan21-0">отбиваем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan22-2">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan23-3">Нарезаем брусочками длиной 4см. Солим, перчим</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-7">и обжариваем на растительном масле до золотистой</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan25-5">корочки.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan26-9">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan27-2">Лук нарезаем полукольцами, добавляем к мясу,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan28-2">обжариваем до золотистого цвета.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan29-8">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan30-9">Добавляем муку, томатную пасту, вливаем сметану,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31-7">бульон или горячую воду.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan32-3">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan33-6">Доводим до кипения, тушим до готовности.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Булгур с сердечками и овощами, Венгерский гуляш"
+     style="display:none"><g
+       id="g51-9"
+       transform="translate(0.5,0.5)"
+       style="display:inline"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-3" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-1" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-9">Булгур с сердечками и овощами</text><g
+         class="content"
+         id="g27"><text
+           x="16mm"
+           y="32mm"
+           id="text14"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-4">▪ 500 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-7">▪ 1 головка</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-8">▪ 150 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-4">▪ 2 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-5">▪ 100 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-0">▪ 4 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-3">▪ 2 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-6">▪ по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan10-1">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan11-0">▪ 1 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan12-6">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan13-3">▪ 150 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan14-20">▪ ½ головка</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text27"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan15-61">Куриные сердечки</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-5">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-5">Шампиньоны</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan18-4">Перец болгарский красный</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan19-7">Фасоль стручковая</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan20-6">Огурцы мар.</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan21-5">Помидоры</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan22-6">Зира</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan23-9">Сметана</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan24-3">Горчица</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan25-7">Соевый соус</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan26-4">Булгур</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan27-5">Чеснок</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="124mm"
+         class="title"
+         style="font-size:16px"
+         id="text28">—</text><g
+         class="content"
+         id="g28" /><text
+         x="8mm"
+         y="132mm"
+         class="preparing__content"
+         id="text51-2"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan28-5">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan29-4">Нарезаем 1 луковицу полукольцами, обжариваем.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan30-7">В это время готовим булгур (крупу в кипящую</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31-4">соленую воду 1/2, 10-15 мин на сл.огне).</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan32-4">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan33-3">Добавляем 500г куриных сердечек, жарим 15 мин.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan34-0">Добавляем шампиньоны 150г, жарим 10 мин. Солим,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan35-7">перчим, добавляем зиру.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan36-8">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan37-6">Добавляем мелко порезанный болгарский перец 2 шт.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan38-8">и обжариеваем до мягкости.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan39-8">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan40-4">Добавляем 100г фасоли и жарим 15 минут. Затем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan41-3">огурчики 4 шт, жарим 10 мин. Добавляем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan42-1">2 помидора, обжариваем 10 мин.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan43-4">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan44-9">Добавляем горчицу 1 ст.л., сметану 2 ст.л.,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan45-2">соевый соус 2 ст.л, тушим на слабом огне около</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan46-0">10 мин.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan47-6">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan48-8">Выкладываем содержимое сковороды к булгуру,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan49-9">перемешиваем, тушим ещё 7 минут. В конце</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan50-2">добавляем мелко порезанный чеснок, держим ещё</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan51-6">5 минут.</tspan></text></g><g
+       id="g39"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-9" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-5" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-0">Венгерский гуляш</text><g
+         class="content"
+         id="g17-4"><text
+           x="16mm"
+           y="32mm"
+           id="text9-8"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-7">▪ 2 головки</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-1">▪ 800 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-7">▪ 10 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-2">▪ 2 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-7">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-2">▪ 700 мл</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-2">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-61">▪ 2 ст.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text17-0"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan10-6">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-1">Говядина</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-5">Картофель</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-9">Лавровый лист</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-4">Паприка</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-9">Вода</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-0">Мука</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-9">Масло растительное</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="90mm"
+         class="title"
+         id="text18-1">—</text><g
+         class="content"
+         id="g18-7" /><text
+         x="8mm"
+         y="98mm"
+         class="preparing__content"
+         id="text39"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan18-71">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-1">Говядину 800 г моем, высушиваем, освобождаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-5">от пленок, режем небольшими кусочками.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-9">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-7">Жарим говядину на растительном масле до румяного</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-7">цвета.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan24-6">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan25-73">2 головки лука очищаем, режем небольшими кубиками</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan26-6">и жарим в той же сковороде до золотистого цвета.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-56">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-3">Складываем мясо и лук в кастрюлю, добавляем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29-9">2 ст.л паприки, лавровый лист и 2 ст.л муки.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan30-4">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan31-8">Вливаем 200 мл воды и доводим до кипения. Делаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan32-1">огонь на минимум и тушим около 1 часа под</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan33-2">крышкой.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan34-9">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan35-3">10 шт картофеля очищаем и нарезаем крупными</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan36-9">дольками. Добавляем его к мясу, вливаем 500</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan37-0">мл воды.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan38-88">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan39-5">Солим и тушим около 40 мин.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Винегрет, Индейка в сметане в духовке"
+     style="display:none"><g
+       id="g27-6"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-38" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-56" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-1">Винегрет</text><g
+         class="content"
+         id="g17-1"><text
+           x="16mm"
+           y="32mm"
+           id="text9-5"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-9">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-8">▪ 3 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-4">▪ 3 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-8">▪ 5 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-1">▪ ½ банки</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-03">▪ 250 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-04">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-4">▪ 20 мл</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text17-4"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan10-4">Свекла</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-7">Картофель</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-63">Морковь</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-1">Огурцы мар.</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-7">Зеленый горошек</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-5">Капуста квашенная</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-9">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-6">Растительное масло нерафинированное</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="90mm"
+         class="title"
+         id="text18-2">—</text><g
+         class="content"
+         id="g18-1" /><text
+         x="8mm"
+         y="98mm"
+         class="preparing__content"
+         id="text27-7"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan18-8">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-5">Отвариваем или печём свёклу, отвариваем картофель</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-7">и морковь.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-4">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-1">Мелко режем все овощи кубиком. (Для Вани</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-8">не добавляем лук).</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan24-5">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan25-9">Свеклу отдельно смешиваем с маслом.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan26-7">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan27-53">Заправляем солью, перцем, масло.</tspan></text></g><g
+       id="g42"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-31" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-8" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-96">Индейка в сметане в духовке</text><g
+         class="content"
+         id="g21"><text
+           x="16mm"
+           y="32mm"
+           id="text11"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-43">▪ 300 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-3">▪ 1 головка</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-3">▪ 200 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-86">▪ 1 ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-0">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-4">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-8">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-8">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan10-8">▪ 5 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan11-9">▪ 2 ст.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text21"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan12-7">Филе индейки</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-7">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-6">Сметана</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-4">Горчица</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-3">Соль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-0">Перец молотый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan18-3">Паприка</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan19-0">Сухой чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan20-9">Укроп</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan21-2">Масло растительное</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="104mm"
+         class="title"
+         style="font-size:16px"
+         id="text22">—</text><g
+         class="content"
+         id="g22" /><text
+         x="8mm"
+         y="112mm"
+         class="preparing__content"
+         id="text42"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan22-5">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan23-4">Разогреваем духовку до 180°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan24-0">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan25-59">Моем и очищаем луковицу, моем и просушиваем 300</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan26-46">г филе.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-9">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-22">Луковицу нарезаем полукольцами. Филе нарезаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29-47">средними кусочками.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan30-75">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan31-48">Пассируем лук на растительном масле, добавляем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan32-12">индейку и готовим 7-8 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan33-8">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan34-93">В конце приготовления добавляем соль, перец,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan35-6">паприку и сухой чеснок.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan36-80">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan37-2">Перекладываем индейку в форму, добавляем 200г</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan38-1">сметаны и 1ч.л. горчицы.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan39-0">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan40-5">Запекаем при 180° 25-30 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan41-1">8.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan42-10">Готовое блюдо посыпаем укропом и подаём.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Карри с нутом на кокосовом молоке, Котлеты из мяса"
+     style="display:none"><g
+       id="g36"
+       transform="translate(0.5,0.5)"
+       style="display:inline"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-0" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-6" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-4">Карри с нутом на кокосовом молоке</text><g
+         class="content"
+         id="g23-6"><text
+           x="16mm"
+           y="32mm"
+           id="text12-2"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-5">▪ 200 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-86">▪ 200 мл</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-2">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-84">▪ 3 зубчик</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-72">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-40">▪ 1 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-6">▪ ½ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-2">▪ ½ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan10-9">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan11-90">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan12-8">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text23-1"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan13-31">Нут вареный</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-1">Кокосовое немолоко</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-0">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-34">Чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-03">Оливковое масло</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan18-9">Томатная паста</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan19-19">Карри</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan20-69">Куркума</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan21-3">Соль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan22-3">Рис</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan23-80">Перец чили красный</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="110mm"
+         class="title"
+         style="font-size:16px"
+         id="text24-5">—</text><g
+         class="content"
+         id="g24-6" /><text
+         x="8mm"
+         y="118mm"
+         class="preparing__content"
+         id="text36"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan24-64">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan25-0">Лук и чеснок мелко режем и обжариваем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan26-0">на оливковом масле.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-4">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-6">Добавляем карри, куркуму и томатную пасту.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29-2">Обжариваем минуту.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan30-6">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan31-75">Добавляем острый перец и соль, перемешиваем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan32-6">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan33-9">Добавляем в сковороду варенный нут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan34-8">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan35-72">Вливаем Немолоко, тушим под крышкой на небольшом</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan36-82">огне 25 минут.</tspan></text></g><g
+       id="g30"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-02" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-7" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-6">Котлеты из мяса</text><g
+         class="content"
+         id="g13"><text
+           x="16mm"
+           y="32mm"
+           id="text7"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-1">▪ 1 кг</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-32">▪ 200 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-1">▪ 250 мл</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-5">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-9">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-9">▪ 50 г</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text13"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan8-1">Фарш</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-49">Белый хлеб</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-10">Молоко</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-75">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-87">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-0">Сливочное масло</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="77mm"
+         class="title"
+         id="text14-4">—</text><g
+         class="content"
+         id="g14" /><text
+         x="8mm"
+         y="85mm"
+         class="preparing__content"
+         id="text30"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan14-8">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan15-04">Замачиваем хлеб в молоке.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan16-2">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-96">Готовим фарш из свинины и говядины (примерно</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan18-1">по половине), также измельчаем лук и отжатый</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan19-04">хлеб.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan20-22">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-20">Добавляем соль, перец, яйцо и сливочное масло.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan22-55">Хорошо вымешиваем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan23-2">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan24-9">Формируем котлеты, смачивая руки холодной водой.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan25-02">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan26-8">Обжариваем с двух сторон на растительном масле.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-3">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-8">Перекладываем котлеты в форму, добавляем немного</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29-0">воды, закрываем крышкой и ставим на 5 минут</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan30-40">в микроволновку или в разогретую духовку.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Кукурузная каша в духовке, Куриные наггетсы"
+     style="display:none"><g
+       id="g31"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-96" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-2" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-54">Кукурузная каша в духовке</text><g
+         class="content"
+         id="g15"><text
+           x="16mm"
+           y="32mm"
+           id="text8"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-49">▪ 1 стакан</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-9">▪ ½ стакан</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-36">▪ ½ стакан</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-0">▪ 60 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-50">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-29">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-4">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text15"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan9-3">Кукурузная крупа</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-5">Вода</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-17">Молоко</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-4">Сливочное масло</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-314">Соль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-69">Сахар</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-42">Ваниль</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="84mm"
+         class="title"
+         style="font-size:16px"
+         id="text16">—</text><g
+         class="content"
+         id="g16" /><text
+         x="8mm"
+         y="92mm"
+         class="preparing__content"
+         id="text31"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan16-26">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-4">Прогреваем духовку до 180°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan18-12">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-8">Промыть крупу до чистой воды.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan20-8">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-92">Выложить крупу в жаропрочную форму, добавить</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan22-8">щепотку соли, сахар, ваниль.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan23-88">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan24-68">Влить в форму половину стакана теплого молока</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan25-3">и половину стакана теплой воды.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan26-83">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan27-33">Закрыть форму фольгой и поставить в духовку.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan28-80">Через 25 минут убрать фольгу, снять пробу, если</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29-476">нужно, подержать ещё минут 5-7.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan30-8">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan31-9">К готовой каше добавить сливочное масло.</tspan></text></g><g
+       id="g21-8"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-7" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-9" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-03">Куриные наггетсы</text><g
+         class="content"
+         id="g13-3"><text
+           x="16mm"
+           y="32mm"
+           id="text7-3"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-73">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-26">▪ 3 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-5">▪ ½ стакана</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-26">▪ 1 стакан</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-58">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-79">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text13-6"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan8-041">Куриное филе</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-0">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-48">Мука</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-70">Сухари панировочные</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-86">Соль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-2">Перец молотый</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="77mm"
+         class="title"
+         id="text14-47">—</text><g
+         class="content"
+         id="g14-9" /><text
+         x="8mm"
+         y="85mm"
+         class="preparing__content"
+         id="text21-3"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan14-9">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan15-2">Режем филе не кусочки, солим и перчим.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan16-8">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-3">Готовим три миски: с мукой, сухарями, яйцами.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan18-0">Обваливаем кусочки курицы в муке, яйце и затем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan19-17">в сухарях.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan20-89">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-1">Жарим наггетсы на растительном масле.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Куриные ножки в духовке, Макароны по-флотски"
+     style="display:none"><g
+       id="g27-2"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-57" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-4" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-99">Куриные ножки в духовке</text><g
+         class="content"
+         id="g13-4"><text
+           x="16mm"
+           y="32mm"
+           id="text7-5"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-93">▪ 8 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-5">▪ 3 зубчик</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-70">▪ 4 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-81">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-99">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-78">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text13-2"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan8-5">Куриные ножки</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-34">Чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-90">Масло растительное</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-2">Прованские травы</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-01">Перец молотый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-96">Соль</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="77mm"
+         class="title"
+         style="font-size:16px"
+         id="text14-2">—</text><g
+         class="content"
+         id="g14-1" /><text
+         x="8mm"
+         y="85mm"
+         class="preparing__content"
+         id="text27-2"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan14-0">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan15-7">Чистим чеснок, пропускаем через давилку.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan16-31">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-1">Ножки перчим, солим, натираем чесночной массой.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan18-90">Ставим в холодильник на полчаса.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan19-56">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan20-77">Разогреваем духовку до 190°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-40">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-64">Выкладываем на фольгу, поливаем масло.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-74">Заворачиваем фольгу, чтобы не вытекал сок. Ставим</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-8">мясо на 35 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan25-58">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan26-2">Открываем фольгу, держим ещё 10-15 минут</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan27-6">до образования румяной корочки.</tspan></text></g><g
+       id="g24-4"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-6" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-28" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-960">Макароны по-флотски</text><g
+         class="content"
+         id="g9"><text
+           x="16mm"
+           y="32mm"
+           id="text5"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-70">▪ 250 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-10">▪ 300 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-13">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-7">▪ 50 г</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text9-7"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan6-26">Говядина</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan7-45">Макароны</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan8-20">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-29">Сливочное масло</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="64mm"
+         class="title"
+         id="text10">—</text><g
+         class="content"
+         id="g10" /><text
+         x="8mm"
+         y="72mm"
+         class="preparing__content"
+         id="text24-0"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan10-99">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan11-4">Говядину отвариваем, перекручиваем в фарш.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan12-51">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan13-03">Поджариваем лук на смеси сливочного</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan14-78">и растительного масло на среднем огне. Добавляем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan15-8">фарш, разминаем лопаткой, обжариваем до испарения</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan16-6">жидкости.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan17-04">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan18-6">Добавляем соль, молотый перец и лавровый лист.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan19-76">Перемешиваем, даём настояться 10 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan20-0">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-97">Отвариваем до готовности макароны (лучше брать</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan22-59">ребристые или полые). Откидываем на дуршлаг</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-78">и соединяем с фаршем. Прогреваем на сковороде</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-53">1 минуту и подаём.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Манник ночной, Мясной рулет с омлетом"
+     style="display:none"><g
+       id="g31-7"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-93" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-78" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-7">Манник ночной</text><g
+         class="content"
+         id="g17-41"><text
+           x="16mm"
+           y="32mm"
+           id="text9-9"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-0">▪ 1 стакан</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-98">▪ 1 стакан</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-85">▪ 3 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-843">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-71">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-3">▪ ½ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-80">▪ 1 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-97">▪ 100 г</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text17-9"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan10-93">Манная крупа</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-24">Кефир 3.2%</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-3">Сметана</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-71">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-22">Ваниль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-02">Сода</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-17">Яблочный уксус</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-51">Сахар</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="90mm"
+         class="title"
+         id="text18-7">—</text><g
+         class="content"
+         id="g18-4" /><text
+         x="8mm"
+         y="98mm"
+         class="preparing__content"
+         id="text31-1"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan18-711">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-170">Манную крупу заливаем кефиром, можно добавить</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-4">сметану. Хорошо перемешиваем и оставляем на ночь</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan21-08">(12 часов).</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan22-51">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan23-6">Разогреть духовку до 180°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan24-62">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan25-1">В разбухшую манку на следующий день добавляем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan26-96">1 яйцо, щепотку соли, ванилин, 1/2 чайной ложки</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan27-48">соды, гашеной 1 столовой ложкой яблочного уксуса.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan28-0">Добавить 100г сахара.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan29-81">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan30-0">Выкладываем в форму и выпекаем в духовке около</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31-2">40-50 минут.</tspan></text></g><g
+       id="g44"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-56" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-46" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-3">Мясной рулет с омлетом</text><g
+         class="content"
+         id="g17-7"><text
+           x="16mm"
+           y="32mm"
+           id="text9-97"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-491">▪ 500 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-70">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-6">▪ 60 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-08">▪ 100 мл</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-53">▪ 4 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-94">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-15">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-41">▪ 10 г</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text17-5"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan10-54">Фарш</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-98">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-38">Батон</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-5">Молоко</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-222">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-70">Сметана</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-346">Зелень</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-36">Сливочное масло</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="90mm"
+         class="title"
+         style="font-size:16px"
+         id="text18-3">—</text><g
+         class="content"
+         id="g18-3" /><text
+         x="8mm"
+         y="98mm"
+         class="preparing__content"
+         id="text44"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan18-44">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-3">Разогреваем духовку до 180°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan20-97">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-25">Яйца, сметану, соль, перец и зелень взбиваем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan22-89">в блендере.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan23-0">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan24-2">Противень смазываем сливочным маслом. Выливаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan25-4">омлет. Выпекаем в духовке 15-20 минут. Готовый</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan26-76">омлет остужаем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-57">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-1">Батон замачиваем в молоке.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan29-3">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan30-3">Лук измельчаем в блендере. Добавляем к луку фарш,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31-3">размоченный в молоке хлеб, соль и специи.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan32-8">Измельчаем до однородного состояния в блендере.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan33-5">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan34-1">Стол сбрызгиваем водой, кладем пищевую пленку.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan35-0">На неё выкладываем фарш ровным слоем в виде</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan36-87">прямоугольника. На фарш выкладываем омлет и с</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan37-63">помощью пленки заворачиваем рулет.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan38-5">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan39-08">Перекладываем рулет на смазанный растительным</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan40-0">маслом противень. Делаем проколы в нескольких</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan41-4">местах.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan42-11">8.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan43-3">Запекаем рулет в духовке при 180° в течении 45-50</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan44-5">минут.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Мясо по-французски, Оладьи из говяжьей печени"
+     style="display:none"><g
+       id="g31-4"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-1" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-50" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-8">Мясо по-французски</text><g
+         class="content"
+         id="g11"><text
+           x="16mm"
+           y="32mm"
+           id="text6"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-3">▪ 500 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-56">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-59">▪ 6 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-9">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-07">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text11-6"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan7-37">Свинина</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan8-61">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-5">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-0">Кефир 3.2%</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-65">Сыр</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="70mm"
+         class="title"
+         id="text12-0">—</text><g
+         class="content"
+         id="g12" /><text
+         x="8mm"
+         y="78mm"
+         class="preparing__content"
+         id="text31-8"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan12-1">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan13-22">Отвариваем вкрутую яйца.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan14-691">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan15-042">Нарезаем свинину мелким кубиком (для этого</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan16-7">её удобно немного заморозить).</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan17-40">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan18-32">Разогреть духовку до 200°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan19-80">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan20-3">Режем яйцо мелким кубиком.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-7">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-0">Смешиваем яйцо и свинину, солим, перчим,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-03">заправляем майонезом (не жалеть майонез),</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-4">складываем в форму. Закрываем форму фольгой</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan25-92">и ставим в духовку примерно на полчаса.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan26-74">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan27-25">Трём на терке сыр.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan28-24">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan29-43">Когда свинина приготовиться, и выкипит лишняя</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan30-86">жидкость, посыпаем натертым на терке сыром</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31-0">и оставляем в духовке ещё на 5 минут.</tspan></text></g><g
+       id="g23-2"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-318" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-34" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-2">Оладьи из говяжьей печени</text><g
+         class="content"
+         id="g15-2"><text
+           x="16mm"
+           y="32mm"
+           id="text8-4"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-51">▪ 600 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-75">▪ 2 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-71">▪ 100 мл</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-6">▪ 100 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-98">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-1">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-33">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text15-3"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan9-7">Говяжья печень</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-98">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-67">Молоко</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-04">Мука</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-8">Розмарин</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-48">Майоран</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-1">Базилик</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="84mm"
+         class="title"
+         style="font-size:16px"
+         id="text16-6">—</text><g
+         class="content"
+         id="g16-8" /><text
+         x="8mm"
+         y="92mm"
+         class="preparing__content"
+         id="text23-5"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan16-21">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-99">Печень очищаем от кожицы и пленок, режем на </tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan18-60">крупные кусочки. Перемалываем в блендере.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan19-6">Добавляем к ней муку, молоко, яйца, соль, перец,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-49">специи.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-90">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-893">Выпекаем на растительном масле, выкладывая</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-1">оладушки ложкой.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="Плов из курицы, Свинина с тыквой в духовке"
+     style="display:none"><g
+       id="g47"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-67" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-73" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-71">Плов из курицы</text><g
+         class="content"
+         id="g15-22"><text
+           x="16mm"
+           y="32mm"
+           id="text8-1"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-50">▪ 400 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-90">▪ 400 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-40">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-13">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-74">▪ 3 зубчика</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-11">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-30">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text15-32"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan9-1">Филе курицы</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-7">Рис</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-5">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-65">Морковь</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-4">Чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-221">Зира</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-72">Барбарис</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="84mm"
+         class="title"
+         id="text16-4">—</text><g
+         class="content"
+         id="g16-1" /><text
+         x="8mm"
+         y="92mm"
+         class="preparing__content"
+         id="text47"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan16-65">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-7">Нарезаем филе на кусочки, обжариваем на сковороде</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan18-85">на среднем огне. Перекладываем филе в кастрюлю</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan19-92">с толстым дном.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan20-73">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-6">Нарезаем лук полукольцами, морковь - соломкой.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan22-4">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan23-79">Обжариваем лук до золотистого цвета, выкладываем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-72">на курицу, не перемешивая.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan25-2">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan26-1">Обжариваем морковь, выкладываем на лук.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-63">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-02">Заливаем поджарку (зирвак) кипятком так, чтобы</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan29-1">вода слегка покрывала слой моркови, тушим</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan30-5">до готовности мяса на слабом огне. Тушим примерно</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan31-6">15 минут. В конце тушения добавляем зиру, молотый</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan32-5">перец, соль.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan33-0">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan34-03">Рис промываем, осторожно выкладываем на зирвак,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan35-4">добавляем барбарис, слегка утрамбовываем рис</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan36-6">шумовкой. Аккуратно заливаем кипятком так, чтобы</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan37-60">вода покрывала рис примерно на 1.5-2 см.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan38-2">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan39-58">Варим плов без крышки на среднем огне, пока вода</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan40-9">не впитается в рис.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan41-5">8.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan42-0">Когда вода впиталась, делаем маленький огонь</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan43-6">и закладываем зубчики чеснока.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan44-0">9.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan45-8">Закрываем плотной крышкой, делаем самый слабый</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan46-3">огонь и выдерживаем под крышкой 15 минут.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan47-7">Выключаем огонь и не снимаем крышку ещё 10 минут.</tspan></text></g><g
+       id="g38"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-05" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-85" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-50">Свинина с тыквой в духовке</text><g
+         class="content"
+         id="g19"><text
+           x="16mm"
+           y="32mm"
+           id="text10-7"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-38">▪ 560 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-23">▪ 650 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-0">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-77">▪ 2 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-76">▪ ½ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-91">▪ ½ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-19">▪ ½ ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-08">▪ 1 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan10-988">▪ ½ ч.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text19"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan11-03">Свинина шейка</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-70">Тыква</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-69">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-21">Майонез</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-77">Кумин</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-97">Кардамон молотый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-62">Душистый перец</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan18-715">Оливковое масло</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan19-88">Паприка</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="97mm"
+         class="title"
+         style="font-size:16px"
+         id="text20">—</text><g
+         class="content"
+         id="g20" /><text
+         x="8mm"
+         y="105mm"
+         class="preparing__content"
+         id="text38"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan20-45">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan21-65">Нарезаем мясо небольшими кусочками, нарезаем лук</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan22-68">полукольцами, добавляем майонез, кумин, кардамон,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-48">душистый перец, паприку, хорошо всё перемешиваем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-83">и убираем в холодильник на час.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan25-8">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan26-75">Очищаем тыкву и нарезаем дольками.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-24">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-50">Разогреваем духовку до 180°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan29-5">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan30-73">В мясо добавляем соль.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan31-27">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan32-2">Застилаем противень фольгой, укладываем мясо</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan33-1">со специями, сверху укладываем тыкву, сбрызгиваем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan34-3">тыкву маслом.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan35-49">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan36-4">Запекаем в духовке на 30 минут. В конце можно</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan37-1">включить гриль, чтобы получить поджаристые</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan38-9">корочки.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="Сердечки с солеными огурцами, Сырники с Пикабу"
+     style="display:none"><g
+       id="g30-1"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-2" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-21" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-62">Сердечки с солеными огурцами</text><g
+         class="content"
+         id="g9-0"><text
+           x="16mm"
+           y="32mm"
+           id="text5-2"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-2">▪ 1 кг</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-97">▪ 1 - 2 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-43">▪ 1 крупная</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-56">▪  undefined</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text9-1"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan6-4">Куриные сердечки</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan7-031">Огурцы соленые</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan8-27">Морковь</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-79" /></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="64mm"
+         class="title"
+         style="font-size:16px"
+         id="text10-8">—</text><g
+         class="content"
+         id="g10-1" /><text
+         x="8mm"
+         y="72mm"
+         class="preparing__content"
+         id="text30-0"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan10-76">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan11-01">Сердечки зачищаем от пленок и трубок. Складываем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan12-02">в посуду с толстым дном. Вливаем 2-3 стакана</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan13-51">воды, доводим до кипения, снимаем пену и варим</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan14-97">до полного выкипания жидкости.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan15-13">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan16-12">Режем лук полукольцами, морковь и огурцы</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan17-06">- соломкой.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan18-87">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-4">Когда вода выкипит, вливаем растительное масло,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-92">добавляем лук и жарим, перемешивая, пару минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-44">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-591">Добавляем морковь и жарим 2-3 минуты.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan23-28">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan24-96">Добавляем огурцы, слегка обжариваем. Вливаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan25-06">стакан воды (можно рассола), добавляем молотый</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan26-40">чёрный перец, перец горошком и лавровый лист.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan27-94">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan28-54">Тушим ещё 25-30 минут. В конце варки солим.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan29-6">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan30-63">Блюдо можно готовить в горшочках.</tspan></text></g><g
+       id="g17-2"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-13" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-0" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-991">Сырники с Пикабу</text><g
+         class="content"
+         id="g9-3"><text
+           x="16mm"
+           y="32mm"
+           id="text5-4"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-58">▪ 1 кг</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-57">▪ 100 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-33">▪ 100 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-89">▪ 3 шт</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text9-55"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan6-3">Творог 9%</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan7-8">Сахар</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan8-60">Мука</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-33">Желтки</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="64mm"
+         class="title"
+         id="text10-6">—</text><g
+         class="content"
+         id="g10-18" /><text
+         x="8mm"
+         y="72mm"
+         class="preparing__content"
+         id="text17-7"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan10-05">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan11-11">Смешиваем все ингредиенты.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan12-03">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan13-00">Катаем шарики по 70г и сплющиваем их.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan14-45">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan15-424">Поджариваем до румяной корочки.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan16-99">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-94">Запекаем в духовке 7-10 минут при 180°.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="Творожная запеканка, Тушеная капуста"
+     style="display:none"><g
+       id="g27-63"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-933" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-461" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-56">Творожная запеканка</text><g
+         class="content"
+         id="g17-17"><text
+           x="16mm"
+           y="32mm"
+           id="text9-2"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-29">▪ 500 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-28">▪ 3 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-12">▪ 3 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-47">▪ 3 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-8">▪ 3 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-6">▪ 3 ст.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-37">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-72">▪  по вкусу</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text17-3"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan10-72">Творог 9%</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-53">Яйцо</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-76">Сливочное масло</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-81">Сахар</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-3">Сметана</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-64">Манная крупа</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-03">Ваниль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-58">Изюм</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="90mm"
+         class="title"
+         id="text18-5">—</text><g
+         class="content"
+         id="g18-0" /><text
+         x="8mm"
+         y="98mm"
+         class="preparing__content"
+         id="text27-9"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan18-98">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan19-02">Растапливаем сливочное масло, добавляем сахар,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-490">сметану, манку. Хорошо смешиваем. Добавляем яйца,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan21-12">взбиваем. Добавляем творог и ванильный экстракт.</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan22-00">Взбиваем всё миксером 10-15 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan23-63">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan24-90">Разогреваем духовку до 160°.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan25-83">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan26-87">Смазываем форму маслом, выливаем массу и выпекаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan27-31">около 60-70 минут.</tspan></text></g><g
+       id="g20-5"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-03" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-18" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-01">Тушёная капуста</text><g
+         class="content"
+         id="g9-7"><text
+           x="16mm"
+           y="32mm"
+           id="text5-9"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-10">▪ 2.5 кг</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-35">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-94">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-846">▪ 1 пучок</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text9-92"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan6-90">Белокочаная капуста</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan7-30">Морковь</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan8-337">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan9-94">Петрушка</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="64mm"
+         class="title"
+         id="text10-9">—</text><g
+         class="content"
+         id="g10-9" /><text
+         x="8mm"
+         y="72mm"
+         class="preparing__content"
+         id="text20-1"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan10-94">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan11-20">Лук и морковь мелко нарезаем, капусту шинкуем.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan12-659">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan13-56">На растительном масле обжариваем лук и морковь,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan14-11">добавляем капусту, накрываем крышкой и тушим</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan15-43">на медленном огне 20 минут, периодически</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan16-72">помешивая.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan17-73">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan18-39">Добавить немного воды, соль, перец, лавровый</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan19-2">лист, хорошо перемешать и тушить ещё 15-20 минут,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan20-44">периодически помешивая.</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="Фунчоза с курицей и овощами, Эскимо из курицы"
+     style="display:inline"><g
+       id="g47-3"
+       transform="translate(0.5,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-8" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-32" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         style="font-size:16px"
+         id="text2-95">Фунчоза с курицей и овощами</text><g
+         class="content"
+         id="g25"><text
+           x="16mm"
+           y="32mm"
+           id="text13-4"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-39">▪ 70 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-4">▪ 250 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-95">▪ 80 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-57">▪ ½ шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-39">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-07">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-272">▪ 1 шт</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan9-90">▪ 1 зубчик</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan10-50">▪ 50 мл</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan11-41">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan12-79">▪  по вкусу</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan13-36">▪ 2 ст.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text25"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan14-212">Фунчоза</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-53">Куриное филе</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan16-91">Фасоль стручковая</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan17-88">Перец болгарский красный</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan18-70">Помидоры</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan19-52">Морковь</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan20-79">Лук репчатый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan21-19">Чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan22-63">Соевый соус</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan23-68">Соль</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan24-46">Перец молотый</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan25-6">Масло растительное</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="117mm"
+         class="title"
+         style="font-size:16px"
+         id="text26">—</text><g
+         class="content"
+         id="g26" /><text
+         x="8mm"
+         y="125mm"
+         class="preparing__content"
+         id="text47-7"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan26-27">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan27-41">Морковь, лук чистим и нарезаем произвольно.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan28-00">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan29-64">Болгарский перец чистим, моем, нарезаем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan30-43">небольшими кусочками.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan31-73">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan32-47">Помидор нарезаем средними кусочками.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan33-21">4.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan34-7">Чеснок чистим и нарезаем тонкими полосочками.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan35-9">5.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan36-5">На растительном масле жарим сперва куриное филе,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan37-68">откладываем. Затем лук, чеснок, морковь,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan38-95">болгарский перец, стручковую фасоль. Обжариваем</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan39-52">10 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan40-1">6.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan41-59">Убавляем огонь до минимум, накрываем крышкой</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan42-9">и готовим ещё 15 минут.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan43-1">7.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan44-6">Заливаем фунчозу кипятком, затем сливаем воду.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan45-21">8.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan46-05">Выкладываем фунчозу к овощам, добавляем перец,</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan47-3">соевый соус и прогреваем 1-2 минуты.</tspan></text></g><g
+       id="g25-7"
+       transform="matrix(1.0000029,0,0,1,560.87167,0.5)"><rect
+         x="0mm"
+         y="0mm"
+         width="148mm"
+         height="210mm"
+         class="recipe__container"
+         id="rect1-68" /><rect
+         x="0mm"
+         y="8mm"
+         width="148mm"
+         height="12mm"
+         style="fill:none;stroke:#808080"
+         id="rect2-20" /><text
+         text-anchor="middle"
+         x="74mm"
+         y="16mm"
+         class="title"
+         id="text2-64">«Эскимо» из курицы</text><g
+         class="content"
+         id="g15-3"><text
+           x="16mm"
+           y="32mm"
+           id="text8-3"><tspan
+             x="16mm"
+             dy="0"
+             id="tspan2-69">▪ 700 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan3-0">▪ 150 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan4-48">▪ 150 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan5-51">▪ 200 г</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan6-29">▪ 1 ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan7-73">▪ 2 ч.л</tspan><tspan
+             x="16mm"
+             dy="1.6em"
+             id="tspan8-809">▪ 1 ч.л</tspan></text><text
+           x="50mm"
+           y="32mm"
+           id="text15-2"><tspan
+             x="50mm"
+             dy="0em"
+             id="tspan9-31">Филе курицы</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan10-87">Чернослив без косточек</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan11-416">Курага</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan12-385">Творожный сыр</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan13-50">Сухой чеснок</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan14-12">Приправа для курицы</tspan><tspan
+             x="50mm"
+             dy="1.6em"
+             id="tspan15-648">Соль</tspan></text></g><text
+         text-anchor="middle"
+         x="74mm"
+         y="84mm"
+         class="title"
+         id="text16-5">—</text><g
+         class="content"
+         id="g16-6" /><text
+         x="8mm"
+         y="92mm"
+         class="preparing__content"
+         id="text25-2"><tspan
+           x="8mm"
+           dy="0"
+           class="bold"
+           id="tspan16-52">1.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan17-69">Заливаем курагу (150г) и чернослив (150г)</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan18-13">кипятком.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan19-31">2.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan20-52">Филе курицы отбиваем, закрыв плёнкой.</tspan><tspan
+           x="8mm"
+           dy="1.5em"
+           class="bold"
+           id="tspan21-69">3.</tspan><tspan
+           x="16.32mm"
+           dy="0"
+           id="tspan22-44">Творожный сыр смешиваем с солью, чесноком</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan23-60">и приправой для курицы. Отбитое филе кладём</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan24-74">на кусок фольги, смазываем смесью с творожным</tspan><tspan
+           x="16mm"
+           dy="0.80000001em"
+           id="tspan25-37">сыром.</tspan></text></g></g></svg>

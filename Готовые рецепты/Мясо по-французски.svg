@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="">Мясо по-французски</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 500 г</tspan><tspan x="16mm" dy="1.6em">▪ 1 шт</tspan><tspan x="16mm" dy="1.6em">▪ 6 шт</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Свинина</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Яйцо</tspan><tspan x="50mm" dy="1.6em">Кефир 3.2%</tspan><tspan x="50mm" dy="1.6em">Сыр</tspan></text></g><text text-anchor="middle" x="74mm" y="70mm" class="title" style="">—</text><g class="content"/><text x="8mm" y="78mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Отвариваем вкрутую яйца.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Нарезаем свинину мелким кубиком (для этого</tspan><tspan x="16mm" dy="0.8em">её удобно немного заморозить).</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Разогреть духовку до 200°.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Режем яйцо мелким кубиком.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Смешиваем яйцо и свинину, солим, перчим,</tspan><tspan x="16mm" dy="0.8em">заправляем майонезом (не жалеть майонез),</tspan><tspan x="16mm" dy="0.8em">складываем в форму. Закрываем форму фольгой</tspan><tspan x="16mm" dy="0.8em">и ставим в духовку примерно на полчаса.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">Трём на терке сыр.</tspan><tspan x="8mm" dy="1.5em" class="bold">7.</tspan><tspan x="16.32mm" dy="0">Когда свинина приготовиться, и выкипит лишняя</tspan><tspan x="16mm" dy="0.8em">жидкость, посыпаем натертым на терке сыром</tspan><tspan x="16mm" dy="0.8em">и оставляем в духовке ещё на 5 минут.</tspan></text></g></svg>

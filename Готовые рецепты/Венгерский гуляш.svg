@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="">Венгерский гуляш</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 2 головки</tspan><tspan x="16mm" dy="1.6em">▪ 800 г</tspan><tspan x="16mm" dy="1.6em">▪ 10 шт</tspan><tspan x="16mm" dy="1.6em">▪ 2 шт</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 700 мл</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Говядина</tspan><tspan x="50mm" dy="1.6em">Картофель</tspan><tspan x="50mm" dy="1.6em">Лавровый лист</tspan><tspan x="50mm" dy="1.6em">Паприка</tspan><tspan x="50mm" dy="1.6em">Вода</tspan><tspan x="50mm" dy="1.6em">Мука</tspan><tspan x="50mm" dy="1.6em">Масло растительное</tspan></text></g><text text-anchor="middle" x="74mm" y="90mm" class="title" style="">—</text><g class="content"/><text x="8mm" y="98mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Говядину 800 г моем, высушиваем, освобождаем</tspan><tspan x="16mm" dy="0.8em">от пленок, режем небольшими кусочками.</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Жарим говядину на растительном масле до румяного</tspan><tspan x="16mm" dy="0.8em">цвета.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">2 головки лука очищаем, режем небольшими кубиками</tspan><tspan x="16mm" dy="0.8em">и жарим в той же сковороде до золотистого цвета.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Складываем мясо и лук в кастрюлю, добавляем</tspan><tspan x="16mm" dy="0.8em">2 ст.л паприки, лавровый лист и 2 ст.л муки.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Вливаем 200 мл воды и доводим до кипения. Делаем</tspan><tspan x="16mm" dy="0.8em">огонь на минимум и тушим около 1 часа под</tspan><tspan x="16mm" dy="0.8em">крышкой.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">10 шт картофеля очищаем и нарезаем крупными</tspan><tspan x="16mm" dy="0.8em">дольками. Добавляем его к мясу, вливаем 500</tspan><tspan x="16mm" dy="0.8em">мл воды.</tspan><tspan x="8mm" dy="1.5em" class="bold">7.</tspan><tspan x="16.32mm" dy="0">Солим и тушим около 40 мин.</tspan></text></g></svg>

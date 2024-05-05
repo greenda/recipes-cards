@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" width="148mm" height="210mm"><defs><style><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g><rect x="0mm" y="0mm" width="148mm" height="210mm" class="recipe__container"/><rect x="0mm" y="8mm" width="148mm" height="12mm" style="stroke: gray; fill: none"/><text text-anchor="middle" x="74mm" y="16mm" class="title" style="font-size: 16px;">Булгур с сердечками и овощами</text><g class="content"><text x="16mm" y="32mm"><tspan x="16mm" dy="0">▪ 500 г</tspan><tspan x="16mm" dy="1.6em">▪ 1 головка</tspan><tspan x="16mm" dy="1.6em">▪ 150 г</tspan><tspan x="16mm" dy="1.6em">▪ 2 шт</tspan><tspan x="16mm" dy="1.6em">▪ 100 г</tspan><tspan x="16mm" dy="1.6em">▪ 4 шт</tspan><tspan x="16mm" dy="1.6em">▪ 2 шт</tspan><tspan x="16mm" dy="1.6em">▪  по вкусу</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 1 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 2 ст.л</tspan><tspan x="16mm" dy="1.6em">▪ 150 г</tspan><tspan x="16mm" dy="1.6em">▪ ½ головка</tspan></text><text x="50mm" y="32mm"><tspan x="50mm" dy="0em">Куриные сердечки</tspan><tspan x="50mm" dy="1.6em">Лук репчатый</tspan><tspan x="50mm" dy="1.6em">Шампиньоны</tspan><tspan x="50mm" dy="1.6em">Перец болгарский красный</tspan><tspan x="50mm" dy="1.6em">Фасоль стручковая</tspan><tspan x="50mm" dy="1.6em">Огурцы мар.</tspan><tspan x="50mm" dy="1.6em">Помидоры</tspan><tspan x="50mm" dy="1.6em">Зира</tspan><tspan x="50mm" dy="1.6em">Сметана</tspan><tspan x="50mm" dy="1.6em">Горчица</tspan><tspan x="50mm" dy="1.6em">Соевый соус</tspan><tspan x="50mm" dy="1.6em">Булгур</tspan><tspan x="50mm" dy="1.6em">Чеснок</tspan></text></g><text text-anchor="middle" x="74mm" y="124mm" class="title" style="font-size: 16px;">—</text><g class="content"/><text x="8mm" y="132mm" class="preparing__content"><tspan x="8mm" dy="0" class="bold">1.</tspan><tspan x="16.32mm" dy="0">Нарезаем 1 луковицу полукольцами, обжариваем.</tspan><tspan x="16mm" dy="0.8em">В это время готовим булгур (крупу в кипящую</tspan><tspan x="16mm" dy="0.8em">соленую воду 1/2, 10-15 мин на сл.огне).</tspan><tspan x="8mm" dy="1.5em" class="bold">2.</tspan><tspan x="16.32mm" dy="0">Добавляем 500г куриных сердечек, жарим 15 мин.</tspan><tspan x="16mm" dy="0.8em">Добавляем шампиньоны 150г, жарим 10 мин. Солим,</tspan><tspan x="16mm" dy="0.8em">перчим, добавляем зиру.</tspan><tspan x="8mm" dy="1.5em" class="bold">3.</tspan><tspan x="16.32mm" dy="0">Добавляем мелко порезанный болгарский перец 2 шт.</tspan><tspan x="16mm" dy="0.8em">и обжариеваем до мягкости.</tspan><tspan x="8mm" dy="1.5em" class="bold">4.</tspan><tspan x="16.32mm" dy="0">Добавляем 100г фасоли и жарим 15 минут. Затем</tspan><tspan x="16mm" dy="0.8em">огурчики 4 шт, жарим 10 мин. Добавляем</tspan><tspan x="16mm" dy="0.8em">2 помидора, обжариваем 10 мин.</tspan><tspan x="8mm" dy="1.5em" class="bold">5.</tspan><tspan x="16.32mm" dy="0">Добавляем горчицу 1 ст.л., сметану 2 ст.л.,</tspan><tspan x="16mm" dy="0.8em">соевый соус 2 ст.л, тушим на слабом огне около</tspan><tspan x="16mm" dy="0.8em">10 мин.</tspan><tspan x="8mm" dy="1.5em" class="bold">6.</tspan><tspan x="16.32mm" dy="0">Выкладываем содержимое сковороды к булгуру,</tspan><tspan x="16mm" dy="0.8em">перемешиваем, тушим ещё 7 минут. В конце</tspan><tspan x="16mm" dy="0.8em">добавляем мелко порезанный чеснок, держим ещё</tspan><tspan x="16mm" dy="0.8em">5 минут.</tspan></text></g></svg>

@@ -264,7 +264,8 @@ const saveSvg = () => {
 
   // const { TodoistApi } = require('@doist/todoist-api-typescript')
   // const a = require(['./../node_modules/@doist/todoist-api-typescript/dist/index.js']);
-  // const getProjects = () => {  const api = new _doist_todoist_api_typescript__WEBPACK_IMPORTED_MODULE_5__.TodoistApi('b6d07921bc749d4f50040963cd1bc13a51fd33e2');
+  // const getProjects = () => {
+    // const api = new _doist_todoist_api_typescript__WEBPACK_IMPORTED_MODULE_5__.TodoistApi('b6d07921bc749d4f50040963cd1bc13a51fd33e2');
   // const cardsNumber = +document.querySelector('.cards__number1').value;
   // console.log('%c%s', 'background: cadetblue; padding: 8px;', cardsNumber);
   // const recipe = _recipes__WEBPACK_IMPORTED_MODULE_3__.RECIPES.find(({    id  }) => id === cardsNumber);

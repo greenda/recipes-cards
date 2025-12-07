@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   sodipodi:docname="Суп из тыквы и Чеснечка.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.72693603"
+     inkscape:cx="438.82816"
+     inkscape:cy="341.15794"
+     inkscape:window-width="1848"
+     inkscape:window-height="1016"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g55" /><defs
+     id="defs1"><style
+       id="style1"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-7"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-0"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-3"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-2"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-6"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-9"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style><style
+       id="style1-8"><![CDATA[.title {
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  stroke: #000000;
+}
+
+.content {
+  font-size: 16px;
+  font-family: 'FreeMono';
+  fill: #000000;
+}
+
+.preparing {
+  font-style: italic;
+  font-size: 24px;
+  font-family: 'FreeMono';
+  text-align: center;
+  fill: #000000;
+}
+
+.preparing__content {
+  font-family: 'FreeMono';
+  font-size: 16px;
+  fill: #000000;
+}
+
+.recipe__container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+]]></style></defs><g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"><g
+       id="g55"
+       transform="matrix(0.26458333,0,0,0.26458333,0.38742559,0.28414456)"><g
+         class="content"
+         id="g32" /><g
+         id="g34"
+         transform="translate(-0.96428571,-0.57393221)"><rect
+           x="0mm"
+           y="0mm"
+           width="148mm"
+           height="210mm"
+           class="recipe__container"
+           id="rect1" /><rect
+           x="0mm"
+           y="8mm"
+           width="148mm"
+           height="12mm"
+           style="fill:none;stroke:#808080"
+           id="rect2" /><text
+           text-anchor="middle"
+           x="74mm"
+           y="16mm"
+           class="title"
+           style="font-size:16px"
+           id="text2">Тыквенный суп с чечевицей</text><g
+           class="content"
+           id="g21"><text
+             x="16mm"
+             y="32mm"
+             id="text11"><tspan
+               x="16mm"
+               dy="0"
+               id="tspan2">▪ 1 / 2 шт</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan3">▪ 500 г</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan4">▪ 1 шт</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan5">▪ 1 стакан</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan6">▪ 1 шт</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan7">▪ 1 ч.л</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan8">▪ по вкусу</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan9">▪ 0.5 ч.л</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan10">▪ 1 л</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan11">▪ 50 мл</tspan></text><text
+             x="50mm"
+             y="32mm"
+             id="text21"><tspan
+               x="50mm"
+               dy="0em"
+               id="tspan12">Сельдерей</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan13">Тыква</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan14">Морковь</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan15">Чечевица</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan16">Лук репчатый</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan17">Паприка</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan18">Кумин</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan19">Карри</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan20">Куриный бульон</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan21">Сливки</tspan></text></g><text
+           text-anchor="middle"
+           x="74mm"
+           y="104mm"
+           class="title"
+           style="font-size:16px"
+           id="text22">—</text><g
+           class="content"
+           id="g22" /><text
+           x="8mm"
+           y="112mm"
+           class="preparing__content"
+           id="text34"><tspan
+             x="8mm"
+             dy="0"
+             class="bold"
+             id="tspan22">1.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan23">Пассеруем 1 головку лука, добавляем нарезанный</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan24">кубиками 1 морковь, 500г тыквы, 1/2 стебля</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan25">сельдерея, обжариваем 5 мин.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan26">2.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan27">Добавляем 1 стакан чечевицы, заливаем бульоном</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan28">и варим 20-25 минут до мягкости, накрыв крышкой.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan29">3.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan30">Добавляем 1 ч.л. паприки, кумин по вкусу, карри</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan31">1/2 ч.л.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan32">4.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan33">Делаем пюре, добавляем сливки. Подаём</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan34">с тыквенными семечками.</tspan></text></g><g
+         id="g43"
+         transform="translate(560.29556,-0.57393221)"><rect
+           x="0mm"
+           y="0mm"
+           width="148mm"
+           height="210mm"
+           class="recipe__container"
+           id="rect1-1" /><rect
+           x="0mm"
+           y="8mm"
+           width="148mm"
+           height="12mm"
+           style="fill:none;stroke:#808080"
+           id="rect2-2" /><text
+           text-anchor="middle"
+           x="74mm"
+           y="16mm"
+           class="title"
+           id="text2-9">Чеснечка</text><g
+           class="content"
+           id="g21-3"><text
+             x="16mm"
+             y="32mm"
+             id="text11-9"><tspan
+               x="16mm"
+               dy="0"
+               id="tspan2-0">▪ 1.5 л</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan3-8">▪ 3 шт</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan4-8">▪ 1 головка</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan5-5">▪ 9 зубчика</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan6-0">▪ 50 г</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan7-9">▪ по вкусу</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan8-6">▪ по вкусу</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan9-3">▪ 100 г</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan10-8">▪ 3 куска</tspan><tspan
+               x="16mm"
+               dy="1.6em"
+               id="tspan11-5">▪ 1 шт</tspan></text><text
+             x="50mm"
+             y="32mm"
+             id="text21-6"><tspan
+               x="50mm"
+               dy="0em"
+               id="tspan12-1">Куриный бульон</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan13-1">Картофель</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan14-5">Лук репчатый</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan15-9">Чеснок</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan16-8">Масло растительное</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan17-4">Соль</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan18-8">Перец молотый</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan19-1">Сыр</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan20-0">Хлеб ржаной</tspan><tspan
+               x="50mm"
+               dy="1.6em"
+               id="tspan21-3">Яйцо</tspan></text></g><text
+           text-anchor="middle"
+           x="74mm"
+           y="104mm"
+           class="title"
+           id="text22-0">—</text><g
+           class="content"
+           id="g22-4" /><text
+           x="8mm"
+           y="112mm"
+           class="preparing__content"
+           id="text43"><tspan
+             x="8mm"
+             dy="0"
+             class="bold"
+             id="tspan22-4">1.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan23-4">Режем кубиками 3 ломтика ржаного хлеба,</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan24-4">складываем в пакет, добавляем раст.масло,</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan25-7">закрываем, трясём. Выкладываем на противень,</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan26-6">печём при 180° 3-4 минут до хруста.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan27-3">2.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan28-1">Лук и 6 зубчиков нарезаем кубиками, обжариваем</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan29-7">на сливочном масле.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan30-5">3.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan31-9">Заливаем бульоном, доводим до кипения, добавляем</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan32-6">картофель, уменьшаем огонь и варим до готовности</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan33-2">картофеля.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan34-1">4.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan35">Яйцо хорошо разбалтываем вилкой. Когда картофель</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan36">уже готов, тонкой струйкой, помешивая суп,</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan37">вливаем в яйцо.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan38">5.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan39">3 зубчика чеснока раздавить, добавить в суп.</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan40">Посолить, добавить молотый перец. Прокипятить</tspan><tspan
+             x="16mm"
+             dy="0.80000001em"
+             id="tspan41">всё. Дать настояться.</tspan><tspan
+             x="8mm"
+             dy="1.5em"
+             class="bold"
+             id="tspan42">6.</tspan><tspan
+             x="16.32mm"
+             dy="0"
+             id="tspan43">Посыпать тёртым сыром и сухариками.</tspan></text></g></g></g></svg>

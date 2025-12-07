@@ -792,6 +792,7 @@
     "id": 10,
     "title": "Чеснечка",
     "type": "first-course",
+    "url": "https://www.edimdoma.ru/retsepty/148182-cheshskiy-sup-chesnechka",
     "idInCategory": 5,
     "ingredients": [
       {
@@ -868,6 +869,7 @@
   {
     "id": 11,
     "title": "Овощной суп с треской",
+    "url": "https://www.edimdoma.ru/retsepty/137708-ovoschnoy-sup-s-treskoy",
     "type": "first-course",
     "idInCategory": 6,
     "ingredients": [

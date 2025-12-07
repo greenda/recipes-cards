@@ -27,11 +27,15 @@ class Select extends HTMLElement {
   addOptions = options => {
     this.options = options;
     options.forEach(({ id, name }) => {
-      const option = document.createElement(_constants_app_constants__WEBPACK_IMPORTED_MODULE_0__[default].OPTION);
+      const option = document.createElement('option');
       option.value = id; option.innerHTML = name;
       this.selectElement.appendChild(option);
     });
-  }; updateOptions = options => { this.removeAllOptions(); this.sortOptions(options); this.addOptions(this.options); }; removeAllOptions = () => { while (this.selectElement.firstChild) { this.selectElement.removeChild(this.selectElement.firstChild); } }; 
+  };
+  
+  updateOptions = options => { this.removeAllOptions(); this.sortOptions(options); this.addOptions(this.options); };
+  
+  removeAllOptions = () => { while (this.selectElement.firstChild) { this.selectElement.removeChild(this.selectElement.firstChild); } }; 
 }
 
 customElements.define('select-with-options', Select);

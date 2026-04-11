@@ -1,11 +1,28 @@
+import componentTemplate from 'html-loader!./template.html';
+import * as css from './style.css';
+
 class SelectWithSearch extends HTMLElement {
   constructor () {
     super();
 
     this.isOpen = false;
     this.commonOptions = [];
+  }
+
+  static get observedAttributes() { return ['options', 'mix']; }
+
+  connectedCallback() {
+    console.log('%c' + 'connected', 'color: green');
+
+    if (!document.getElementById("select-with-search")) {
+      const text = String.raw`${componentTemplate}`;
+      if (!text) throw new Error('No template.');
+
+      document.querySelector('.page').insertAdjacentHTML('beforebegin', text);
+    }
 
     const template = document.getElementById("select-with-search");
+
     const templateContent = template.cloneNode(true).content;
 
     this.content = templateContent;
@@ -29,12 +46,6 @@ class SelectWithSearch extends HTMLElement {
     this.select = shadowRoot.querySelector('.select');
 
     document.querySelector('html').addEventListener('click', this.handleExternalClick);
-  }
-
-  static get observedAttributes() { return ['options', 'mix']; }
-
-  connectedCallback() {
-    console.log('%c' + 'connected', 'color: green');
   }
 
   attributeChangedCallback(name, oldValue, newValue) {

@@ -1,6 +1,8 @@
 // TODO разобраться, как сделать адрес от app
 class Select extends HTMLElement {
   init = options => {
+    console.log('%c' + 'init', 'color: #3fcbff');
+
     this.sortOptions(options);
 
     // this.selectElement = document.createElement(
@@ -37,6 +39,17 @@ class Select extends HTMLElement {
   
   removeAllOptions = () => { while (this.selectElement.firstChild) { this.selectElement.removeChild(this.selectElement.firstChild); } }; 
 }
+
+function connectedCallback () {
+  console.log('%c' + 'connectedCallback ' + this.getAttribute('options'), 'color: #3fcbff');
+}
+
+function attributeChangedCallback (name, oldVal, newVal) {
+  console.log('%c' + 'attributeChangedCallback', 'color: #3fcbff');
+}
+
+Select.prototype.connectedCallback = connectedCallback;
+Select.prototype.attributeChangedCallback = attributeChangedCallback;
 
 customElements.define('select-with-options', Select);
 

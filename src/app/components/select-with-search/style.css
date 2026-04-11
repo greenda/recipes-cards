@@ -22,3 +22,7 @@
   gap: 4px;
   align-items: center;
 }
+
+.select__input::after {
+  content: 'v';
+}

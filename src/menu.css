@@ -63,7 +63,7 @@
 }
 
 .add-row-button {
-  background-image: url(add-icon_hover.svg);
+  background-image: url(app/add-icon_hover.svg);
   background-size: 100%;
   width: 32px;
   height: 32px;
@@ -79,7 +79,7 @@
 }
 
 .move-button {
-  background-image: url(arrow.svg);
+  background-image: url(app/arrow.svg);
   background-size: 100%;
   width: 32px;
   height: 32px;

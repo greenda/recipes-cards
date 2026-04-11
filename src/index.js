@@ -1,12 +1,14 @@
 import * as css from './index.css';
+import * as menu from './menu.css';
 import * as svg1 from './svg1.css';
 import Select from './app/components/select';
+import SelectWithSearch from './app/components/select-with-search';
+import SimpleComp from './app/components/simple-comp';
 
 // TODO в константы капсом
 import ingredientsJSON from './ingredients.json' with { type: "json" };
 import recipesJSON from './recipes.json';
 import unitsJSON from './units.json';
-import selectWithSearchTemplate from './app/components/select-with-search/template.html';
 
 const ingredients = JSON.stringify(ingredientsJSON);
 const recipes = JSON.stringify(recipesJSON);
@@ -538,12 +540,11 @@ const RECIPE_TYPE_MAP = {
 
 // document.body.appendChild(component());
 
-const addTemplates = () => {
-  document.querySelector('.page').insertAdjacentHTML('beforebegin', selectWithSearchTemplate);
-}
+
 
 const init = async () => {
-    addTemplates();
+
+    console.log('%c' + 'init 1', 'color: #3fcbff');
      
     // TODO переделать не через windows
     window.INGREDIENTS = JSON.parse(ingredients).map(({ id, name }) => ({ id, label: name }))
@@ -598,7 +599,7 @@ const init = async () => {
       window.maxIndex = 3;
       window.rowIndex = 2;
 
-  console.log('%c' + 'init 2', 'color: green');
+  // console.log('%c' + 'init 2', 'color: green');
 
   const cardsNumberSelect1 = document.querySelector('.cards__number1');
   const cardsNumberSelect2 = document.querySelector('.cards__number2');

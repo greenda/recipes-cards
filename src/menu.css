@@ -63,7 +63,7 @@
 }
 
 .add-row-button {
-  background-image: url(app/add-icon_hover.svg);
+  /* background-image: url(app/add-icon_hover.svg); */
   background-size: 100%;
   width: 32px;
   height: 32px;
@@ -162,8 +162,4 @@
 
 .copy-menu-button:hover {
   background-color: rgba(180, 106, 72, 1);
-}
-
-.select__hide-button {
-  background-image: url(app/hide-select-button.svg);
 }

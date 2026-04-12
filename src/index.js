@@ -4,6 +4,8 @@ import * as svg1 from './svg1.css';
 import Select from './app/components/select';
 import SelectWithSearch from './app/components/select-with-search';
 import SimpleComp from './app/components/simple-comp';
+import addIconHover from './app/add-icon_hover.svg';
+import removeIcon from './app/cancel-icon.svg';
 
 // TODO в константы капсом
 import ingredientsJSON from './ingredients.json' with { type: "json" };
@@ -44,200 +46,200 @@ const removeRow = event => {
   document.querySelector(`.table__row[rowindex="${rowIndex}"]`).remove();
 }
 
-  const getIngredients = () => [...window.INGREDIENTS, ...window.NEW_INGREDIENTS];
-  const getUnits = () => [...window.UNITS, ...window.NEW_UNITS];
+const getIngredients = () => [...window.INGREDIENTS, ...window.NEW_INGREDIENTS];
+const getUnits = () => [...window.UNITS, ...window.NEW_UNITS];
 
-  const trimRow = (limit, text) => text.split(' ')
-    .reduce((acc, word, index) => {
-      const lastElement = acc.length - 1;
-      if (index === 0) return [word];
+const trimRow = (limit, text) => text.split(' ')
+  .reduce((acc, word, index) => {
+    const lastElement = acc.length - 1;
+    if (index === 0) return [word];
 
-      const prevElement = acc[lastElement];
+    const prevElement = acc[lastElement];
 
-      return prevElement.length < 3
-        ? [...acc.slice(0, -1), `${prevElement} ${word}`]
-        : [...acc, word];
-    }, [])
-    .reduce((acc, word) => {
-      if (!acc.length) return [word]; const lastIndex = acc.length - 1; const lastElement = acc[lastIndex]; const rowWithNewWord = `${lastElement} ${word}`; return rowWithNewWord.length < limit ? [...acc.slice(0, -1), rowWithNewWord] : [...acc, word];
+    return prevElement.length < 3
+      ? [...acc.slice(0, -1), `${prevElement} ${word}`]
+      : [...acc, word];
+  }, [])
+  .reduce((acc, word) => {
+    if (!acc.length) return [word]; const lastIndex = acc.length - 1; const lastElement = acc[lastIndex]; const rowWithNewWord = `${lastElement} ${word}`; return rowWithNewWord.length < limit ? [...acc.slice(0, -1), rowWithNewWord] : [...acc, word];
+  }, []);
+
+const createCardSvg = (recipe, x0, y0) => {
+  const startX = +x0;
+  const startY = +y0;
+
+  let svg = document.querySelector('.cards__svg');
+
+  const container = document.querySelector('.cards__container');
+
+  if (svg) {
+    container.removeChild(svg);
+  }
+
+  svg = createSvgElement(TYPE.SVG, { className: 'cards__svg', width: mm(148), height: mm(210) });
+
+  const defs = createSvgElement(TYPE.DEFS);
+  const style = createSvgElement(TYPE.STYLE);
+  const docu = new DOMParser().parseFromString("<xml></xml>", "application/xml");
+  const cdata = docu.createCDATASection(`${window.css}`);
+  style.appendChild(cdata);
+  defs.appendChild(style);
+  svg.appendChild(defs);
+  const recipeGroup = createSvgElement(TYPE.GROUP);
+
+  const recipeContainer = createSvgElement(
+    TYPE.RECTANGLE, {
+    x: mm(startX),
+    y: mm(startY),
+    width: mm(CARD_WIDTH),
+    height: mm(CARD_HEIGHT),
+    class: 'recipe__container'
+  });
+
+  const {
+    id,
+    title,
+    idInCategory,
+    type,
+    ingredients,
+    directions
+  } = recipe;
+
+  const titleContainer = createSvgElement(
+    TYPE.RECTANGLE, {
+    x: mm(startX),
+    y: mm(startY+ BASE_OFFSET / 2),
+    width: mm(CARD_WIDTH),
+    height: mm(BASE_OFFSET - BASE_OFFSET / 4),
+    style: 'stroke: gray; fill: none'
+  });
+
+  const recipeTitle = createSvgElement(TYPE.TEXT, {
+    'text-anchor': 'middle',
+    x: mm(startX + CARD_WIDTH / 2),
+    y: mm(startY + BASE_OFFSET),
+    class: 'title',
+    style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
+  },
+    title
+  );
+
+  const ingredientsAmountOfGroup = createSvgElement(TYPE.GROUP, { class: 'content' });
+
+  const ingredientMainText = createSvgElement(TYPE.TEXT, {
+    x: mm(startX + BASE_OFFSET),
+    y: mm(startY + BASE_OFFSET * 2)
+  });
+
+  const ingredientProductsText = createSvgElement(TYPE.TEXT, {
+    x: mm(startX + PRODUCTS_OFFSET),
+    y: mm(startY + BASE_OFFSET * 2)
+  });
+
+  const ingredientsOffset = ingredients.reduce((acc, { ingredientId, ...rest }) => {
+    // TODO сделать получение ингредиентов методом
+    const a = getIngredients().find(({ id }) => id === ingredientId);
+
+    const ingredientElementsRows = trimRow(INGREDIENTS_MAX_CHAR_COUNT, getIngredients().find(({ id }) => id === ingredientId).label);
+
+    return [...acc, { ingredientId, ingredientElementsRows, ...rest }];
+  }, [])
+    .reduce((acc, { amountOf, unitId, index: unitIndex, isAnalogue, ingredientId, ingredientElementsRows }, index) => {
+      const isFirstRow = index === 0; const lastRowCount = isFirstRow ? 1 : acc[acc.length - 1].rowCount;
+
+      const processedUnitId = Number.isInteger(unitIndex) ? `${unitId}_${unitIndex}` : unitId;
+      const unit = window.UNITS.find(({ id }) => id === processedUnitId);
+
+      const amountOfUnitElement = createSvgElement(TYPE.TSPAN, {
+        x: mm(startX + BASE_OFFSET),
+        dy: isFirstRow ? '0' :
+          isAnalogue ? '0.8em' : `${(lastRowCount + 1) * 0.8}em`
+      },
+        `▪ ${amountOf || ''} ${unit?.label}`);
+
+      ingredientMainText.appendChild(amountOfUnitElement);
+
+      const ingredientOffset = ingredientElementsRows.reduce((elementAcc, word, wordIndex) => {
+        const dy = isFirstRow && wordIndex === 0 ? 0 : wordIndex === 0 && !isAnalogue ? 1.6 : 0.8;
+
+        const productRow = createSvgElement(TYPE.TSPAN, {
+          x: mm(startX + PRODUCTS_OFFSET),
+          dy: `${dy}em`,
+        },
+          isAnalogue ? `или ${word.toLowerCase()}` : word); ingredientProductsText.appendChild(productRow);
+
+        return elementAcc + dy;
+      }, 0);
+
+      return [...acc, { rowCount: ingredientElementsRows.length, offset: ingredientOffset }];
     }, []);
 
-    const createCardSvg = (recipe, x0, y0) => {
-      const startX = +x0;
-      const startY = +y0;
+  // const separatorOffset = Math.floor(ingredientsOffset.reduce((acc, { offset }) => (acc + offset * 16), 0));
+  // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(ingredientsOffset) + separatorOffset);
 
-      let svg = document.querySelector('svg');
 
-      const container = document.querySelector('.cards__container');
+  ingredientsAmountOfGroup.appendChild(ingredientMainText);
+  ingredientsAmountOfGroup.appendChild(ingredientProductsText);
 
-      if (svg) {
-        container.removeChild(svg);
+  recipeGroup.appendChild(recipeContainer);
+  recipeGroup.appendChild(titleContainer);
+  recipeGroup.appendChild(recipeTitle);
+  recipeGroup.appendChild(ingredientsAmountOfGroup);
+
+  svg.appendChild(recipeGroup);
+  container.appendChild(svg);
+  // ---------------------------- //
+
+  const directionsGroup = createSvgElement(TYPE.GROUP, {
+    class: 'content'
+  });
+
+  // const directionsTitle = createSvgElement(TYPE.TEXT, {
+  //   // TODO 52 в константы
+  //   x: mm(startX + 52),
+  //   y: mm(startY + BASE_OFFSET + DIRECTION_Y_OFFSET),
+  //   'text-anchor': 'middle',
+  //   class: 'preparing'
+  // }, 'Приготовление');
+
+  const separatorOffset = Math.floor(document.querySelector('.content').getBBox().height * 0.26) + BASE_OFFSET * 2 + BASE_OFFSET / 2;
+
+  const separator = createSvgElement(TYPE.TEXT, {
+    'text-anchor': 'middle',
+    x: mm(startX + CARD_WIDTH / 2),
+    y: separatorOffset + 'mm',
+    class: 'title',
+    style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
+  },
+    '—'
+  );
+
+  recipeGroup.appendChild(separator);
+
+  const directionsMainText = createSvgElement(TYPE.TEXT, {
+    x: mm(startX + BASE_OFFSET / 2),
+    y: mm(startY + separatorOffset + BASE_OFFSET / 2), class: 'preparing__content'
+  });
+
+  const PIXEL_IN_MM = 0.26; directions.forEach((direction, index) => {
+    trimRow(DIRECTIONS_MAX_CHAR_COUNT, direction).forEach((row, rowIndex) => {
+      if (rowIndex === 0) {
+        directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
+          x: mm(startX  + BASE_OFFSET / 2),
+          dy: index === 0 && rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em', class: 'bold'
+        }, `${index + 1}.`));
       }
 
-      svg = createSvgElement(TYPE.SVG, { id: 'svg', width: mm(148), height: mm(210) });
+      directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
+        x: rowIndex === 0 ? mm(startX + BASE_OFFSET / 2 + 16 * (`${index}`.length + 1) * PIXEL_IN_MM)
+          : mm(startX  + BASE_OFFSET), dy: rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em'
+      }, row));
+    });
+  });
 
-      const defs = createSvgElement(TYPE.DEFS);
-      const style = createSvgElement(TYPE.STYLE);
-      const docu = new DOMParser().parseFromString("<xml></xml>", "application/xml");
-      const cdata = docu.createCDATASection(`${window.css}`);
-      style.appendChild(cdata);
-      defs.appendChild(style);
-      svg.appendChild(defs);
-      const recipeGroup = createSvgElement(TYPE.GROUP);
-
-      const recipeContainer = createSvgElement(
-        TYPE.RECTANGLE, {
-        x: mm(startX),
-        y: mm(startY),
-        width: mm(CARD_WIDTH),
-        height: mm(CARD_HEIGHT),
-        class: 'recipe__container'
-      });
-
-      const {
-        id,
-        title,
-        idInCategory,
-        type,
-        ingredients,
-        directions
-      } = recipe;
-
-      const titleContainer = createSvgElement(
-        TYPE.RECTANGLE, {
-        x: mm(startX),
-        y: mm(startY+ BASE_OFFSET / 2),
-        width: mm(CARD_WIDTH),
-        height: mm(BASE_OFFSET - BASE_OFFSET / 4),
-        style: 'stroke: gray; fill: none'
-      });
-
-      const recipeTitle = createSvgElement(TYPE.TEXT, {
-        'text-anchor': 'middle',
-        x: mm(startX + CARD_WIDTH / 2),
-        y: mm(startY + BASE_OFFSET),
-        class: 'title',
-        style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
-      },
-        title
-      );
-
-      const ingredientsAmountOfGroup = createSvgElement(TYPE.GROUP, { class: 'content' });
-
-      const ingredientMainText = createSvgElement(TYPE.TEXT, {
-        x: mm(startX + BASE_OFFSET),
-        y: mm(startY + BASE_OFFSET * 2)
-      });
-
-      const ingredientProductsText = createSvgElement(TYPE.TEXT, {
-        x: mm(startX + PRODUCTS_OFFSET),
-        y: mm(startY + BASE_OFFSET * 2)
-      });
-
-      const ingredientsOffset = ingredients.reduce((acc, { ingredientId, ...rest }) => {
-        // TODO сделать получение ингредиентов методом
-        const a = getIngredients().find(({ id }) => id === ingredientId);
-
-        const ingredientElementsRows = trimRow(INGREDIENTS_MAX_CHAR_COUNT, getIngredients().find(({ id }) => id === ingredientId).label);
-
-        return [...acc, { ingredientId, ingredientElementsRows, ...rest }];
-      }, [])
-        .reduce((acc, { amountOf, unitId, index: unitIndex, isAnalogue, ingredientId, ingredientElementsRows }, index) => {
-          const isFirstRow = index === 0; const lastRowCount = isFirstRow ? 1 : acc[acc.length - 1].rowCount;
-
-          const processedUnitId = Number.isInteger(unitIndex) ? `${unitId}_${unitIndex}` : unitId;
-          const unit = window.UNITS.find(({ id }) => id === processedUnitId);
-
-          const amountOfUnitElement = createSvgElement(TYPE.TSPAN, {
-            x: mm(startX + BASE_OFFSET),
-            dy: isFirstRow ? '0' :
-              isAnalogue ? '0.8em' : `${(lastRowCount + 1) * 0.8}em`
-          },
-            `▪ ${amountOf || ''} ${unit?.label}`);
-
-          ingredientMainText.appendChild(amountOfUnitElement);
-
-          const ingredientOffset = ingredientElementsRows.reduce((elementAcc, word, wordIndex) => {
-            const dy = isFirstRow && wordIndex === 0 ? 0 : wordIndex === 0 && !isAnalogue ? 1.6 : 0.8;
-
-            const productRow = createSvgElement(TYPE.TSPAN, {
-              x: mm(startX + PRODUCTS_OFFSET),
-              dy: `${dy}em`,
-            },
-              isAnalogue ? `или ${word.toLowerCase()}` : word); ingredientProductsText.appendChild(productRow);
-
-            return elementAcc + dy;
-          }, 0);
-
-          return [...acc, { rowCount: ingredientElementsRows.length, offset: ingredientOffset }];
-        }, []);
-
-      // const separatorOffset = Math.floor(ingredientsOffset.reduce((acc, { offset }) => (acc + offset * 16), 0));
-      // console.log('%c%s', 'background: cadetblue; padding: 8px;', JSON.stringify(ingredientsOffset) + separatorOffset);
-
-
-      ingredientsAmountOfGroup.appendChild(ingredientMainText);
-      ingredientsAmountOfGroup.appendChild(ingredientProductsText);
-
-      recipeGroup.appendChild(recipeContainer);
-      recipeGroup.appendChild(titleContainer);
-      recipeGroup.appendChild(recipeTitle);
-      recipeGroup.appendChild(ingredientsAmountOfGroup);
-
-      svg.appendChild(recipeGroup);
-      container.appendChild(svg);
-      // ---------------------------- //
-
-      const directionsGroup = createSvgElement(TYPE.GROUP, {
-        class: 'content'
-      });
-
-      // const directionsTitle = createSvgElement(TYPE.TEXT, {
-      //   // TODO 52 в константы
-      //   x: mm(startX + 52),
-      //   y: mm(startY + BASE_OFFSET + DIRECTION_Y_OFFSET),
-      //   'text-anchor': 'middle',
-      //   class: 'preparing'
-      // }, 'Приготовление');
-
-      const separatorOffset = Math.floor(document.querySelector('.content').getBBox().height * 0.26) + BASE_OFFSET * 2 + BASE_OFFSET / 2;
-
-      const separator = createSvgElement(TYPE.TEXT, {
-        'text-anchor': 'middle',
-        x: mm(startX + CARD_WIDTH / 2),
-        y: separatorOffset + 'mm',
-        class: 'title',
-        style: `${title.length > 20 ? 'font-size: 16px;' : ''}`
-      },
-        '—'
-      );
-
-      recipeGroup.appendChild(separator);
-
-      const directionsMainText = createSvgElement(TYPE.TEXT, {
-        x: mm(startX + BASE_OFFSET / 2),
-        y: mm(startY + separatorOffset + BASE_OFFSET / 2), class: 'preparing__content'
-      });
-
-      const PIXEL_IN_MM = 0.26; directions.forEach((direction, index) => {
-        trimRow(DIRECTIONS_MAX_CHAR_COUNT, direction).forEach((row, rowIndex) => {
-          if (rowIndex === 0) {
-            directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
-              x: mm(startX  + BASE_OFFSET / 2),
-              dy: index === 0 && rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em', class: 'bold'
-            }, `${index + 1}.`));
-          }
-
-          directionsMainText.appendChild(createSvgElement(TYPE.TSPAN, {
-            x: rowIndex === 0 ? mm(startX + BASE_OFFSET / 2 + 16 * (`${index}`.length + 1) * PIXEL_IN_MM)
-              : mm(startX  + BASE_OFFSET), dy: rowIndex === 0 ? '0' : rowIndex === 0 ? '1.5em' : '0.8em'
-          }, row));
-        });
-      });
-
-      recipeGroup.appendChild(directionsGroup);
-      recipeGroup.appendChild(directionsMainText);
-    };
+  recipeGroup.appendChild(directionsGroup);
+  recipeGroup.appendChild(directionsMainText);
+};
 
     const createCard = () => {
       createCardSvg(window.selectedRecipe || copyCard(), 0, 0);
@@ -393,6 +395,7 @@ const removeRow = event => {
       tableAddButton.className = 'add-button';
       tableAddButton.tabIndex = tabIndex + 10;
       tableAddButton.onclick = addRow;
+      tableAddButton.innerHTML = addIconHover;
       tableAddButtonContainer.appendChild(tableAddButton);
 
       const tableDeleteButtonContainer = document.createElement('div');
@@ -401,6 +404,7 @@ const removeRow = event => {
       tableDeleteButton.className = 'delete-button';
       tableDeleteButton.onclick = removeRow;
       tableDeleteButton.tabIndex = tabIndex + 11;
+      tableDeleteButton.innerHTML = removeIcon;
       tableDeleteButtonContainer.appendChild(tableDeleteButton);
 
       rowElement.appendChild(ingredientsCell);
@@ -462,7 +466,7 @@ const removeRow = event => {
 
       document.querySelector('.recipe-title').value = recipe.title;
       document.querySelector('.directions__textarea').value = recipe.directions.join('\n');
-      document.querySelector('.recipe-nutritional-value').value = recipe.nutritionalValue;
+      document.querySelector('.recipe-nutritional-value').value = recipe.nutritionalValue || '';
       document.querySelector('.recipe-url').value = recipe.url;
       document.getElementById('recipeTypeSelect').input.value = RECIPE_TYPE_MAP[recipe.type];
 
@@ -549,7 +553,6 @@ const init = async () => {
     window.NEW_UNITS = [];
     window.RECIPES = JSON.parse(recipes).sort(({ title: a }, { title: b }) => a > b ? 1 : -1);
 
-
     window.UNITS = JSON.parse(units).reduce((acc, { id, name }) => ([
         ...acc,
         ...Array.isArray(name)
@@ -569,34 +572,32 @@ const init = async () => {
     );
     recipeSelector.addEventListener('selectOption', selectRecipe);
 
-      // TODO сделать хелпер по поиску и вставки в контейнер (отдельно для списков)
-      const categoryContainer = document.querySelector('.recipe-type');
-      // TODO сделать здесь простой селектор. Сделать наследование от него в селекторе с выбором
-      const categorySelector = document.createElement('select-with-search');
-      categorySelector.id = 'recipeTypeSelect';
-      categoryContainer.appendChild(categorySelector);
-      // TODO сделать удобный хелпер для выставления опций к списку
-      categorySelector.setAttribute('options', JSON.stringify(Object.values(RECIPE_TYPE).map(value => ({ id: value, label: RECIPE_TYPE_MAP[value] }))));
+    // TODO сделать хелпер по поиску и вставки в контейнер (отдельно для списков)
+    const categoryContainer = document.querySelector('.recipe-type');
+    // TODO сделать здесь простой селектор. Сделать наследование от него в селекторе с выбором
+    const categorySelector = document.createElement('select-with-search');
+    categorySelector.id = 'recipeTypeSelect';
+    categoryContainer.appendChild(categorySelector);
+    // TODO сделать удобный хелпер для выставления опций к списку
+    categorySelector.setAttribute('options', JSON.stringify(Object.values(RECIPE_TYPE).map(value => ({ id: value, label: RECIPE_TYPE_MAP[value] }))));
 
-      addTableRow({
-        ingredientSelectId: 's1',
-        ingredients: INGREDIENTS,
-        unitSelectId: 's2',
-        units: UNITS,
-        rowIndex: 1,
-      });
+    addTableRow({
+      ingredientSelectId: 's1',
+      ingredients: INGREDIENTS,
+      unitSelectId: 's2',
+      units: UNITS,
+      rowIndex: 1,
+    });
 
-      window.ingredients = INGREDIENTS;
-      window.units = UNITS;
-      window.table = [{
-        rowIndex: 1,
-        ingredients: s1,
-        units: s2,
-      }];
-      window.maxIndex = 3;
-      window.rowIndex = 2;
-
-  // console.log('%c' + 'init 2', 'color: green');
+    window.ingredients = INGREDIENTS;
+    window.units = UNITS;
+    window.table = [{
+      rowIndex: 1,
+      ingredients: s1,
+      units: s2,
+    }];
+    window.maxIndex = 3;
+    window.rowIndex = 2;
 
   const cardsNumberSelect1 = document.querySelector('.cards__number1');
   const cardsNumberSelect2 = document.querySelector('.cards__number2');
@@ -609,8 +610,6 @@ const init = async () => {
     option2.value = id; option2.innerHTML = title;
     cardsNumberSelect2.appendChild(option2);
   });
-
-  
 };
 
 init();

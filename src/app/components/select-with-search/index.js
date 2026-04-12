@@ -1,4 +1,4 @@
-import componentTemplate from 'html-loader!./template.html';
+import componentTemplate from './template.html';
 import * as css from './style.css';
 import hideSelectButton from './hide-select-button.svg';
 
@@ -13,8 +13,6 @@ class SelectWithSearch extends HTMLElement {
   static get observedAttributes() { return ['options', 'mix']; }
 
   connectedCallback() {
-    console.log('%c' + 'connected', 'color: green');
-
     if (!document.getElementById("select-with-search")) {
       const text = String.raw`${componentTemplate}`;
       if (!text) throw new Error('No template.');
@@ -34,7 +32,6 @@ class SelectWithSearch extends HTMLElement {
     const selectHideButton = templateContent.querySelector('.select__hide-button');
     selectHideButton.addEventListener('click', this.togglePopup);
 
-    console.log('%c' + hideSelectButton, 'color: #3fcbff');
     selectHideButton.innerHTML = hideSelectButton;
 
     const selectInput = templateContent.querySelector('.select__input');
@@ -53,7 +50,6 @@ class SelectWithSearch extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    console.log('%c%s', 'background: cadetblue; padding: 8px;', 'attributeChangedCallback ' + name);
     if (name === 'options') {
       this.setOptions(JSON.parse(newValue), this.popup);
 

@@ -7,11 +7,7 @@ module.exports = {
   devtool: 'inline-source-map',
   module: {
     rules: [
-      // { test: /\.svg$/, use: 'svg-inline-loader' },
-      {
-        test: /\.svg$/,
-        type: 'asset/resource',
-      },
+      { test: /\.svg/i, type: 'asset/source' },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
       { test: /\.(js)$/, use: 'babel-loader' },
       { test: /\.html$/i, loader: 'html-loader'},
@@ -25,7 +21,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
-      // inject: false 
     })
   ],
 }

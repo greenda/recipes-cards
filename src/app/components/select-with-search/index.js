@@ -1,5 +1,6 @@
 import componentTemplate from 'html-loader!./template.html';
 import * as css from './style.css';
+import hideSelectButton from './hide-select-button.svg';
 
 class SelectWithSearch extends HTMLElement {
   constructor () {
@@ -32,6 +33,9 @@ class SelectWithSearch extends HTMLElement {
 
     const selectHideButton = templateContent.querySelector('.select__hide-button');
     selectHideButton.addEventListener('click', this.togglePopup);
+
+    console.log('%c' + hideSelectButton, 'color: #3fcbff');
+    selectHideButton.innerHTML = hideSelectButton;
 
     const selectInput = templateContent.querySelector('.select__input');
     selectInput.addEventListener('input', this.handleInputChange);

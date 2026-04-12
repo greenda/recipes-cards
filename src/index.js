@@ -543,9 +543,6 @@ const RECIPE_TYPE_MAP = {
 
 
 const init = async () => {
-
-    console.log('%c' + 'init 1', 'color: #3fcbff');
-     
     // TODO переделать не через windows
     window.INGREDIENTS = JSON.parse(ingredients).map(({ id, name }) => ({ id, label: name }))
     window.NEW_INGREDIENTS = [];

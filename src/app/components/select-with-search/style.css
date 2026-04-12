@@ -26,3 +26,16 @@
 .select__input::after {
   content: 'v';
 }
+
+.select__hide-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  height: 36px;
+  width: 30px;
+  left: 180px;
+  background-repeat: no-repeat;
+  background-position-y: 16px;
+  background-position-x: 8px;
+  padding: 0;
+}

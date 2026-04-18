@@ -72,11 +72,13 @@ const createCardSvg = (recipe, x0, y0) => {
 
   const container = document.querySelector('.cards__container');
 
+  console.log('%c' + svg, 'color: #3fcbff');
+
   if (svg) {
     container.removeChild(svg);
   }
 
-  svg = createSvgElement(TYPE.SVG, { className: 'cards__svg', width: mm(148), height: mm(210) });
+  svg = createSvgElement(TYPE.SVG, { class: 'cards__svg', width: mm(148), height: mm(210) });
 
   const defs = createSvgElement(TYPE.DEFS);
   const style = createSvgElement(TYPE.STYLE);
@@ -563,7 +565,7 @@ const init = async () => {
 
     window.tabIndex = 0;
 
-    const recipeSelectorContainer = document.querySelector('.section');
+    const recipeSelectorContainer = document.querySelector('.recipe');
     const recipeSelector = document.createElement('select-with-search');
     recipeSelector.id = 'recipeSelect';
     recipeSelectorContainer.appendChild(recipeSelector);

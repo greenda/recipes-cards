@@ -1,5 +1,5 @@
 import componentTemplate from './template.html';
-import * as css from './style.css';
+import css from '!!css-loader!./style.css'
 import hideSelectButton from './hide-select-button.svg';
 
 class SelectWithSearch extends HTMLElement {
@@ -17,7 +17,15 @@ class SelectWithSearch extends HTMLElement {
       const text = String.raw`${componentTemplate}`;
       if (!text) throw new Error('No template.');
 
-      document.querySelector('.page').insertAdjacentHTML('beforebegin', text);
+      const a = text.replace('<style></style>', `<style>${JSON.stringify(css)}</style>`);
+
+      console.log('%c' + 'aaaaaaaaa', 'color: #3fcbff');
+
+      document.querySelector('.page')
+        .insertAdjacentHTML(
+          'beforebegin',
+          text.replace('<style></style>', `<style>${css}</style>`),
+        );
     }
 
     const template = document.getElementById("select-with-search");

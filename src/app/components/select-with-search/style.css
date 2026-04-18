@@ -1,10 +1,39 @@
+.select__option {
+  padding: 8px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.select__option:hover {
+  background-color: #F8AE29;
+}
+
+.select__hide-button {
+  height: 36px;
+  padding: 0px 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 0 4px 4px 0;
+}
+
+.select__input {
+  border: none;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
 .select__container {
+  max-height: calc(55px * 6);
+  overflow-y: scroll;
   position: absolute;
   background: white;
   display: block;
   border: 1px solid #E5E5E5;
-  width: 180px;
+  width: 306px;
   box-shadow: 0px 2px 8px 0px rgb(34 60 80 / 20%);
+  z-index: 10;
 }
 
 .select__option {
@@ -17,25 +46,58 @@
 }
 
 .select__field {
-  display: grid;
-  grid-template-columns: 182px 24px;
-  gap: 4px;
+  display: flex;
   align-items: center;
+  /* position: relative; */
 }
 
-.select__input::after {
-  content: 'v';
+.select:focus-visible {
+  outline: 1px solid rgb(110, 0, 0);
+  border: 1px solid rgb(52, 4, 4);
 }
 
-.select__hide-button {
-  position: absolute;
-  background-color: transparent;
+#s1:focus-visible {
+  outline: 1px solid #1a1d75;
+}
+
+button:focus-visible {
+  outline: 1px solid #B0B0B0;
+}
+
+.select__input:focus-visible {
+  outline: 1px solid #B0B0B0;
+}
+
+.select__input_short {
+  width: 60px;
+}
+
+.select__container.hide {
+  display: none;
+}
+
+.section input {
+  color: red;
   border: none;
-  height: 36px;
-  width: 30px;
-  left: 180px;
-  background-repeat: no-repeat;
-  background-position-y: 16px;
-  background-position-x: 8px;
-  padding: 0;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  font-size: 16px;
+  padding-right: 24px;
+}
+
+.date-input_short input {
+  width: 44px;
+}
+
+.date-input_short button {
+  left: 32px;
+}
+
+.date-input_short + .select__container{
+  width: 68px;
+}
+
+.select__field.date-input_short {
+  grid-template-columns: 62px;
 }

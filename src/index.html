@@ -19,28 +19,52 @@
       <div>
         <simple-comp/>
       </div>
-      <div class="section">
-        <h2>Рецепт</h1>
-      </div>
-      <!-- TODO переделать контейнер -->
-      <div class="section">
-        <h2>Категория</h2>
-        <div class="recipe-type"></div>
-      </div>
-      <div class="section">
-        <h2>Название</h2>
-        <input class="recipe-title"/>
-      </div>
-      <div class="section">
-        <div class="section__group">
-          <h2>БЖУ</h2>
-          <input class="recipe-nutritional-value"/>
+      <div class="columns columns__two">
+        <div class="column">
+          <div class="section">
+            <div class="description">
+              <span class="description__label">Рецепт</span>
+              <div class="recipe description__value"></div>
+            </div>
+          </div>
+        
+          <div class="section">
+            <div class="description">
+              <span class="description__label">Категория</span>
+              <div class="recipe-type description__value"></div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="description">
+              <span class="description__label">Название</span>
+              <div class="description__value">
+                <input class="recipe-title"/>
+              </div>         
+            </div>
+          </div>
         </div>
-        <div class="section__group">
-          <h2>URL</h2>
-          <input class="recipe-url"/>
+        <div class="column">
+          <div class="section">
+            <div class="description">
+              <span class="description__label description__label_short">БЖУ</span>
+              <div class="recipe description__value">
+                <input class="recipe-nutritional-value"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="description">
+              <span class="description__label description__label_short">URL</span>
+              <div class="recipe description__value">
+                <input class="recipe-url"/>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="table">
         <div class="table__head">
           <div>
@@ -59,7 +83,7 @@
       </div>
       <div class="directions">
         <h2>Действия</h1>
-          <textarea class="directions__textarea" rows="4"></textarea>
+          <textarea class="directions__textarea" rows="8"></textarea>
       </div>
       <div class="active-buttons">
         <button class="create-card-button" onclick="createCard()">Нарисовать карточку</button>

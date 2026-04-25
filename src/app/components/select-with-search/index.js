@@ -17,10 +17,6 @@ class SelectWithSearch extends HTMLElement {
       const text = String.raw`${componentTemplate}`;
       if (!text) throw new Error('No template.');
 
-      const a = text.replace('<style></style>', `<style>${JSON.stringify(css)}</style>`);
-
-      console.log('%c' + 'aaaaaaaaa', 'color: #3fcbff');
-
       document.querySelector('.page')
         .insertAdjacentHTML(
           'beforebegin',
@@ -43,6 +39,7 @@ class SelectWithSearch extends HTMLElement {
     selectHideButton.innerHTML = hideSelectButton;
 
     const selectInput = templateContent.querySelector('.select__input');
+    selectInput.addEventListener('click', this.handleInputClick)
     selectInput.addEventListener('input', this.handleInputChange);
     selectInput.tabIndex = tabIndex;
 
@@ -53,6 +50,7 @@ class SelectWithSearch extends HTMLElement {
     this.input = shadowRoot.querySelector('.select__input');
     this.selectContainer = shadowRoot.querySelector('.select__container');
     this.select = shadowRoot.querySelector('.select');
+    this.hideButton = shadowRoot.querySelector('.select__hide-button');
 
     document.querySelector('html').addEventListener('click', this.handleExternalClick);
   }
@@ -86,6 +84,10 @@ class SelectWithSearch extends HTMLElement {
   disconnectedCallback() {
     const selectHideButton = this.select.querySelector('.select__hide-button');
     selectHideButton.removeEventListener('click', this.togglePopup);
+  }
+
+  handleInputClick = () => {
+    this.hideButton.classList.toggle('selected');
   }
 
   handleInputChange = () => {

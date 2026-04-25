@@ -16,22 +16,35 @@ const ingredients = JSON.stringify(ingredientsJSON);
 const recipes = JSON.stringify(recipesJSON);
 const units = JSON.stringify(unitsJSON);
 
-const addRow = recipeRow => {
+const addNewRow = event => {
+  const rowIndex = event.currentTarget.getAttribute('rowIndex');
+
+  addRow(null, rowIndex);
+}
+
+const addRow = (recipeRow, prevRowIndex) => {
+  console.log('%c' + 'addRow', 'color: #3fcbff');
   const ingredientSelectId = `s${window.maxIndex + 1}`;
   const unitSelectId = `s${window.maxIndex + 2}`;
 
   const rowIndex = window.rowIndex;
 
-  addTableRow({ ingredientSelectId, unitSelectId, rowIndex: window.rowIndex, ...recipeRow });
+  addTableRow({ ingredientSelectId, unitSelectId, rowIndex: window.rowIndex, ...recipeRow }, prevRowIndex);
   window.maxIndex = window.maxIndex + 3;
 
-  window.table = [
+  const newRow = {
+    rowIndex,
+    ingredients: window[ingredientSelectId],
+    units: window[unitSelectId],
+  };
+
+  window.table = prevRowIndex ? [
     ...window.table,
-    {
-      rowIndex,
-      ingredients: window[ingredientSelectId],
-      units: window[unitSelectId],
-    },
+    newRow
+  ] : [
+    ...window.table.slice(0, prevRowIndex),
+    newRow,
+    ...window.table.slice(prevRowIndex + 1),
   ];
 
   updateIngredients(INGREDIENTS);
@@ -39,7 +52,7 @@ const addRow = recipeRow => {
 }
 
 const removeRow = event => {
-  const rowIndex = event.target.parentNode.parentNode.getAttribute('rowindex');
+  const rowIndex = event.currentTarget.getAttribute('rowindex');
 
   window.table = window.table.filter(({ rowIndex: index }) => index !== rowIndex);
 
@@ -359,7 +372,7 @@ const createCardSvg = (recipe, x0, y0) => {
       amountOf,
       unitId,
       index,
-    }) => {
+    }, prevRowIndex) => {
       const tableContentElement = document.querySelector('.table__content');
       const tabIndex = window.tabIndex;
 
@@ -396,7 +409,8 @@ const createCardSvg = (recipe, x0, y0) => {
       const tableAddButton = document.createElement('button');
       tableAddButton.className = 'add-button';
       tableAddButton.tabIndex = tabIndex + 10;
-      tableAddButton.onclick = addRow;
+      tableAddButton.setAttribute('rowIndex', rowIndex);
+      tableAddButton.onclick = addNewRow;
       tableAddButton.innerHTML = addIconHover;
       tableAddButtonContainer.appendChild(tableAddButton);
 
@@ -406,6 +420,7 @@ const createCardSvg = (recipe, x0, y0) => {
       tableDeleteButton.className = 'delete-button';
       tableDeleteButton.onclick = removeRow;
       tableDeleteButton.tabIndex = tabIndex + 11;
+      tableDeleteButton.setAttribute('rowIndex', rowIndex);
       tableDeleteButton.innerHTML = removeIcon;
       tableDeleteButtonContainer.appendChild(tableDeleteButton);
 
@@ -415,7 +430,11 @@ const createCardSvg = (recipe, x0, y0) => {
       rowElement.appendChild(tableAddButtonContainer);
       rowElement.appendChild(tableDeleteButtonContainer);
 
-      tableContentElement.appendChild(rowElement);
+      if (prevRowIndex) {
+        document.querySelector(`.table__row[rowindex="${prevRowIndex}"]`).after(rowElement);
+      } else {
+        tableContentElement.appendChild(rowElement);
+      }
 
       window.tabIndex = window.tabIndex + 10;
 

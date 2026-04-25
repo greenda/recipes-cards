@@ -19,49 +19,40 @@
       <div>
         <simple-comp/>
       </div>
-      <div class="columns columns__two">
-        <div class="column">
-          <div class="section">
-            <div class="description">
-              <span class="description__label">Рецепт</span>
-              <div class="recipe description__value"></div>
-            </div>
-          </div>
-        
-          <div class="section">
-            <div class="description">
-              <span class="description__label">Категория</span>
-              <div class="recipe-type description__value"></div>
-            </div>
-          </div>
+      <div class="section">
+        <div class="description">
+          <span class="description__label">Рецепт</span>
+          <div class="recipe description__value"></div>
+        </div>
 
-          <div class="section">
-            <div class="description">
-              <span class="description__label">Название</span>
-              <div class="description__value">
-                <input class="recipe-title"/>
-              </div>         
-            </div>
+        <div class="description description_short">
+          <span class="description__label description__label_short">БЖУ</span>
+          <div class="recipe description__value description__value_short">
+            <input class="recipe-nutritional-value"/>
           </div>
         </div>
-        <div class="column">
-          <div class="section">
-            <div class="description">
-              <span class="description__label description__label_short">БЖУ</span>
-              <div class="recipe description__value">
-                <input class="recipe-nutritional-value"/>
-              </div>
-            </div>
-          </div>
+      </div>
+    
+      <div class="section">
+        <div class="description">
+          <span class="description__label">Категория</span>
+          <div class="recipe-type description__value"></div>
+        </div>
 
-          <div class="section">
-            <div class="description">
-              <span class="description__label description__label_short">URL</span>
-              <div class="recipe description__value">
-                <input class="recipe-url"/>
-              </div>
-            </div>
+        <div class="description description_short">
+          <span class="description__label description__label_short">URL</span>
+          <div class="recipe description__value recipe description__value_short">
+            <input class="recipe-url"/>
           </div>
+        </div>
+      </div>
+      
+      <div class="section section_without-top-margin">
+        <div class="description">
+          <span class="description__label">Название</span>
+          <div class="description__value description__value_long">
+            <input class="recipe-title"/>
+          </div>         
         </div>
       </div>
 
